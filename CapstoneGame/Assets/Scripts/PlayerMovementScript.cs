@@ -17,7 +17,7 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject FirstPlayer;
 
     public Transform groundCheck;
-    public float groundDistance = 0.4f;  //creating the ground check distance
+    public float groundDistance = 0.2f;  //creating the ground check distance
     public LayerMask groundMask; //the name of the mask that will identify as ground.
     public LayerMask Deathbox;
 
