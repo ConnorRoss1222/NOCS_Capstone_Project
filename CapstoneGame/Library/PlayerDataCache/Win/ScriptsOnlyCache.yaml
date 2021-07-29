@@ -68,23 +68,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2162}
     - Class: 114
-      Script: {instanceID: 2384}
+      Script: {instanceID: 2378}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2864}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3410}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3546}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 17686}
+      Script: {instanceID: 3548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -161,9 +161,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2162}
     - Class: 114
-      Script: {instanceID: 2384}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 3312}
+      Script: {instanceID: 3314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -191,6 +191,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -202,17 +204,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1996}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2864}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3410}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 3546}
+      Script: {instanceID: 3548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -246,6 +248,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -261,23 +265,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2254}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 2414}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2864}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 3072}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3410}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 3546}
+      Script: {instanceID: 3548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -509,6 +513,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 3b2bc070fef69479e4143ab92dd13ff2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 359128d7326a5faae008d99209a44b7f
@@ -767,16 +777,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: 3b2bc070fef69479e4143ab92dd13ff2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenu
   platform: 5
   scenePathNames:
   - Assets/Scenes/UI Scenes/Main Menu.unity
   - Assets/Scenes/UI Scenes/Instructions.unity
   - Assets/Scenes/Demo_Scene1.unity
   - Assets/Scenes/Hub.unity
-  playerPath: C:/Users/livvy/Dropbox/Uni/QUT/IFB398 Capstone Project/Builds/2.1/Capstonetest.exe
+  playerPath: C:/Users/livvy/Dropbox/Uni/QUT/IFB398 Capstone Project/Builds/2.2/Capstonetest.exe
