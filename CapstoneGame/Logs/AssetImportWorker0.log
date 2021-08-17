@@ -1,0 +1,251 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 18363.1556; Version 1909; 64bit' Language: 'en' Physical Memory: 16336 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\UUnity\2019.4.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Sam/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53229
+Successfully changed project path to: C:/Users/Sam/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
+C:/Users/Sam/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 31.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path D:/UUnity/2019.4.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Sam/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   30.0.14.7168
+Initialize mono
+Mono path[0] = 'D:/UUnity/2019.4.8f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UUnity/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/UUnity/2019.4.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UUnity/2019.4.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001354 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 32.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to find bridge dll in registry for Microsoft Visual Studio Tools for Unity for C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
+Mono: successfully reloaded assembly
+- Completed reload, in  1.425 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000991 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.952 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.0 MB.
+System memory in use after: 100.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1616.
+Total: 2.811100 ms (FindLiveObjects: 0.195900 ms CreateObjectMapping: 0.036800 ms MarkObjects: 2.250900 ms  DeleteObjects: 0.326000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/TerrainData_9909fd04-a044-47ae-bda5-9b4acce8ccf7.asset
+  artifactKey: Guid(4a7845499d05f67478844437e79a1835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_9909fd04-a044-47ae-bda5-9b4acce8ccf7.asset using Guid(4a7845499d05f67478844437e79a1835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56670c2be5bf986e609077a9f82ed222') in 0.083096 seconds
+  Import took 0.085812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/TerrainData_fb6f4710-859e-4bee-9ed8-f66c583ecf32.asset
+  artifactKey: Guid(43662844773dc594f804394d17bec6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_fb6f4710-859e-4bee-9ed8-f66c583ecf32.asset using Guid(43662844773dc594f804394d17bec6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a079b4c3e644c5df23ed1a08bf65401') in 0.017513 seconds
+  Import took 0.019768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/TerrainData_37d9ba07-0e3d-4ff4-9677-d444eb236879.asset
+  artifactKey: Guid(0edfcc7d12dd90f4c8226eebf69ec7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_37d9ba07-0e3d-4ff4-9677-d444eb236879.asset using Guid(0edfcc7d12dd90f4c8226eebf69ec7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72eb5ea146d1815e91d61ece83964f44') in 0.015928 seconds
+  Import took 0.018262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/TerrainData_9c153e0d-9a57-4d71-b1bb-2546f0f7f6fc.asset
+  artifactKey: Guid(bc72902f49146e746b1300ce57c355d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_9c153e0d-9a57-4d71-b1bb-2546f0f7f6fc.asset using Guid(bc72902f49146e746b1300ce57c355d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162d3609a6c9344951f9bbb6a9422440') in 0.015616 seconds
+  Import took 0.017918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/TerrainData_1342651c-125b-42e2-bec3-7c6a07a69e7c.asset
+  artifactKey: Guid(dfb4ecebd2c275340b447d86ec320e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_1342651c-125b-42e2-bec3-7c6a07a69e7c.asset using Guid(dfb4ecebd2c275340b447d86ec320e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74155255e60184021fdf4202270d0e9') in 0.015629 seconds
+  Import took 0.018065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/TerrainData_43da3dc1-6fa2-46ca-b5c3-30dcace25cd7.asset
+  artifactKey: Guid(4cdd8f12c23f7294298b0e4eed56c97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_43da3dc1-6fa2-46ca-b5c3-30dcace25cd7.asset using Guid(4cdd8f12c23f7294298b0e4eed56c97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5ba0ba6652e2030327787bc3d5bfeb') in 0.015403 seconds
+  Import took 0.017792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/TerrainData_0c64ff8a-a685-49fe-abea-219b2e6a7400.asset
+  artifactKey: Guid(52b60b00dcca0ee489ebb22cb159b74c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_0c64ff8a-a685-49fe-abea-219b2e6a7400.asset using Guid(52b60b00dcca0ee489ebb22cb159b74c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218579cd53295fa6461e06915cfcb94e') in 0.015714 seconds
+  Import took 0.018176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/TerrainData_1c84e332-8d87-40b4-a22b-30ab00b7d65b.asset
+  artifactKey: Guid(eed04125ac14ba54f91f66c0e5d800f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_1c84e332-8d87-40b4-a22b-30ab00b7d65b.asset using Guid(eed04125ac14ba54f91f66c0e5d800f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58868b955721aa1b189da7f16eaa7ac') in 0.016584 seconds
+  Import took 0.018905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/TerrainData_f8d817c4-3390-46f2-9eb3-e731224f345c.asset
+  artifactKey: Guid(b1fd1c09dd48f2c48ae63eb09370c0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_f8d817c4-3390-46f2-9eb3-e731224f345c.asset using Guid(b1fd1c09dd48f2c48ae63eb09370c0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e556da2fd111ac219362f827de66d9f8') in 0.015815 seconds
+  Import took 0.018373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/TerrainData_69d1184a-22cd-4861-afae-6605b8200a19.asset
+  artifactKey: Guid(ba5a3eae31194c24aa62c6bf0c6c3537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_69d1184a-22cd-4861-afae-6605b8200a19.asset using Guid(ba5a3eae31194c24aa62c6bf0c6c3537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6c742b7164fd93e6f0406d4942f87a') in 0.015904 seconds
+  Import took 0.018193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/TerrainData_659f59c7-1699-4fc6-b00a-670c9a7e8a56.asset
+  artifactKey: Guid(35f5882dd1e5c1b4b823a300574366f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_659f59c7-1699-4fc6-b00a-670c9a7e8a56.asset using Guid(35f5882dd1e5c1b4b823a300574366f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b47f7345227467c858b93734a530a55') in 0.015807 seconds
+  Import took 0.018180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Terrain_Main.asset
+  artifactKey: Guid(4c04e51867ef5c642986efb43a6b8e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain_Main.asset using Guid(4c04e51867ef5c642986efb43a6b8e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree big_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '0097103fc816d1def316b7dcc86ce1d4') in 0.023140 seconds
+  Import took 0.025858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/TerrainData_3d130939-a2e2-4dd9-8e85-da46b7dcc6cb.asset
+  artifactKey: Guid(e90878d5a05de894aa6082303b6c50bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_3d130939-a2e2-4dd9-8e85-da46b7dcc6cb.asset using Guid(e90878d5a05de894aa6082303b6c50bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd147350d2bfa4b4cdcf4f58648f017') in 0.016966 seconds
+  Import took 0.019643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/TerrainData_e27da8ee-f952-4fa3-b64f-5a93ef7151a8.asset
+  artifactKey: Guid(9f529d264c8798448b8369de1ce30e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_e27da8ee-f952-4fa3-b64f-5a93ef7151a8.asset using Guid(9f529d264c8798448b8369de1ce30e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21a87a21a4ed0831b3a60a9e240f33c') in 0.015949 seconds
+  Import took 0.018449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/TerrainData_c1bd3cd8-7d5c-4db9-910f-c02396fcfde4.asset
+  artifactKey: Guid(9e68adf1b8a54a44eba300faf198330a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_c1bd3cd8-7d5c-4db9-910f-c02396fcfde4.asset using Guid(9e68adf1b8a54a44eba300faf198330a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree big_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '89a0b28e19ac75cf3e295f7cc994f218') in 0.029514 seconds
+  Import took 0.032758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree big_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '56ec7330bb0e9e976b65a5927651081a') in 0.030930 seconds
+  Import took 0.034193 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.8 MB.
+System memory in use after: 76.0 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1618.
+Total: 2.371300 ms (FindLiveObjects: 0.181700 ms CreateObjectMapping: 0.032500 ms MarkObjects: 2.141600 ms  DeleteObjects: 0.014100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000956 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1618.
+Total: 1.978400 ms (FindLiveObjects: 0.191300 ms CreateObjectMapping: 0.032700 ms MarkObjects: 1.737000 ms  DeleteObjects: 0.016100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
