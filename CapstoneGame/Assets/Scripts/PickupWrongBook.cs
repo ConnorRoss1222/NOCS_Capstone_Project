@@ -35,6 +35,8 @@ public class PickupWrongBook : MonoBehaviour
         {
             if (TheDistance <= 3)
             {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Lets keep looking";
                 this.GetComponent<BoxCollider>().enabled = false;
@@ -52,5 +54,7 @@ public class PickupWrongBook : MonoBehaviour
         Book.SetActive(false);
         subText.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

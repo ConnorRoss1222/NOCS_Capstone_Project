@@ -13,22 +13,21 @@ public class MouseLook : MonoBehaviour
 
 
     //mouse Sensitivity
-    public float MouseSensitivity = 200f;
-
+    public float MouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         //lock the cursor to the center of the screen and hide it.
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         float mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;  //making sure the player isn't moving faster if the frame rate is slower 
         float mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
 
