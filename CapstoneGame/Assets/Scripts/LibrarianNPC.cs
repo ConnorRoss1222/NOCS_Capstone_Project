@@ -9,6 +9,7 @@ public class LibrarianNPC : MonoBehaviour
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
+    public GameObject characterName;
     public GameObject subBox;
     public GameObject bookOverlay;
     public static bool statePickupBook = false;
@@ -45,6 +46,7 @@ public class LibrarianNPC : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "I want to talk but that possum is really freaking me out";
+                    characterName.GetComponent<Text>().text = "Librarian";
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
@@ -95,6 +97,7 @@ public class LibrarianNPC : MonoBehaviour
         yield return new WaitForSeconds(3.5f);
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
         bookOverlay.SetActive(true);
         StartCoroutine(ExitBook());
     }
@@ -103,6 +106,7 @@ public class LibrarianNPC : MonoBehaviour
     {
         yield return new WaitForSeconds(5.5f);
         subText.GetComponent<Text>().text = "Ohhh you’d like some information on bushfires! Have I got just the book for you, if I could just……ahhh…..find it. Rats, I must’ve put it back on the shelf. Now if I remember correctly, it should be in the nonfiction section.";
+        characterName.GetComponent<Text>().text = "Librarian";
         statePossumConversation = true;
         StartCoroutine(ExitConversation());
     }
@@ -121,6 +125,7 @@ public class LibrarianNPC : MonoBehaviour
         yield return new WaitForSeconds(5.5f);
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
