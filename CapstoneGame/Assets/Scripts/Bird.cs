@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PickupWrongBook : MonoBehaviour
+public class Bird : MonoBehaviour
 {
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
     public GameObject subBox;
-    public GameObject Book;
+    public GameObject PossumObject;
     private bool insideRange = false;
 
     void Update()
     {
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
-            this.GetComponent<BoxCollider>().enabled = false;
-
             insideRange = false;
 
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
-            subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Lets keep looking";
+            subText.GetComponent<Text>().text = "After getting a hold of the bird it calms down and leaves on its merry way";
+            LibrarianNPC.statePossum = true;
+            this.GetComponent<BoxCollider>().enabled = false;
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
             StartCoroutine(ExitConversation());
@@ -45,11 +45,12 @@ public class PickupWrongBook : MonoBehaviour
         ActionText.SetActive(false);
     }
 
+
     IEnumerator ExitConversation()
     {
         yield return new WaitForSeconds(2.5f);
         subBox.SetActive(false);
-        Book.SetActive(false);
+        PossumObject.SetActive(false);
         subText.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
