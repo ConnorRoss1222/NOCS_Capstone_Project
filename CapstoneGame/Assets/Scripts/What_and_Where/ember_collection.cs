@@ -13,7 +13,7 @@ public class ember_collection : MonoBehaviour
     private void Update()
     {
         //check if inside collider box and press e 
-        if (nearEmber && Input.GetKeyDown(KeyCode.E))
+        if (nearEmber && Input.GetKeyDown(KeyCode.E) && FireTimeTrial.start)
         {
             // remove object and its collider box
             Ember.SetActive(false);
@@ -24,6 +24,8 @@ public class ember_collection : MonoBehaviour
             //increment global variable and print to logs
             FireTimeTrial.num_burning_collected++;
             Debug.Log(FireTimeTrial.num_burning_collected);
+
+            nearEmber = false;
         }
     }
     // Check if player enters colliderbox of ember
@@ -31,16 +33,23 @@ public class ember_collection : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("hit detected");
-        if (other.CompareTag("Player")) nearEmber = true;
-        ActionText.GetComponent<Text>().text = "Press [E] to Extinguish";
-        ActionText.SetActive(true);
+        //only allow if timer has started
+        if (FireTimeTrial.start)
+        {
+            if (other.CompareTag("Player")) nearEmber = true;
+            ActionText.GetComponent<Text>().text = "Press [E] to Extinguish";
+            ActionText.SetActive(true);
+        }
     }
     // Check if player leaves colliderbox of ember
     // player tag on player object
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) nearEmber = false;
-        ActionText.SetActive(false);
+        if (FireTimeTrial.start)
+        {
+            if (other.CompareTag("Player")) nearEmber = false;
+            ActionText.SetActive(false);
+        }
     }
 }
 
