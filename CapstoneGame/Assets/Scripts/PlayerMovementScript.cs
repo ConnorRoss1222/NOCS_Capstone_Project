@@ -24,6 +24,9 @@ public class PlayerMovementScript : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
     bool isDead;
+    bool currentlyTalking;
+
+    public GameObject textbox;
 
     // Update is called once per frame
     void Update()
@@ -31,8 +34,9 @@ public class PlayerMovementScript : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheck.position/*creating a sphere at the location of the object */, groundDistance /*creating the radius of the sphere*/, groundMask /*looking for this layer mask */);
         isDead = Physics.CheckSphere(groundCheck.position, groundDistance, Deathbox); //checking if the player has fallen beneath the world
 
+        currentlyTalking = textbox.activeSelf;
 
-        if(isGrounded && velocity.y < 0) // resetting the players velocity when they're grounded.
+        if(isGrounded && velocity.y < 0 && !currentlyTalking) // resetting the players velocity when they're grounded.
         {
             velocity.y = -2f;
         }
@@ -46,20 +50,25 @@ public class PlayerMovementScript : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z; //creating the direction for the player to move, based on the players local rotation, not the world.
+        if (!currentlyTalking)
+        {
+            Vector3 move = transform.right * x + transform.forward * z; //creating the direction for the player to move, based on the players local rotation, not the world.
 
-        controller.Move(move * speed * Time.deltaTime); // moving the player
+            controller.Move(move * speed * Time.deltaTime); // moving the player
+        }
+        
+        
 
-        if(Input.GetButtonDown("Jump") && isGrounded)  //jumping when the player touches the ground
+        if(Input.GetButtonDown("Jump") && isGrounded && !currentlyTalking)  //jumping when the player touches the ground
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity); 
         }
 
-        if (Input.GetButton("Sprint") && isGrounded) //toggling the sprint on
+        if (Input.GetButton("Sprint") && isGrounded && !currentlyTalking) //toggling the sprint on
         {
             speed = 40f; 
         }
-        if (Input.GetButtonUp("Sprint") && isGrounded) // toggling the sptin off
+        if (Input.GetButtonUp("Sprint") && isGrounded && !currentlyTalking) // toggling the sptin off
         {
             speed = 20f;
         }

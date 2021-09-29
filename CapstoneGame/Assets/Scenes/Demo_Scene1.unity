@@ -3168,6 +3168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 1409252608}
+  PlayerCamera: {fileID: 0}
+  textbox: {fileID: 0}
 --- !u!114 &223376116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5594,7 +5596,7 @@ Transform:
   - {fileID: 1860865233}
   - {fileID: 175020268}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &419461154
 GameObject:
@@ -6899,6 +6901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 1409252608}
+  PlayerCamera: {fileID: 0}
+  textbox: {fileID: 305717280}
 --- !u!114 &509046937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6984,7 +6988,7 @@ RectTransform:
   - {fileID: 1922905161}
   - {fileID: 1356711054}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7295,7 +7299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &561809396
 PrefabInstance:
@@ -7486,7 +7490,7 @@ Transform:
   m_LocalScale: {x: 2752.9514, y: 24.661722, z: 2826.3784}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568908798
 GameObject:
@@ -9657,7 +9661,7 @@ Transform:
   - {fileID: 1556056258}
   - {fileID: 343458221}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &777766710
 GameObject:
@@ -13584,6 +13588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 0}
+  PlayerCamera: {fileID: 0}
+  textbox: {fileID: 0}
 --- !u!114 &1144252533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14848,7 +14854,7 @@ Transform:
   - {fileID: 5474786409278323664}
   - {fileID: 5474786410709334225}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1252183812
 MonoBehaviour:
@@ -16715,6 +16721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 1409252608}
+  PlayerCamera: {fileID: 0}
+  textbox: {fileID: 305717280}
 --- !u!114 &1409252611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19925,7 +19933,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cf425e4c210cb4d4697c3a91f78daa2a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf425e4c210cb4d4697c3a91f78daa2a, type: 3}
       propertyPath: m_LocalScale.x
@@ -20127,6 +20135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 0}
+  PlayerCamera: {fileID: 0}
+  textbox: {fileID: 0}
 --- !u!114 &1711439876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26145,6 +26155,10 @@ PrefabInstance:
       value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 305717280}
+    - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: groundDistance
       value: 0.4
       objectReference: {fileID: 0}
@@ -26220,6 +26234,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5474786410654597505, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 305717280}
     - target: {fileID: 5474786410654597507, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_TagString
       value: MainCamera
@@ -26340,6 +26358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 5474786409518189561}
+  textbox: {fileID: 0}
   MouseSensitivity: 100
   playerBody: {fileID: 5474786410709334225}
 --- !u!4 &5474786410109610274
