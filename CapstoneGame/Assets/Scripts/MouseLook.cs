@@ -26,13 +26,14 @@ public class MouseLook : MonoBehaviour
         //lock the cursor to the center of the screen and hide it.
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        
+        
     }
 
     // Update is called once per frame
 
     void Update()
     {
-       
         currentlyTalking = textbox.activeSelf;
         float mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;  //making sure the player isn't moving faster if the frame rate is slower 
         float mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
