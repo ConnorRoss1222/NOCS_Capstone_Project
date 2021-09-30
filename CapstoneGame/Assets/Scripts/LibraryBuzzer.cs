@@ -16,7 +16,6 @@ public class LibraryBuzzer : MonoBehaviour
     {
         if (insideRange && buzzedIn == false)
         {
-
             insideRange = false;
 
             subBox.SetActive(true);

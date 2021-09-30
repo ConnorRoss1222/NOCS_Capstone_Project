@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class DroneCheckpoint : MonoBehaviour
 {
     public GameObject droneScoreText;
-    private int droneScore = 0;
+    public GameObject thisCheckpoint;
+    public GameObject nextCheckpoint;
     private bool checkpointCompleted = false;
     private bool insideRange = false;
 
@@ -16,8 +17,10 @@ public class DroneCheckpoint : MonoBehaviour
         {
             checkpointCompleted = true;
             this.GetComponent<BoxCollider>().enabled = false;
-            droneScore++;
-            droneScoreText.GetComponent<Text>().text = droneScore.ToString();
+            DroneMinigameController.droneScore++;
+            droneScoreText.GetComponent<Text>().text = DroneMinigameController.droneScore.ToString();
+            nextCheckpoint.SetActive(true);
+            thisCheckpoint.SetActive(false);
         }
     }
 

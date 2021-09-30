@@ -14,6 +14,7 @@ public class LibrarianNPC : MonoBehaviour
     public static bool statePickupBook = false;
     public static bool statePossum = false;
     private bool statePossumConversation = false;
+    private bool stateBookConversation = false;
     private bool insideRange = false;
     public GameObject optButton;
 
@@ -63,14 +64,29 @@ public class LibrarianNPC : MonoBehaviour
             }
             else if (LibrarianNPC.statePossum == true && LibrarianNPC.statePickupBook == true)
             {
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.Confined;
-                subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "Oh great you found it! Let's give it a read.";
-                this.GetComponent<BoxCollider>().enabled = false;
-                ActionDisplay.SetActive(false);
-                ActionText.SetActive(false);
-                StartCoroutine(FoundBookConversation());
+                if (stateBookConversation == false)
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.Confined;
+                    subBox.SetActive(true);
+                    subText.GetComponent<Text>().text = "Oh great you found it! Let's give it a read.";
+                    this.GetComponent<BoxCollider>().enabled = false;
+                    ActionDisplay.SetActive(false);
+                    ActionText.SetActive(false);
+                    StartCoroutine(FoundBookConversation());
+                    stateBookConversation = true;
+                }
+                else
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.Confined;
+                    subBox.SetActive(true);
+                    subText.GetComponent<Text>().text = "Oh you're back, are you here to see the book again?";
+                    this.GetComponent<BoxCollider>().enabled = false;
+                    ActionDisplay.SetActive(false);
+                    ActionText.SetActive(false);
+                    StartCoroutine(FoundBookConversation());
+                }
             }
         }
     }
