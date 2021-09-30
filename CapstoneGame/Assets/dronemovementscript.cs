@@ -50,23 +50,25 @@ public class dronemovementscript : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime); // moving the player
 
-        if (Input.GetKeyDown("space"))  //jumping when the player touches the ground
+        if (Input.GetButtonDown("Jump"))  //jumping when the player touches the ground
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift))  //jumping when the player touches the ground
+        if (Input.GetButtonUp("Jump"))  //jumping when the player touches the ground
+        {
+            velocity.y = 0;
+        }
+
+        if (Input.GetButtonDown("Sprint"))  //jumping when the player touches the ground
         {
             velocity.y = -Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
 
-        if (Input.GetButton("Sprint") && isGrounded) //toggling the sprint on
+        if (Input.GetButtonUp("Sprint"))  //jumping when the player touches the ground
         {
-            speed = 40f;
+            velocity.y = 0;
         }
-        if (Input.GetButtonUp("Sprint") && isGrounded) // toggling the sptin off
-        {
-            speed = 20f;
-        }
+
 
         velocity.y += gravity * Time.deltaTime; // increasing the velocity as the player falls.
 
