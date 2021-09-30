@@ -28522,7 +28522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 5474786409518189561}
-  textbox: {fileID: 1489900476}
+  textbox: {fileID: 305717280}
   MouseSensitivity: 100
   playerBody: {fileID: 5474786410709334225}
 --- !u!4 &5474786410109610274
