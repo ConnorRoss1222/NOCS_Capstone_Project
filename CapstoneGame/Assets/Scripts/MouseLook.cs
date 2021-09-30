@@ -19,6 +19,7 @@ public class MouseLook : MonoBehaviour
     float xRotation = 180f;
 
     bool currentlyTalking;
+    bool currentlyInterfacing;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class MouseLook : MonoBehaviour
     void Update()
     {
         currentlyTalking = textbox.activeSelf;
+        
         float mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;  //making sure the player isn't moving faster if the frame rate is slower 
         float mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
 

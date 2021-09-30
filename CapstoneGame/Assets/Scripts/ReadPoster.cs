@@ -11,11 +11,18 @@ public class ReadPoster : MonoBehaviour
     private bool insideRange = false;
     public GameObject optButton;
 
+
+    void Start()
+    {
+    }
     // Update is called once per frame
     void Update()
     {
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
+            GameObject.Find("Main Character").GetComponent<PlayerMovementScript>().enabled = false;
+            GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = false;
+            GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = false;
             this.GetComponent<BoxCollider>().enabled = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
@@ -34,6 +41,9 @@ public class ReadPoster : MonoBehaviour
         this.GetComponent<BoxCollider>().enabled = true;
         posterOverlay.SetActive(false);
         optButton.SetActive(false);
+        GameObject.Find("Main Character").GetComponent<PlayerMovementScript>().enabled = true;
+        GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = true;
+        GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
