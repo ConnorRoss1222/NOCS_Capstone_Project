@@ -35,7 +35,6 @@ public class FireTimeTrial : MonoBehaviour
             timeRemaining = 10;
             num_burning_collected = 0;
             internal_start = false;
-
             timerIsRunning = true;
 
         }
