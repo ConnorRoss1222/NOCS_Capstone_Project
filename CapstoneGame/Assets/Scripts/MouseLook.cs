@@ -5,6 +5,8 @@ using System.Threading;
 using UnityEngine;
 
 //edit,project settings, input -- shows pre labelled inputs
+
+
 public class MouseLook : MonoBehaviour
 {
 
@@ -28,28 +30,39 @@ public class MouseLook : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         
+        PlayerCamera.transform.rotation = Quaternion.Euler(0, 0, 0);
+
         
     }
 
     // Update is called once per frame
 
+    bool firstIteration = true;
     void Update()
     {
         currentlyTalking = textbox.activeSelf;
         
         float mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;  //making sure the player isn't moving faster if the frame rate is slower 
         float mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
-
-        if (!currentlyTalking)
+        if (firstIteration)
         {
-            xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f); //Stops the player from looking beyond the body.
-
-            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-            playerBody.Rotate(Vector3.up * mouseX);
-            //need to rotate around the x axis and along the y
-            PlayerCamera.SetActive(true);
+            xRotation = Mathf.Clamp(0, 0, 0);
+            firstIteration = false;
         }
+        else
+        {
+            if (!currentlyTalking)
+            {
+                xRotation -= mouseY;
+                xRotation = Mathf.Clamp(xRotation, -90f, 90f); //Stops the player from looking beyond the body.
+
+                transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+                playerBody.Rotate(Vector3.up * mouseX);
+                //need to rotate around the x axis and along the y
+                PlayerCamera.SetActive(true);
+            }
+        }
+        
         
        
        
