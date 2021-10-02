@@ -43,8 +43,8 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (isDead) // killing the player
         {
-            Destroy(FirstPlayer);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+            Destroy(FirstPlayer); 
+            SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         }
 
         float x = Input.GetAxis("Horizontal");
