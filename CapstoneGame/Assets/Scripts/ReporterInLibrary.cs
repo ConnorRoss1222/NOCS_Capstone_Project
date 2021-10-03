@@ -15,6 +15,7 @@ public class ReporterInLibrary : MonoBehaviour
     private bool insideRange = false;
     private bool firstTimeMeeting = false;
     private int correctQuestion = 0;
+    private string FullText = "";
 
     void Update()
     {
@@ -204,5 +205,17 @@ public class ReporterInLibrary : MonoBehaviour
     {
         if (other.CompareTag("Player")) insideRange = false;
         ActionText.SetActive(false);
+    }
+
+    IEnumerator ShowText(IEnumerator nextPart)
+    {
+        for (int i = 0; i < FullText.Length + 1; i++)
+        {
+            subText.GetComponent<Text>().text = FullText.Substring(0, i);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        yield return new WaitForSeconds(2.5f);
+        StartCoroutine(nextPart);
     }
 }

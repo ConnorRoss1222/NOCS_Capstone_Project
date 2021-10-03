@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FinishLine : MonoBehaviour
+public class SecondFinishLine : MonoBehaviour
 {
 
     public GameObject ActionDisplay;
@@ -18,9 +18,9 @@ public class FinishLine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+
     }
-      
+
     // Update is called once per frame
     void Update()
     {
@@ -34,22 +34,21 @@ public class FinishLine : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             characterName.GetComponent<Text>().text = "Flurm";
             subBox.SetActive(true);
-            StartCoroutine(Conversation1()); 
+            StartCoroutine(Conversation1());
         }
 
     }
 
-   IEnumerator Conversation1()
+    IEnumerator Conversation1()
     {
-        FullText = "Looks like you've got the hang of that. Let's get more advanced!";
+        FullText = "Wow, you picked that up quickly too! Next you'll need to know how to interact with people and objects on Earth.";
         StartCoroutine(ShowText(Conversation0()));
         yield return new WaitForSeconds(0.05f);
-    }  
+    }
 
-   IEnumerator Conversation0()
+    IEnumerator Conversation0()
     {
-        yield return new WaitForSeconds(1.5f);
-        FullText = "You can also sprint and jump on Earth using LShift and Space. Why don't you jump up these obstacles and sprint to the end of the next hallway. See you there!";
+        FullText = "You can do this using E when prompted. Go ahead and try it out on that robot human, and the box over there.";
         StartCoroutine(ShowText(ExitConversation()));
         yield return new WaitForSeconds(0.5f);
     }

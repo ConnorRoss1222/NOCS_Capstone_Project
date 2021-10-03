@@ -18,8 +18,8 @@ TagManager:
   - Ground
   - Deathbox
   - Minimap
-  - Don't Render
-  - 
+  - Don't Render Main Camera
+  - Dont Render Minimap Camera
   - 
   - 
   - 
