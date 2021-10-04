@@ -8,6 +8,7 @@ public class switchColour : MonoBehaviour
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
+    public GameObject characterName;
     public GameObject subBox;
     public Material red;
     public Material green;
@@ -45,11 +46,13 @@ public class switchColour : MonoBehaviour
                 current = 1;
             }
 
+            characterName.GetComponent<Text>().text = "Human Robot";
+
             FullText = "Look the colour changed!";
-            StartCoroutine(ShowText(ExitConversation()));
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
-            StartCoroutine(ExitConversation());
+            StartCoroutine(ShowText(ExitConversation()));
+            
         }
     }
 
@@ -85,6 +88,8 @@ public class switchColour : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
