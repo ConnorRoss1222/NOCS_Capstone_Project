@@ -36,6 +36,8 @@ public class NPCTest : MonoBehaviour
         {
             if (TheDistance <= 3)
             {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Whoa! What are you doing out here little dude, the fire may have passed but this smoke still isn’t good for you. Lucky I decided to stay around for civilians or you’d be in serious trouble.";
                 this.GetComponent<BoxCollider>().enabled = false;
@@ -76,6 +78,8 @@ public class NPCTest : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Option02()
@@ -85,5 +89,7 @@ public class NPCTest : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
