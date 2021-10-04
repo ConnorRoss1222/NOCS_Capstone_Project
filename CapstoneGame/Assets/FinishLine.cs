@@ -11,6 +11,7 @@ public class FinishLine : MonoBehaviour
     public GameObject subText;
     public GameObject subBox;
     public GameObject characterName;
+    public GameObject flurm1;
     private bool insideRange = false;
     private bool firstTimeMeeting = true;
     private string FullText;
@@ -18,16 +19,18 @@ public class FinishLine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        //flurm.SetActive(true);
+        //flurm.transform.position = new Vector3(0, 0, 0);
+      //  flurm1.SetActive(true);
+
     }
-      
+
     // Update is called once per frame
     void Update()
     {
         if (insideRange && firstTimeMeeting == true)
         {
             this.GetComponent<BoxCollider>().enabled = false;
-
             insideRange = false;
             firstTimeMeeting = false;
             Cursor.visible = true;
@@ -80,7 +83,7 @@ public class FinishLine : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
-        this.GetComponent<BoxCollider>().enabled = true;
+        //this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

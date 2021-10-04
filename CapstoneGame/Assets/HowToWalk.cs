@@ -12,7 +12,9 @@ public class HowToWalk : MonoBehaviour
     public GameObject subBox;
     public GameObject optButton01;
     public GameObject optButton02;
-    public GameObject monkey;
+    public GameObject mainCamera;
+    public GameObject flurm;
+    public GameObject flurm1;
     private bool firstTimeMeeting = false;
     public string FullText;
 
@@ -20,11 +22,10 @@ public class HowToWalk : MonoBehaviour
     {
         subText.GetComponent<Text>().text = "";
 
-
     }
     void Update()
     {
-        monkey.transform.rotation = Quaternion.Euler(0, 0, 0);
+        mainCamera.transform.rotation = Quaternion.Euler(0, 0, 0);
      
         if (firstTimeMeeting == false)
         {
@@ -66,6 +67,9 @@ public class HowToWalk : MonoBehaviour
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
         Cursor.visible = false;
+        flurm.SetActive(false);
+        flurm1.SetActive(true);
+
         //Cursor.lockState = CursorLockMode.Locked;
         GameObject.Find("StartDialogue").SetActive(false);
 

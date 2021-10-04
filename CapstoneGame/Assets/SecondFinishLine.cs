@@ -11,6 +11,7 @@ public class SecondFinishLine : MonoBehaviour
     public GameObject subText;
     public GameObject subBox;
     public GameObject characterName;
+    public GameObject flurm;
     private bool insideRange = false;
     private bool firstTimeMeeting = true;
     private string FullText;
@@ -18,7 +19,8 @@ public class SecondFinishLine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //flurm.SetActive(true);
+        //flurm.transform.position = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -79,7 +81,7 @@ public class SecondFinishLine : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
-        this.GetComponent<BoxCollider>().enabled = true;
+        //this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
