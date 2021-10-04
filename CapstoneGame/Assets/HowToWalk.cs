@@ -29,8 +29,6 @@ public class HowToWalk : MonoBehaviour
     {
         mainCamera.transform.rotation = Quaternion.Euler(0, 0, 0);
 
-       
-
         if (firstTimeMeeting == false)
         {
             Cursor.visible = true;

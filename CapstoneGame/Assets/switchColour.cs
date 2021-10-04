@@ -12,6 +12,7 @@ public class switchColour : MonoBehaviour
     public GameObject subBox;
     public Material red;
     public Material green;
+    public GameObject first;
 
     private string FullText;
     private bool insideRange = false;
@@ -46,7 +47,7 @@ public class switchColour : MonoBehaviour
                 current = 1;
             }
 
-            characterName.GetComponent<Text>().text = "Human Robot";
+            characterName.GetComponent<Text>().text = "Flurm";
 
             FullText = "Look the colour changed!";
             ActionDisplay.SetActive(false);
@@ -89,7 +90,7 @@ public class switchColour : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
-
+        first.SetActive(true);
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

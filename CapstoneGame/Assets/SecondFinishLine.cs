@@ -50,7 +50,7 @@ public class SecondFinishLine : MonoBehaviour
 
     IEnumerator Conversation0()
     {
-        FullText = "You can do this using E when prompted. Go ahead and try it out on that robot human, and the box over there.";
+        FullText = "You can do this using E when prompted. Go ahead and try it out on that robot human, and the box over there. Then come meet me back here";
         StartCoroutine(ShowText(ExitConversation()));
         yield return new WaitForSeconds(0.5f);
     }
@@ -81,6 +81,7 @@ public class SecondFinishLine : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
+        flurm.SetActive(false);
         //this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

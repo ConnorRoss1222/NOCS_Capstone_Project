@@ -10,6 +10,7 @@ public class talktorobot : MonoBehaviour
     public GameObject subText;
     public GameObject subBox;
     public GameObject characterName;
+    public GameObject second;
 
     private string FullText;
     private bool insideRange = false;
@@ -67,6 +68,7 @@ public class talktorobot : MonoBehaviour
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
+        second.SetActive(true);
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
