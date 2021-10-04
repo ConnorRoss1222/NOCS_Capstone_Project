@@ -3,68 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FinishLine : MonoBehaviour
+public class talktorobot : MonoBehaviour
 {
-
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
     public GameObject subBox;
     public GameObject characterName;
-    public GameObject flurm1;
-    public GameObject flurm2;
-    private bool insideRange = false;
-    private bool firstTimeMeeting = true;
+
     private string FullText;
+    private bool insideRange = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        //flurm.SetActive(true);
-        //flurm.transform.position = new Vector3(0, 0, 0);
-      //  flurm1.SetActive(true);
-
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if (insideRange && firstTimeMeeting == true)
+
+        if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
             this.GetComponent<BoxCollider>().enabled = false;
             insideRange = false;
-            firstTimeMeeting = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
-            characterName.GetComponent<Text>().text = "Flurm";
             subBox.SetActive(true);
-            StartCoroutine(Conversation1()); 
+            characterName.GetComponent<Text>().text = "Human Robot";
+            FullText =  "I am a robot human. There are lots of humans just like me on Earth. Nice to meet you!";
+            StartCoroutine(ShowText(ExitConversation()));
+            ActionDisplay.SetActive(false);
+            ActionText.SetActive(false);
         }
-
-    }
-
-   IEnumerator Conversation1()
-    {
-        FullText = "Looks like you've got the hang of that. Let's get more advanced!";
-        StartCoroutine(ShowText(Conversation0()));
-        yield return new WaitForSeconds(0.05f);
-    }  
-
-   IEnumerator Conversation0()
-    {
-        yield return new WaitForSeconds(1.5f);
-        FullText = "You can also sprint and jump on Earth using LShift and Space. Why don't you jump up these obstacles and sprint to the end of the next hallway. See you there!";
-        StartCoroutine(ShowText(ExitConversation()));
-        yield return new WaitForSeconds(0.5f);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
-
+        ActionText.GetComponent<Text>().text = "Press [E] to Interact";
+        ActionText.SetActive(true);
     }
 
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player")) insideRange = false;
+        ActionText.SetActive(false);
+    }
 
     IEnumerator ShowText(IEnumerator nextPart)
     {
@@ -77,16 +61,13 @@ public class FinishLine : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         StartCoroutine(nextPart);
     }
-
     IEnumerator ExitConversation()
     {
         yield return new WaitForSeconds(2.5f);
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
-        flurm1.SetActive(false);
-        flurm2.SetActive(true);
-        //this.GetComponent<BoxCollider>().enabled = true;
+        this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

@@ -15,18 +15,22 @@ public class HowToWalk : MonoBehaviour
     public GameObject mainCamera;
     public GameObject flurm;
     public GameObject flurm1;
+    public GameObject minimap;
+
     private bool firstTimeMeeting = false;
     public string FullText;
 
     private void Start()
     {
         subText.GetComponent<Text>().text = "";
-
+        minimap.SetActive(false);
     }
     void Update()
     {
         mainCamera.transform.rotation = Quaternion.Euler(0, 0, 0);
-     
+
+       
+
         if (firstTimeMeeting == false)
         {
             Cursor.visible = true;
