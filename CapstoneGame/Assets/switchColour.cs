@@ -3,17 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PickupWrongBook : MonoBehaviour
+public class switchColour : MonoBehaviour
 {
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
+    public GameObject characterName;
     public GameObject subBox;
-    public GameObject Book;
-    private bool insideRange = false;
+    public Material red;
+    public Material green;
+    public GameObject first;
 
+    private string FullText;
+    private bool insideRange = false;
+    public int current;
+
+    private void Start()
+    {
+        current = 1;
+    }
     void Update()
     {
+
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
             this.GetComponent<BoxCollider>().enabled = false;
@@ -23,10 +34,26 @@ public class PickupWrongBook : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
-            subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Lets keep looking";
+
+            if (current == 1)
+            {
+                this.GetComponent<MeshRenderer>().material = green;
+                current = 2;
+
+            }
+            else
+            {
+                this.GetComponent<MeshRenderer>().material = red;
+                current = 1;
+            }
+
+            characterName.GetComponent<Text>().text = "Flurm";
+
+            FullText = "Look the colour changed!";
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
-            StartCoroutine(ExitConversation());
+            StartCoroutine(ShowText(ExitConversation()));
+            
         }
     }
 
@@ -45,12 +72,25 @@ public class PickupWrongBook : MonoBehaviour
         ActionText.SetActive(false);
     }
 
+    IEnumerator ShowText(IEnumerator nextPart)
+    {
+        for (int i = 0; i < FullText.Length + 1; i++)
+        {
+            subText.GetComponent<Text>().text = FullText.Substring(0, i);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+      //  yield return new WaitForSeconds(2.5f);
+        StartCoroutine(nextPart);
+    }
+
     IEnumerator ExitConversation()
     {
         yield return new WaitForSeconds(2.5f);
         subBox.SetActive(false);
-        Book.SetActive(false);
         subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+        first.SetActive(true);
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Drone
+  - Don't Render
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - Ground
   - Deathbox
   - Minimap
-  - 
-  - 
+  - Don't Render Main Camera
+  - Dont Render Minimap Camera
   - 
   - 
   - 

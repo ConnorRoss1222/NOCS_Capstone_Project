@@ -3,30 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PickupWrongBook : MonoBehaviour
+public class talktorobot : MonoBehaviour
 {
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
     public GameObject subBox;
-    public GameObject Book;
+    public GameObject characterName;
+    public GameObject second;
+
+    private string FullText;
     private bool insideRange = false;
 
+    private void Start()
+    {
+    }
     void Update()
     {
+
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
             this.GetComponent<BoxCollider>().enabled = false;
-
             insideRange = false;
-
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
-            subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Lets keep looking";
+            characterName.GetComponent<Text>().text = "Human Robot";
+            FullText =  "I am a robot human. There are lots of humans just like me on Earth. Nice to meet you!";
+            StartCoroutine(ShowText(ExitConversation()));
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
-            StartCoroutine(ExitConversation());
         }
     }
 
@@ -45,12 +51,24 @@ public class PickupWrongBook : MonoBehaviour
         ActionText.SetActive(false);
     }
 
+    IEnumerator ShowText(IEnumerator nextPart)
+    {
+        for (int i = 0; i < FullText.Length + 1; i++)
+        {
+            subText.GetComponent<Text>().text = FullText.Substring(0, i);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        yield return new WaitForSeconds(2.5f);
+        StartCoroutine(nextPart);
+    }
     IEnumerator ExitConversation()
     {
         yield return new WaitForSeconds(2.5f);
         subBox.SetActive(false);
-        Book.SetActive(false);
         subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+        second.SetActive(true);
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

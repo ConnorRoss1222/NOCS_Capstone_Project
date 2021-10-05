@@ -8,6 +8,10 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUi;
+    public GameObject PlayerCamera;
+    public GameObject textbox;
+
+
 
     // Update is called once per frame
     void Update()
@@ -15,17 +19,27 @@ public class PauseMenu : MonoBehaviour
         //If the escape key is pressed;
         if ( Input.GetKeyDown( KeyCode.Escape ) )
         {
-            //then resume
-            if ( GameIsPaused )
+            if (GameIsPaused)
             {
-                Resume();
+                Debug.Log("Game already paused");
             }
-            //then pause
             else
             {
-                Pause();
+                if (textbox.activeSelf)
+                {
+                    Debug.Log("fdsafdsafasd");
+                }
+                else
+                {
+                    Pause();
+                }
             }
+            
+           
+            
         }
+
+
     }
 
     //Resuming the Game Scene
@@ -34,6 +48,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUi.SetActive( false );
         Time.timeScale = 1f;
         GameIsPaused = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     //Pausing the game Scene
