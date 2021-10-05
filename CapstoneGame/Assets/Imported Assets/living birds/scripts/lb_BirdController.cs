@@ -177,12 +177,12 @@ public class lb_BirdController : MonoBehaviour {
 		}
 
 		//check one bird every second to see if it should be unspawned
-		if(myBirds[birdIndex].activeSelf && BirdOffCamera (myBirds[birdIndex].transform.position) && Vector3.Distance(myBirds[birdIndex].transform.position,currentCamera.transform.position) > unspawnDistance){
+		//if(myBirds[birdIndex].activeSelf && BirdOffCamera (myBirds[birdIndex].transform.position) && Vector3.Distance(myBirds[birdIndex].transform.position,currentCamera.transform.position) > unspawnDistance){
 			//if the bird is off camera and at least unsapwnDistance units away lets unspawn
-			Unspawn(myBirds[birdIndex]);
-		}
+			//Unspawn(myBirds[birdIndex]);
+		//}
 
-		birdIndex = birdIndex == myBirds.Length-1 ? 0:birdIndex+1;
+		//birdIndex = birdIndex == myBirds.Length-1 ? 0:birdIndex+1;
 	}
 
 	//this function will cycle through targets removing those outside of the unspawnDistance
