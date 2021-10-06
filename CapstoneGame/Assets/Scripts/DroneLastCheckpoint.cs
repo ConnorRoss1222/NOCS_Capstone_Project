@@ -32,7 +32,7 @@ public class DroneLastCheckpoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("hit detected");
-        if (other.CompareTag("Player")) insideRange = true;
+        if (other.CompareTag("Drone")) insideRange = true;
     }
 
 

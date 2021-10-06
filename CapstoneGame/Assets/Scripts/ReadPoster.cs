@@ -20,7 +20,7 @@ public class ReadPoster : MonoBehaviour
     {
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
-            //GameObject.Find("Main Character").GetComponent<PlayerMovementScript>().enabled = false;
+            GameObject.Find("FirstPersonPlayer").GetComponent<PlayerMovementScript>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = false;
             GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = false;
             this.GetComponent<BoxCollider>().enabled = false;
@@ -41,7 +41,7 @@ public class ReadPoster : MonoBehaviour
         this.GetComponent<BoxCollider>().enabled = true;
         posterOverlay.SetActive(false);
         optButton.SetActive(false);
-        //GameObject.Find("Main Character").GetComponent<PlayerMovementScript>().enabled = true;
+        GameObject.Find("FirstPersonPlayer").GetComponent<PlayerMovementScript>().enabled = true;
         GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = true;
         GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = true;
     }

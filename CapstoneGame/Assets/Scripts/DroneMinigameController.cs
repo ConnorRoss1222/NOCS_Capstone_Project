@@ -74,7 +74,7 @@ public class DroneMinigameController : MonoBehaviour
 
         firstCheckpoint.SetActive(true);
         droneScoreBox.SetActive(true);
-        droneScoreText.GetComponent<Text>().text = droneScore.ToString();
+        droneScoreText.GetComponent<Text>().text = droneScore.ToString() + "/8";
     }
 
     public void CloseButtonPressed()
