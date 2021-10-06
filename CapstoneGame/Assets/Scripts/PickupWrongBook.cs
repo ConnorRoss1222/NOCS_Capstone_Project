@@ -17,6 +17,9 @@ public class PickupWrongBook : MonoBehaviour
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
             this.GetComponent<BoxCollider>().enabled = false;
+
+            insideRange = false;
+
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
@@ -44,7 +47,7 @@ public class PickupWrongBook : MonoBehaviour
 
     IEnumerator ExitConversation()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
         subBox.SetActive(false);
         Book.SetActive(false);
         subText.GetComponent<Text>().text = "";
