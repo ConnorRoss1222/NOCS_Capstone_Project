@@ -1,14 +1,4 @@
-Base path: 'D:/UUnity/2019.4.8f1/Editor/Data', plugins path 'D:/UUnity/2019.4.8f1/Editor/Data/PlaybackEngines'
+Base path: 'G:/Unity Directory/Unity/Hub/Editor/2020.3.4f1/Editor/Data', plugins path 'G:/Unity Directory/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
-<<<<<<< HEAD
 Cmd: shutdown
-=======
-<<<<<<<< HEAD:CapstoneGame/Logs/shadercompiler-UnityShaderCompiler.exe5.log
-Cmd: shutdown
-========
-Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)
-
-Quitting shader compiler process
->>>>>>>> parent of b287e190 (slight changes):CapstoneGame/Logs/shadercompiler-AssetImportWorker0.log
->>>>>>> parent of b287e190 (slight changes)

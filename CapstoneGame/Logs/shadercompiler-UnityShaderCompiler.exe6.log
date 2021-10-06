@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Base path: 'D:/UUnity/2019.4.8f1/Editor/Data', plugins path 'D:/UUnity/2019.4.8f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
@@ -6,8 +7,13 @@ Cmd: shutdown
 
 Quitting shader compiler process
 =======
+=======
+>>>>>>> parent of b287e190 (slight changes)
 Base path: 'G:/Unity Directory/Unity/Hub/Editor/2020.3.4f1/Editor/Data', plugins path 'G:/Unity Directory/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
 Cmd: shutdown
+<<<<<<< HEAD
+>>>>>>> parent of b287e190 (slight changes)
+=======
 >>>>>>> parent of b287e190 (slight changes)
