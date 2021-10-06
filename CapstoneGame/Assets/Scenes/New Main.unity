@@ -5101,6 +5101,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
+      value: 722
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1206
+=======
       value: 863.0231
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
@@ -5110,6 +5121,7 @@ PrefabInstance:
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1359.5
+>>>>>>> parent of 06da6dea (Terrain Basics Completed, with trees and stuff too)
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalRotation.w
