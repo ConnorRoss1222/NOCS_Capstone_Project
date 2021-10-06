@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ReporterInLibrary : MonoBehaviour
 {
+    public GameObject Reporter;
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
@@ -177,9 +178,20 @@ public class ReporterInLibrary : MonoBehaviour
         yield return new WaitForSeconds(4f);
         subText.GetComponent<Text>().text = "You look like you know how to fly a drone. Follow me!";
         characterName.GetComponent<Text>().text = "Reporter";
-        StartCoroutine(ExitConversation());
+        StartCoroutine(ExitConversationQuizPass());
     }
 
+    IEnumerator ExitConversationQuizPass()
+    {
+        yield return new WaitForSeconds(3.5f);
+        subBox.SetActive(false);
+        subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+        this.GetComponent<BoxCollider>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Reporter.SetActive(false);
+    }
 
     IEnumerator ExitConversation()
     {

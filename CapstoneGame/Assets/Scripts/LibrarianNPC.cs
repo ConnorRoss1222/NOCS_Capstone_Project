@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LibrarianNPC : MonoBehaviour
 {
+    public GameObject ReporterOn;
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
@@ -75,6 +76,7 @@ public class LibrarianNPC : MonoBehaviour
                     ActionText.SetActive(false);
                     StartCoroutine(FoundBookConversation());
                     stateBookConversation = true;
+                    ReporterOn.SetActive(true);
                 }
                 else
                 {
