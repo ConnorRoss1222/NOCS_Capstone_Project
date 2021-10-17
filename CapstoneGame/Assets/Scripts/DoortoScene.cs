@@ -9,7 +9,7 @@ public class DoortoScene : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Demo_Scene1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene(4);
     }
 
 
