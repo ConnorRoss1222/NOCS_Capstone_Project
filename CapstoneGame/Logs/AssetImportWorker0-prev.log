@@ -15,11 +15,11 @@ C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55145
+65254
 Successfully changed project path to: C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 26.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,259 +35,135 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001643 seconds.
+Registered in 0.001826 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 27.61 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 25.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.877 seconds
+- Completed reload, in  0.885 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000686 seconds.
+Registered in 0.000643 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.724 seconds
+- Completed reload, in  0.711 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1207 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.7 MB.
-System memory in use after: 87.8 MB.
+System memory in use before: 87.9 MB.
+System memory in use after: 88.0 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1685.
-Total: 1.708400 ms (FindLiveObjects: 0.133400 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.229400 ms  DeleteObjects: 0.301700 ms)
+Total: 1.742000 ms (FindLiveObjects: 0.165500 ms CreateObjectMapping: 0.038500 ms MarkObjects: 1.217500 ms  DeleteObjects: 0.319600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree small_grass 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree burnt_grass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree small_grass 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
- -> (artifact id: '88bdbeb41fab2c4de6a87cb2c6f2f726') in 0.098565 seconds
-  Import took 0.102168 seconds .
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232951f948c40cc5c7f11b2d5a6918d8') in 0.166581 seconds
+  Import took 0.170077 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 834.831728 seconds.
-  path: Assets/Imported Assets/living birds/models/littleBird.FBX
-  artifactKey: Guid(2d22c1b2dd1214c4d835fd1f6d436db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/living birds/models/littleBird.FBX using Guid(2d22c1b2dd1214c4d835fd1f6d436db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed87973cc8ebd034442b6b94bc59b26') in 0.253523 seconds
-  Import took 0.288616 seconds .
+  Time since last request: 5.844885 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505260998f8471939d61cc8454a4a30d') in 0.090756 seconds
+  Import took 0.094392 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Imported Assets/living birds/models/blueJay.FBX
-  artifactKey: Guid(9e8e96d31d222394087dd09880b9a261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/living birds/models/blueJay.FBX using Guid(9e8e96d31d222394087dd09880b9a261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96dd72eb338549f89bd636a5de3851c') in 0.051354 seconds
-  Import took 0.054015 seconds .
+  Time since last request: 0.013987 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505260998f8471939d61cc8454a4a30d') in 0.097114 seconds
+  Import took 0.099689 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Imported Assets/living birds/models/crow.FBX
-  artifactKey: Guid(0646ceebc81f52a4e8a676e94ab46092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/living birds/models/crow.FBX using Guid(0646ceebc81f52a4e8a676e94ab46092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a947d86d0ff38a2c072965cac973b9b9') in 0.080058 seconds
-  Import took 0.082654 seconds .
+  Time since last request: 13.884598 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaaa4188c18e3b4f07befa0aa7af607') in 0.060820 seconds
+  Import took 0.064042 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 01.dae
-  artifactKey: Guid(836c223527ea5104ea614a4dc350d6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 01.dae using Guid(836c223527ea5104ea614a4dc350d6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b696b804db88d3ad42868ef4a00be6') in 0.044723 seconds
-  Import took 0.047711 seconds .
+  Time since last request: 0.042604 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaaa4188c18e3b4f07befa0aa7af607') in 0.068363 seconds
+  Import took 0.070549 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type3 Door.fbx
-  artifactKey: Guid(d70931b351fe10a45a0bfc07fd362a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type3 Door.fbx using Guid(d70931b351fe10a45a0bfc07fd362a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f7fa61fd78db768ea767bd0ea17d77') in 0.114417 seconds
-  Import took 0.116616 seconds .
+  Time since last request: 16.351361 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36514e5c3d63bbc1891775e03cd46b0') in 0.083105 seconds
+  Import took 0.085838 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type3 02.dae
-  artifactKey: Guid(35aff7f9767a6ee429d8bdf31328705f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type3 02.dae using Guid(35aff7f9767a6ee429d8bdf31328705f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43029277c2f5225b9db2b5adbfdaeabe') in 0.042941 seconds
-  Import took 0.045822 seconds .
+  Time since last request: 6.708518 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda1b0a6e96b867758368654f8cf5f58') in 0.088188 seconds
+  Import took 0.090863 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 Door.fbx
-  artifactKey: Guid(919734941a900d24090f2925025373f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 Door.fbx using Guid(919734941a900d24090f2925025373f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd691cb6858bef57c4ef7edc9c13c2254') in 0.059593 seconds
-  Import took 0.061387 seconds .
+  Time since last request: 0.034342 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda1b0a6e96b867758368654f8cf5f58') in 0.089689 seconds
+  Import took 0.092053 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002031 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1187 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1731.
+Total: 1.297900 ms (FindLiveObjects: 0.134700 ms CreateObjectMapping: 0.033200 ms MarkObjects: 1.117100 ms  DeleteObjects: 0.011800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 03.dae
-  artifactKey: Guid(d48bf2190ea9990478b126e5e2540a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 03.dae using Guid(d48bf2190ea9990478b126e5e2540a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70186b608ce34a325132d3bbdd7e0d48') in 0.034585 seconds
-  Import took 0.036973 seconds .
+  Time since last request: 1553.407281 seconds.
+  path: Assets/Prefab/FireHouse.fbx
+  artifactKey: Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FireHouse.fbx using Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243f39840d9301ec0f25f7e2db6b813b') in 0.144262 seconds
+  Import took 0.147492 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Low Poly Water/Plane Meshes/Lake1x1W400H400.asset
-  artifactKey: Guid(e8b2a88d32f1fbf46be9d2a54e7de968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Water/Plane Meshes/Lake1x1W400H400.asset using Guid(e8b2a88d32f1fbf46be9d2a54e7de968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57e443cc15429720d104e1461e712eb') in 0.010717 seconds
-  Import took 0.013311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Imported Assets/living birds/models/cardinal.FBX
-  artifactKey: Guid(f2f7b64dd5c50f8479d6d1610f8537c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/living birds/models/cardinal.FBX using Guid(f2f7b64dd5c50f8479d6d1610f8537c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdf55db533e910c54d8c70016107e09') in 0.045881 seconds
-  Import took 0.049056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type1 02.dae
-  artifactKey: Guid(e004c3c6d0ca04944ad39f9de61d9606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type1 02.dae using Guid(e004c3c6d0ca04944ad39f9de61d9606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a45b329b4eb9cea92ad6b6ffeeb10f') in 0.051887 seconds
-  Import took 0.054597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type4 Big.dae
-  artifactKey: Guid(73b1ed3ef1428a24787cba8b7d5ac6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type4 Big.dae using Guid(73b1ed3ef1428a24787cba8b7d5ac6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277e1414c64e8176deb555d77c6f40e0') in 0.043548 seconds
-  Import took 0.045976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type1 01.dae
-  artifactKey: Guid(607fa0a0a8b6097479348b4480edc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type1 01.dae using Guid(607fa0a0a8b6097479348b4480edc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52bbe3b2d557fab1d0162862a0d2d41') in 0.041613 seconds
-  Import took 0.044656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type6 Small.dae
-  artifactKey: Guid(32ece367df421af48acad3f16120520c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type6 Small.dae using Guid(32ece367df421af48acad3f16120520c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781df7753fe1c1d1fd49bd97f57900bb') in 0.040431 seconds
-  Import took 0.043685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type1 Door.fbx
-  artifactKey: Guid(3bd29fe4ed3569940ac7518a56a0adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type1 Door.fbx using Guid(3bd29fe4ed3569940ac7518a56a0adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06415d92dbc38d24dca1620fa8858aaf') in 0.052410 seconds
-  Import took 0.055145 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Imported Assets/LowPolyWater_Pack/LowPoly Island/island1_design2_c4d.obj
-  artifactKey: Guid(6e654008c0c551d41b2f83f329e79d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/LowPolyWater_Pack/LowPoly Island/island1_design2_c4d.obj using Guid(6e654008c0c551d41b2f83f329e79d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257777076f923f8b45590dcdecfa7def') in 0.035074 seconds
-  Import took 0.037304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type3 01.dae
-  artifactKey: Guid(7e1ddd08b1b2c354a8ad951245480569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type3 01.dae using Guid(7e1ddd08b1b2c354a8ad951245480569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45fc42fa101a62ac2afdff743e7e67b') in 0.038475 seconds
-  Import took 0.041242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 02.dae
-  artifactKey: Guid(e5af5116aa5f71b4fb5f5ffc3443447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type2 02.dae using Guid(e5af5116aa5f71b4fb5f5ffc3443447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ad3ca52265499b7f03031bda990d7d') in 0.036915 seconds
-  Import took 0.039289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type5 Small.dae
-  artifactKey: Guid(860b4a48bd6f3cf4b958a1d928e3c111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type5 Small.dae using Guid(860b4a48bd6f3cf4b958a1d928e3c111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '173fe966cda3add737fe9cf93f4263b0') in 0.043971 seconds
-  Import took 0.047051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type6 Big.dae
-  artifactKey: Guid(528e1a5bd85e7dd4781f1fdd6a8cb01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type6 Big.dae using Guid(528e1a5bd85e7dd4781f1fdd6a8cb01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b4f0ccf812b38a0a16d0711d84f4e5') in 0.042517 seconds
-  Import took 0.045284 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type4 Small.dae
-  artifactKey: Guid(6a52aea886ff71343a7b3ac3ec6dfd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type4 Small.dae using Guid(6a52aea886ff71343a7b3ac3ec6dfd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342c59baf1027cb45bc5bac1bd6fc197') in 0.040483 seconds
-  Import took 0.043148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type5 Big.dae
-  artifactKey: Guid(1f40fa7399dd9aa4b93f77317682f7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/BrokenVector/LowPolyFencePack/Models/Fence Type5 Big.dae using Guid(1f40fa7399dd9aa4b93f77317682f7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce56d4f71faed75853694af569cefd57') in 0.043106 seconds
-  Import took 0.046043 seconds .
+  Time since last request: 47.157614 seconds.
+  path: Assets/Prefab/FireHouse.fbx
+  artifactKey: Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FireHouse.fbx using Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22095417606cbe9172459614e08064e') in 0.094757 seconds
+  Import took 0.098300 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
