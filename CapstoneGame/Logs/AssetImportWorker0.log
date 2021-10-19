@@ -1,0 +1,193 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 16319 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63529
+Successfully changed project path to: C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
+C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   30.0.14.7168
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001631 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 28.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000640 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.700 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1207 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.8 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1685.
+Total: 1.935400 ms (FindLiveObjects: 0.160000 ms CreateObjectMapping: 0.032100 ms MarkObjects: 1.438900 ms  DeleteObjects: 0.303300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefab/Trees/Tall_coloured.fbx
+  artifactKey: Guid(acbfd6d797e5ebb41b391d7d03df5400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Tall_coloured.fbx using Guid(acbfd6d797e5ebb41b391d7d03df5400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe7b11af15913de130abe04a504c5e7') in 0.163461 seconds
+  Import took 0.165447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Prefab/Trees/Thick_short_burnt.fbx
+  artifactKey: Guid(587005def73316740ba345455b074867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Thick_short_burnt.fbx using Guid(587005def73316740ba345455b074867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f3b7b7945124b9cc53a50c7a4f44d8') in 0.015315 seconds
+  Import took 0.017503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.706658 seconds.
+  path: Assets/Prefab/Trees/rock_somewhatbig.fbx
+  artifactKey: Guid(08d5bea699e39624b9cd95253eb45ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/rock_somewhatbig.fbx using Guid(08d5bea699e39624b9cd95253eb45ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d01b19ff726af4a172f1756948223e') in 0.042093 seconds
+  Import took 0.044339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.292957 seconds.
+  path: Assets/Prefab/Trees/rock_small.fbx
+  artifactKey: Guid(0cf1a0f546dc0714185b50fd94b7d923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/rock_small.fbx using Guid(0cf1a0f546dc0714185b50fd94b7d923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4f98958a01f8d6b8e69fdafc5dd476') in 0.046609 seconds
+  Import took 0.048989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.141549 seconds.
+  path: Assets/Prefab/Trees/Pinetree_alive.fbx
+  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6080c21ab96a85114898e653f25915fe') in 0.040558 seconds
+  Import took 0.042804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.408771 seconds.
+  path: Assets/Prefab/Trees/Pine_burnt.fbx
+  artifactKey: Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Pine_burnt.fbx using Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca9ccae3a866a6c5ac6582b8b79a0cc') in 0.040048 seconds
+  Import took 0.042066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.107318 seconds.
+  path: Assets/Prefab/Trees/Long_tree_dry.fbx
+  artifactKey: Guid(fd56fde8b293e474fb48690324cccc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Long_tree_dry.fbx using Guid(fd56fde8b293e474fb48690324cccc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468791e6fee4f42d6cfc60a9de192d85') in 0.021962 seconds
+  Import took 0.024264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.507179 seconds.
+  path: Assets/Prefab/Trees/Branchy_burnt.fbx
+  artifactKey: Guid(10ab54fb4a639d6479f2ffde48fb9e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Branchy_burnt.fbx using Guid(10ab54fb4a639d6479f2ffde48fb9e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d19404ccdefdbd388fea6e839041227') in 0.018541 seconds
+  Import took 0.020892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010837 seconds.
+  path: Assets/Prefab/Trees/Branchy_burnt.fbx
+  artifactKey: Guid(10ab54fb4a639d6479f2ffde48fb9e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Branchy_burnt.fbx using Guid(10ab54fb4a639d6479f2ffde48fb9e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d19404ccdefdbd388fea6e839041227') in 0.033079 seconds
+  Import took 0.035007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.314248 seconds.
+  path: Assets/Prefab/Trees/Tree_bushy.fbx
+  artifactKey: Guid(374af57fbaccabe488392f3a1725f672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Tree_bushy.fbx using Guid(374af57fbaccabe488392f3a1725f672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e7a206e4986c5c080e8e2d266e8aa2') in 0.057780 seconds
+  Import took 0.059830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.786170 seconds.
+  path: Assets/Prefab/Trees/thinner_bunrt.fbx
+  artifactKey: Guid(c2c1b1db7fbeeb642a8365d0e3ebcba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/thinner_bunrt.fbx using Guid(c2c1b1db7fbeeb642a8365d0e3ebcba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47acef11a0663a96a67ab323f2f10677') in 0.033456 seconds
+  Import took 0.035630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.667203 seconds.
+  path: Assets/Prefab/Trees/Thin_bushy_tree.fbx
+  artifactKey: Guid(b4cb46c57965c2847a68203f6c819ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Thin_bushy_tree.fbx using Guid(b4cb46c57965c2847a68203f6c819ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc1d17e35ffae8d4a31948e88a4667e') in 0.023002 seconds
+  Import took 0.025411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005713 seconds.
+  path: Assets/Prefab/Trees/Thin_bushy_tree.fbx
+  artifactKey: Guid(b4cb46c57965c2847a68203f6c819ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Trees/Thin_bushy_tree.fbx using Guid(b4cb46c57965c2847a68203f6c819ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc1d17e35ffae8d4a31948e88a4667e') in 0.055265 seconds
+  Import took 0.057755 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.794 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1187 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.8 MB.
+System memory in use after: 89.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1731.
+Total: 1.772800 ms (FindLiveObjects: 0.140900 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.578900 ms  DeleteObjects: 0.016300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
