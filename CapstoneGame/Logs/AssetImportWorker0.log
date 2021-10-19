@@ -15,11 +15,11 @@ C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52662
+65254
 Successfully changed project path to: C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 26.71 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,706 +35,135 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001705 seconds.
+Registered in 0.001826 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 25.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 25.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.841 seconds
+- Completed reload, in  0.885 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000598 seconds.
+Registered in 0.000643 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.709 seconds
+- Completed reload, in  0.711 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1207 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 87.9 MB.
-System memory in use after: 87.9 MB.
+System memory in use after: 88.0 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1685.
-Total: 1.674700 ms (FindLiveObjects: 0.143900 ms CreateObjectMapping: 0.037800 ms MarkObjects: 1.194000 ms  DeleteObjects: 0.298100 ms)
+Total: 1.742000 ms (FindLiveObjects: 0.165500 ms CreateObjectMapping: 0.038500 ms MarkObjects: 1.217500 ms  DeleteObjects: 0.319600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefab/Trees/burnt_grass.fbx
-  artifactKey: Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/burnt_grass.fbx using Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76f63cd62b0fedd8ace60910f5a52f6') in 0.136187 seconds
-  Import took 0.138109 seconds .
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232951f948c40cc5c7f11b2d5a6918d8') in 0.166581 seconds
+  Import took 0.170077 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.786072 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaeea71ce355264b19d00994b503f39c') in 0.035749 seconds
-  Import took 0.038632 seconds .
+  Time since last request: 5.844885 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505260998f8471939d61cc8454a4a30d') in 0.090756 seconds
+  Import took 0.094392 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003009 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaeea71ce355264b19d00994b503f39c') in 0.013868 seconds
-  Import took 0.015819 seconds .
+  Time since last request: 0.013987 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505260998f8471939d61cc8454a4a30d') in 0.097114 seconds
+  Import took 0.099689 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 70.344623 seconds.
-  path: Assets/Prefab/Trees/thinner_bunrt.fbx
-  artifactKey: Guid(c2c1b1db7fbeeb642a8365d0e3ebcba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/thinner_bunrt.fbx using Guid(c2c1b1db7fbeeb642a8365d0e3ebcba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43fda22b67ee33a7bcc67da9e4bdf772') in 0.021581 seconds
-  Import took 0.025941 seconds .
+  Time since last request: 13.884598 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaaa4188c18e3b4f07befa0aa7af607') in 0.060820 seconds
+  Import took 0.064042 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 35.247253 seconds.
-  path: Assets/Prefab/Trees/Pine_burnt.fbx
-  artifactKey: Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pine_burnt.fbx using Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055438a185b9f850da587765126e40cd') in 0.014822 seconds
-  Import took 0.016640 seconds .
+  Time since last request: 0.042604 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaaa4188c18e3b4f07befa0aa7af607') in 0.068363 seconds
+  Import took 0.070549 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.096577 seconds.
-  path: Assets/Prefab/Trees/Pine_burnt.fbx
-  artifactKey: Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pine_burnt.fbx using Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055438a185b9f850da587765126e40cd') in 0.017186 seconds
-  Import took 0.019356 seconds .
+  Time since last request: 16.351361 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36514e5c3d63bbc1891775e03cd46b0') in 0.083105 seconds
+  Import took 0.085838 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.922774 seconds.
-  path: Assets/Prefab/Trees/Broken.fbx
-  artifactKey: Guid(c07fc18c93b1ed5499cb07af6e214aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Broken.fbx using Guid(c07fc18c93b1ed5499cb07af6e214aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda4fe34546c0f2741baf3a1da230866') in 0.023063 seconds
-  Import took 0.025081 seconds .
+  Time since last request: 6.708518 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda1b0a6e96b867758368654f8cf5f58') in 0.088188 seconds
+  Import took 0.090863 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008520 seconds.
-  path: Assets/Prefab/Trees/Broken.fbx
-  artifactKey: Guid(c07fc18c93b1ed5499cb07af6e214aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Broken.fbx using Guid(c07fc18c93b1ed5499cb07af6e214aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda4fe34546c0f2741baf3a1da230866') in 0.048366 seconds
-  Import took 0.051544 seconds .
+  Time since last request: 0.034342 seconds.
+  path: Assets/Prefab/School_building.fbx
+  artifactKey: Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/School_building.fbx using Guid(5fcf041150f5f7940a86610069733d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda1b0a6e96b867758368654f8cf5f58') in 0.089689 seconds
+  Import took 0.092053 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 270.652279 seconds.
-  path: Assets/Prefab/Trees/grass_main.fbx
-  artifactKey: Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main.fbx using Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684aced5d3f682c3bde26a97e9756ac4') in 0.016894 seconds
-  Import took 0.018816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.548655 seconds.
-  path: Assets/Prefab/Trees/grass_main.fbx
-  artifactKey: Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main.fbx using Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2fb8e854a37ecaa9cabe29a1b6f96f6') in 0.036820 seconds
-  Import took 0.039114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001659 seconds.
-  path: Assets/Prefab/Trees/grass_main.fbx
-  artifactKey: Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main.fbx using Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2fb8e854a37ecaa9cabe29a1b6f96f6') in 0.083782 seconds
-  Import took 0.085825 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 81.754412 seconds.
-  path: Assets/Prefab/Trees/low_grass.fbx
-  artifactKey: Guid(73e1bd4c092e54a45bfebfb15da06e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/low_grass.fbx using Guid(73e1bd4c092e54a45bfebfb15da06e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2e2d499ca6bdcfa11609c79f976851') in 0.033889 seconds
-  Import took 0.035901 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029515 seconds.
-  path: Assets/Prefab/Trees/low_grass.fbx
-  artifactKey: Guid(73e1bd4c092e54a45bfebfb15da06e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/low_grass.fbx using Guid(73e1bd4c092e54a45bfebfb15da06e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2e2d499ca6bdcfa11609c79f976851') in 0.013718 seconds
-  Import took 0.015654 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.267311 seconds.
-  path: Assets/Prefab/Trees/grass_main.fbx
-  artifactKey: Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main.fbx using Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e380706b8289ebc501c358dc744d015') in 0.020184 seconds
-  Import took 0.022847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.047618 seconds.
-  path: Assets/Prefab/Trees/grass_main.fbx
-  artifactKey: Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main.fbx using Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26765ec3d659787599f57479968e5a55') in 0.092590 seconds
-  Import took 0.094520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.628623 seconds.
-  path: Assets/Prefab/Trees/grass_main.fbx
-  artifactKey: Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main.fbx using Guid(7ef0b54d2cb2dad46969693591c39f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3376b33ffb317a1ee5e2479dd3111be') in 0.016030 seconds
-  Import took 0.018486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.591562 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677887f38e89f4ad95702310f455857a') in 0.012034 seconds
-  Import took 0.013919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.392008 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6a45a0ca5e86423f72875d9bbfee2a') in 0.013571 seconds
-  Import took 0.015752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.616186 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca17038bfbd0a064da566af2bfe5a88') in 0.010685 seconds
-  Import took 0.012693 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.149415 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca17038bfbd0a064da566af2bfe5a88') in 0.021000 seconds
-  Import took 0.023038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.351680 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53be96652b68782c45aca9e57a82356a') in 0.025451 seconds
-  Import took 0.027306 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.121871 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53be96652b68782c45aca9e57a82356a') in 0.019603 seconds
-  Import took 0.021480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.719628 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1765cdde521616bd513a625574eab131') in 0.018474 seconds
-  Import took 0.020381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.195577 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aaed63d1b912ca9d364118f1d8a4681') in 0.016553 seconds
-  Import took 0.018599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041494 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aaed63d1b912ca9d364118f1d8a4681') in 0.015298 seconds
-  Import took 0.017455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.713463 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a12a44f4e5be1dc70ba2d470b10f97') in 0.041674 seconds
-  Import took 0.044340 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.035582 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a12a44f4e5be1dc70ba2d470b10f97') in 0.012077 seconds
-  Import took 0.014929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.556919 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f772d61b236a8b9ceaa2d43821ab51a4') in 0.020350 seconds
-  Import took 0.022351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038487 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f772d61b236a8b9ceaa2d43821ab51a4') in 0.011417 seconds
-  Import took 0.013369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.590379 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986ffd298f6237ac72ec4f74ab5d7e55') in 0.012104 seconds
-  Import took 0.014273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.037590 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2923badd81e35fb34dfb453bb7ad3be') in 0.058216 seconds
-  Import took 0.061467 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027576 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2923badd81e35fb34dfb453bb7ad3be') in 0.011458 seconds
-  Import took 0.013460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.499623 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249b66526a32ac57a6c40e1ddd46cff5') in 0.014667 seconds
-  Import took 0.016991 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.054818 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249b66526a32ac57a6c40e1ddd46cff5') in 0.033113 seconds
-  Import took 0.035152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.095081 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d53eefc8c8255b7e2e2fe5c92e9c4c') in 0.036632 seconds
-  Import took 0.038629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028435 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d53eefc8c8255b7e2e2fe5c92e9c4c') in 0.013215 seconds
-  Import took 0.015101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.543392 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ef51c9377af6d8d27017ab5af4c6f9') in 0.018919 seconds
-  Import took 0.021663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.049389 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ef51c9377af6d8d27017ab5af4c6f9') in 0.023369 seconds
-  Import took 0.025586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.962889 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6979f0b5e7c23c81d284961b86f057b') in 0.039403 seconds
-  Import took 0.041313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.451147 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b861ffae0d4cee545844c5396c1b79') in 0.012945 seconds
-  Import took 0.015546 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.984009 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc4a02f08d38dce95fad49bccb28ffe') in 0.021676 seconds
-  Import took 0.023576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029007 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc4a02f08d38dce95fad49bccb28ffe') in 0.046388 seconds
-  Import took 0.048593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.256205 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f642deed98bb52e2c7ba310c98d3f27') in 0.014717 seconds
-  Import took 0.016782 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.846642 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6990a8a68194159f154c9a94a12f3465') in 0.022456 seconds
-  Import took 0.024636 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028555 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6990a8a68194159f154c9a94a12f3465') in 0.015635 seconds
-  Import took 0.017622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.198406 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4347a439a01997505de3d87c45724913') in 0.017986 seconds
-  Import took 0.020363 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002031 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1187 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 90.0 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 8.415170 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8a1cf95c332ebf33a01feeaa5751aa7') in 0.042136 seconds
-  Import took 0.044198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.175906 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0776fee594506f30510de8311ed7b948') in 0.012230 seconds
-  Import took 0.014166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.156771 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0776fee594506f30510de8311ed7b948') in 0.019859 seconds
-  Import took 0.021767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.329647 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9099f503018e341d76b96319bfa2bf') in 0.039625 seconds
-  Import took 0.041952 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.314993 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42939c3de3c6dc50bf6d8ab606d42ac8') in 0.037861 seconds
-  Import took 0.041551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025502 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42939c3de3c6dc50bf6d8ab606d42ac8') in 0.012652 seconds
-  Import took 0.014592 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.860517 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebf8b5de3ef1b7df2f58ddffa8cdccb3') in 0.013090 seconds
-  Import took 0.015647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.456481 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8f3a1edbbc5132e48b978d18a76e24') in 0.047291 seconds
-  Import took 0.049333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022395 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8f3a1edbbc5132e48b978d18a76e24') in 0.103864 seconds
-  Import took 0.106114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 738.434043 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6dc9b534a729cfd1e83e53fb0f5559') in 0.030658 seconds
-  Import took 0.033222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011834 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6dc9b534a729cfd1e83e53fb0f5559') in 0.027440 seconds
-  Import took 0.029356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.502877 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c07021d216a88948c4efb4071a56fc2') in 0.068391 seconds
-  Import took 0.070570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.760128 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83015e69a4392c376bf38769e9ce2dde') in 0.034967 seconds
-  Import took 0.037119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 195.435383 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6421f96d9f57372bb6b8abf5adfb47ce') in 0.018657 seconds
-  Import took 0.020746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.124478 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6421f96d9f57372bb6b8abf5adfb47ce') in 0.027868 seconds
-  Import took 0.030359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.617027 seconds.
-  path: Assets/Prefab/Trees/tall_grass.fbx
-  artifactKey: Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/tall_grass.fbx using Guid(22f0d976fd4b4aa4dadf1ce2328b436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb8e952f6828e62fda2f038e9e56827') in 0.020815 seconds
-  Import took 0.022920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.305997 seconds.
-  path: Assets/Prefab/Trees/grass_main 1.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main 1.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63766f86c1f8e331cfbdc9ff17859435') in 0.037413 seconds
-  Import took 0.039527 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012502 seconds.
-  path: Assets/Prefab/Trees/grass_main 1.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main 1.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63766f86c1f8e331cfbdc9ff17859435') in 0.062450 seconds
-  Import took 0.064409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.110078 seconds.
-  path: Assets/Prefab/Trees/BUNRT.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/BUNRT.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '988c3a0c82b0dfee060873a718bee07f') in 0.034824 seconds
-  Import took 0.037118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.144696 seconds.
-  path: Assets/Prefab/Trees/BUNRT.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/BUNRT.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c36e911392fae9293583d83cf2bab4f') in 0.021491 seconds
-  Import took 0.023761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014049 seconds.
-  path: Assets/Prefab/Trees/BUNRT.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/BUNRT.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c36e911392fae9293583d83cf2bab4f') in 0.012777 seconds
-  Import took 0.014877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.818856 seconds.
-  path: Assets/Prefab/Trees/grass_main 1.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main 1.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbdbf5c5e2c82557aefd63b15ba0663') in 0.015375 seconds
-  Import took 0.017236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.129636 seconds.
-  path: Assets/Prefab/Trees/grass_main 1.fbx
-  artifactKey: Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/grass_main 1.fbx using Guid(fd5d06c137e19f24a944e0653a705dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbdbf5c5e2c82557aefd63b15ba0663') in 0.021452 seconds
-  Import took 0.023600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.401120 seconds.
-  path: Assets/Prefab/Trees/small_grass 2.fbx
-  artifactKey: Guid(15e9b4e93cbe3714daf41e86eb8fa70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 2.fbx using Guid(15e9b4e93cbe3714daf41e86eb8fa70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da738b3697e7b78e8d6b97a22f91d1c') in 0.023726 seconds
-  Import took 0.025945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.041784 seconds.
-  path: Assets/Prefab/Trees/Alive_Grass.fbx
-  artifactKey: Guid(15e9b4e93cbe3714daf41e86eb8fa70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Alive_Grass.fbx using Guid(15e9b4e93cbe3714daf41e86eb8fa70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2643908a6c2bbceb77cd777669fbc3a') in 0.034710 seconds
-  Import took 0.036711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.074282 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8739dcac44f11ca241a551cdf35092a4') in 0.015453 seconds
-  Import took 0.017636 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016294 seconds.
-  path: Assets/Prefab/Trees/small_grass 1.fbx
-  artifactKey: Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/small_grass 1.fbx using Guid(20c9c3da645724d499a1d85e8d41b0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8739dcac44f11ca241a551cdf35092a4') in 0.016885 seconds
-  Import took 0.019115 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 117.082342 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-Tree prefab at index 9 is missing.
-
-The tree burnt_grass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-Tree prefab at index 11 is missing.
-
-The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
-The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
- -> (artifact id: 'bd29a25c48e828c75ea223de14f588d9') in 0.057925 seconds
-  Import took 0.060347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 204.061911 seconds.
-  path: Assets/Prefab/Trees/burnt_grass.fbx
-  artifactKey: Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/burnt_grass.fbx using Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c7537f5ed62f7d2ae603f12fe14bf9') in 0.020901 seconds
-  Import took 0.023027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.896151 seconds.
-  path: Assets/Prefab/Trees/burnt_grass.fbx
-  artifactKey: Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/burnt_grass.fbx using Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef04bcd34a24565787ccad4af7e6809a') in 0.030498 seconds
-  Import took 0.033350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.113678 seconds.
-  path: Assets/Prefab/Trees/burnt_grass.fbx
-  artifactKey: Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/burnt_grass.fbx using Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef04bcd34a24565787ccad4af7e6809a') in 0.031059 seconds
-  Import took 0.032983 seconds .
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1731.
+Total: 1.297900 ms (FindLiveObjects: 0.134700 ms CreateObjectMapping: 0.033200 ms MarkObjects: 1.117100 ms  DeleteObjects: 0.011800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.593683 seconds.
-  path: Assets/Prefab/Trees/burnt_grass.fbx
-  artifactKey: Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/burnt_grass.fbx using Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af017acbf310e79812202e3391f78f5') in 0.022721 seconds
-  Import took 0.024503 seconds .
+  Time since last request: 1553.407281 seconds.
+  path: Assets/Prefab/FireHouse.fbx
+  artifactKey: Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FireHouse.fbx using Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243f39840d9301ec0f25f7e2db6b813b') in 0.144262 seconds
+  Import took 0.147492 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.118245 seconds.
-  path: Assets/Prefab/Trees/burnt_grass.fbx
-  artifactKey: Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/burnt_grass.fbx using Guid(02ba8e9b47a33724893a6227b6f3786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af017acbf310e79812202e3391f78f5') in 0.016797 seconds
-  Import took 0.018705 seconds .
+  Time since last request: 47.157614 seconds.
+  path: Assets/Prefab/FireHouse.fbx
+  artifactKey: Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FireHouse.fbx using Guid(63a4d9dd07af46f49af3092dacc4f666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22095417606cbe9172459614e08064e') in 0.094757 seconds
+  Import took 0.098300 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
