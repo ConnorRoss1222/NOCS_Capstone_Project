@@ -28,6 +28,11 @@ public class PlayerMovementScript : MonoBehaviour
 
     public GameObject textbox;
 
+    private void Start()
+    {
+        speed = 20f;
+    }
+
     // Update is called once per frame
     void Update()
     {

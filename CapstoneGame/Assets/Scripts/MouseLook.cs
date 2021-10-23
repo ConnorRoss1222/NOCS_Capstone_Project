@@ -26,11 +26,11 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //lock the cursor to the center of the screen and hide it.
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         
-        PlayerCamera.transform.rotation = Quaternion.Euler(0, 0, 0);
 
         
     }
