@@ -14,6 +14,7 @@ public class PlayerMovementScript : MonoBehaviour
     public float gravity = -19.62f;
     public float jumpHeight = 3f;
     public float sprint = 40f;
+ 
     public GameObject FirstPlayer;
 
     public Transform groundCheck;
@@ -26,7 +27,9 @@ public class PlayerMovementScript : MonoBehaviour
     bool isDead;
     bool currentlyTalking;
 
+
     public GameObject textbox;
+    public GameObject runningSound;
 
     private void Start()
     {
@@ -36,12 +39,22 @@ public class PlayerMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position/*creating a sphere at the location of the object */, groundDistance /*creating the radius of the sphere*/, groundMask /*looking for this layer mask */);
+
+        if (Input.GetKeyDown(KeyCode.W) )
+        {
+            runningSound.SetActive(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.W))
+        {
+            runningSound.SetActive(false);
+        }
+
+            isGrounded = Physics.CheckSphere(groundCheck.position/*creating a sphere at the location of the object */, groundDistance /*creating the radius of the sphere*/, groundMask /*looking for this layer mask */);
         isDead = Physics.CheckSphere(groundCheck.position, groundDistance, Deathbox); //checking if the player has fallen beneath the world
 
         currentlyTalking = textbox.activeSelf;
 
-        if(isGrounded && velocity.y < 0 && !currentlyTalking) // resetting the players velocity when they're grounded.
+        if(isGrounded && velocity.y < 0) //&& !currentlyTalking) // resetting the players velocity when they're grounded.
         {
             velocity.y = -2f;
         }

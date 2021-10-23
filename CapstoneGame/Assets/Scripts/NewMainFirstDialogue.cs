@@ -13,7 +13,7 @@ public class NewMainFirstDialogue : MonoBehaviour
     public GameObject optButton01;
     public GameObject optButton02;
     public GameObject mainCamera;
-
+    public GameObject typeWriterSound;
     public GameObject playerCamera;
 
     private bool firstTimeMeeting = false;
@@ -76,33 +76,38 @@ public class NewMainFirstDialogue : MonoBehaviour
 
     IEnumerator ShowText()
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
-
+        typeWriterSound.SetActive(false);
         // yield return new WaitForSeconds(2f);
         StartCoroutine(Conversation0());
     } 
     
     IEnumerator ShowTextLast()
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
+        typeWriterSound.SetActive(false);
         StartCoroutine(ExitConversation());
     }
 
     IEnumerator ShowButton()
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             optButton01.GetComponentInChildren<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
+        typeWriterSound.SetActive(false);
     }
 
 }
