@@ -16,6 +16,7 @@ public class Ranger : MonoBehaviour
     public GameObject Poster_1;
     public GameObject Poster_2;
     public GameObject Poster_3;
+    public GameObject waypoint;
     private bool insideRange = false;
     public static bool Poster1 = false;
     public static bool Poster2 = false;
@@ -25,10 +26,12 @@ public class Ranger : MonoBehaviour
 
     void Update()
     {
+
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
             if (firstTimeMeeting == false)
             {
+                waypoint.SetActive(false);
                 this.GetComponent<BoxCollider>().enabled = false;
                 insideRange = false;
                 Cursor.visible = true;

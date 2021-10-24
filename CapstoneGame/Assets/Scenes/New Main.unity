@@ -14625,7 +14625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1875418052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14649,6 +14649,7 @@ MonoBehaviour:
   Poster_1: {fileID: 1428958122}
   Poster_2: {fileID: 1959421439}
   Poster_3: {fileID: 2145509793}
+  waypoint: {fileID: 6216607515521198633}
   honk: {fileID: 431423656}
 --- !u!65 &1875418053
 BoxCollider:
@@ -14977,6 +14978,8 @@ MonoBehaviour:
   subText: {fileID: 759268826}
   characterName: {fileID: 352391502}
   subBox: {fileID: 1521862709}
+  ranger: {fileID: 1875418051}
+  waypoint: {fileID: 6216607515521198633}
 --- !u!65 &1911189448
 BoxCollider:
   m_ObjectHideFlags: 0

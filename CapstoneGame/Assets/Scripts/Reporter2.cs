@@ -12,6 +12,8 @@ public class Reporter2 : MonoBehaviour
     public GameObject subText;
     public GameObject characterName;
     public GameObject subBox;
+    public GameObject ranger;
+    public GameObject waypoint;
     public static int droneScore = 0;
     private bool insideRange = false;
     public static bool CompletedDrone = false;
@@ -57,6 +59,9 @@ public class Reporter2 : MonoBehaviour
         photoOverlay.SetActive(true);
         optButton.GetComponentInChildren<Text>().text = "Close Photo";
         optButton.SetActive(true);
+
+       
+
     }
 
     IEnumerator ExitConversation1()
@@ -77,6 +82,24 @@ public class Reporter2 : MonoBehaviour
         this.GetComponent<BoxCollider>().enabled = true;
         photoOverlay.SetActive(false);
         optButton.SetActive(false);
+        subBox.SetActive(true);
+        subText.GetComponent<Text>().text = "Thanks so much for your help mate! Go find Ranger Sam, I'm sure he has some further learning for you!";
+        characterName.GetComponent<Text>().text = "Richard";
+        StartCoroutine(ExitConversation2());
+
+    }
+
+    IEnumerator ExitConversation2()
+    {
+        yield return new WaitForSeconds(4.5f);
+        ranger.SetActive(true);
+        waypoint.SetActive(true);
+        subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+        subBox.SetActive(false);
+        this.GetComponent<BoxCollider>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnTriggerEnter(Collider other)
