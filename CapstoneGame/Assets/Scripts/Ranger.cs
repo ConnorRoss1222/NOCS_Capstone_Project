@@ -13,7 +13,9 @@ public class Ranger : MonoBehaviour
     public GameObject optButton01;
     public GameObject optButton02;
     private bool insideRange = false;
-    public static int PostersRead = 0;
+    public static bool Poster1 = false;
+    public static bool Poster2 = false;
+    public static bool Poster3 = false;
     private bool firstTimeMeeting = false;
 
     void Update()
@@ -36,7 +38,7 @@ public class Ranger : MonoBehaviour
             }
             else
             {
-                if (PostersRead >= 3)
+                if (Poster1 == true && Poster2 == true && Poster3 == true)
                 {
                     this.GetComponent<BoxCollider>().enabled = false;
                     insideRange = false;

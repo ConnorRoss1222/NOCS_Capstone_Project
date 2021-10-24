@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ReadPoster : MonoBehaviour
+public class ReadPoster2 : MonoBehaviour
 {
     public GameObject ActionDisplay;
     public GameObject ActionText;
@@ -12,10 +12,6 @@ public class ReadPoster : MonoBehaviour
     public GameObject optButton;
 
 
-    void Start()
-    {
-    }
-    // Update is called once per frame
     void Update()
     {
         if (insideRange && Input.GetKeyDown(KeyCode.E))
@@ -27,7 +23,7 @@ public class ReadPoster : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             insideRange = false;
-            Ranger.PostersRead++;
+            Ranger.Poster2 = true;
             posterOverlay.SetActive(true);
             optButton.GetComponentInChildren<Text>().text = "Close Poster";
             optButton.SetActive(true);
@@ -48,7 +44,6 @@ public class ReadPoster : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
         ActionText.GetComponent<Text>().text = "Press [E] to Interact";
         ActionText.SetActive(true);
