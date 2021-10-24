@@ -18,6 +18,7 @@ public class LibrarianNPC : MonoBehaviour
     private bool stateBookConversation = false;
     private bool insideRange = false;
     public GameObject optButton;
+    public int firsttime = 1;
 
 
     void Update()
@@ -119,17 +120,31 @@ public class LibrarianNPC : MonoBehaviour
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
         bookOverlay.SetActive(true);
+        StartCoroutine(FoundBookCloseButton());
+
+    }
+
+    IEnumerator FoundBookCloseButton()
+    {
+        yield return new WaitForSeconds(10f);
         optButton.GetComponentInChildren<Text>().text = "Close Book";
         optButton.SetActive(true);
     }
 
     public void CloseButtonPressed()
     {
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         this.GetComponent<BoxCollider>().enabled = true;
         bookOverlay.SetActive(false);
         optButton.SetActive(false);
+
+        if(firsttime == 1)
+        {
+            firsttime = 0;
+            ReporterInLibrary.finishedbook = 1;
+        }
     }
 
     IEnumerator FoundPossumConversation1()

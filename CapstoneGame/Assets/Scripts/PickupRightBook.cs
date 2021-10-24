@@ -40,7 +40,6 @@ public class PickupRightBook : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
         ActionText.GetComponent<Text>().text = "Press [E] to Interact";
         ActionText.SetActive(true);

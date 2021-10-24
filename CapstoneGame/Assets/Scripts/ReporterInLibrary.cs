@@ -17,15 +17,18 @@ public class ReporterInLibrary : MonoBehaviour
     private bool firstTimeMeeting = false;
     private int correctQuestion = 0;
     private string FullText = "";
+    public static int finishedbook = 0;
 
     void Update()
     {
-        if (insideRange && Input.GetKeyDown(KeyCode.E))
+        if ((insideRange && Input.GetKeyDown(KeyCode.E)) || finishedbook == 1)
         {
             if (firstTimeMeeting == false)
             {
+                Reporter.SetActive(true);
                 this.GetComponent<BoxCollider>().enabled = false;
                 insideRange = false;
+                finishedbook = 0;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
@@ -64,7 +67,7 @@ public class ReporterInLibrary : MonoBehaviour
     {
         yield return new WaitForSeconds(5.5f);
         subText.GetComponent<Text>().text = "Perfect Timing! The mayors new assistant and I were just reading through this book on bushfires, maybe we could offer some assistance?";
-        characterName.GetComponent<Text>().text = "Librarian";
+        characterName.GetComponent<Text>().text = "Liam";
         StartCoroutine(Conversation2());
     }
 
@@ -79,6 +82,8 @@ public class ReporterInLibrary : MonoBehaviour
     IEnumerator ConversationQuestion1()
     {
         yield return new WaitForSeconds(5.5f);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         subText.GetComponent<Text>().text = "Many of Australia's native plants are ________";
         characterName.GetComponent<Text>().text = "Reporter";
         correctQuestion = 0;
@@ -91,6 +96,8 @@ public class ReporterInLibrary : MonoBehaviour
     IEnumerator ConversationQuestion2()
     {
         yield return new WaitForSeconds(1f);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         subText.GetComponent<Text>().text = "Due to Australias hot and dry climate, _______";
         characterName.GetComponent<Text>().text = "Reporter";
         correctQuestion = 1;
@@ -103,6 +110,8 @@ public class ReporterInLibrary : MonoBehaviour
     IEnumerator ConversationQuestion3()
     {
         yield return new WaitForSeconds(1f);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         subText.GetComponent<Text>().text = "The potential for extreme fire weather ________";
         characterName.GetComponent<Text>().text = "Reporter";
         correctQuestion = 2;

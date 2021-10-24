@@ -15,11 +15,21 @@ public class LibraryBuzzer : MonoBehaviour
     private bool buzzedIn = false;
     private bool insideRange = false;
 
+    public GameObject Reporter;
+    public GameObject Bird;
+    public GameObject Book1;
+    public GameObject Book2;
+    public GameObject Book3;
+    public GameObject Book4;
+    public GameObject Book5;
+
+    public static bool finishedLibrary = false;
+
 
 
     void Update()
     {
-        if (insideRange && buzzedIn == false)
+        if ((insideRange && buzzedIn == false) && finishedLibrary == false)
         {
             insideRange = false;
 
@@ -30,6 +40,17 @@ public class LibraryBuzzer : MonoBehaviour
             ActionText.GetComponent<Text>().text = "Help Liam capture the bird!";
             ActionText.SetActive(true);
 
+            this.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(ExitConversation());
+        }
+        else if ((insideRange && buzzedIn == false) && finishedLibrary == true)
+        {
+            insideRange = false;
+
+            subBox.SetActive(true);
+            subText.GetComponent<Text>().text = "Welcome back! You are more than welcome to come over and read the book again!";
+            characterName.GetComponent<Text>().text = "Liam";
+            ActionText.SetActive(true);
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(ExitConversation());
         }
@@ -48,8 +69,24 @@ public class LibraryBuzzer : MonoBehaviour
 
     IEnumerator ExitConversation()
     {
-        yield return new WaitForSeconds(2.5f);
-        subBox.SetActive(false);;
+        yield return new WaitForSeconds(3.5f);
+        subBox.SetActive(false);
+        subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+        this.GetComponent<BoxCollider>().enabled = true;
+    }
+
+    IEnumerator ExitConversationFinished()
+    {
+        yield return new WaitForSeconds(3.5f);
+        subBox.SetActive(false);
+        Reporter.SetActive(false);
+        Bird.SetActive(false);
+        Book1.SetActive(false);
+        Book2.SetActive(false);
+        Book3.SetActive(false);
+        Book4.SetActive(false);
+        Book5.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;

@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class LibraryTeleporter : MonoBehaviour
 {
 
-
     void OnTriggerEnter(Collider other)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+
     }
 
 
