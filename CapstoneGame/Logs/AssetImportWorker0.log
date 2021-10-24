@@ -538,3 +538,80 @@ Received Import Request.
 Start importing Assets/Prefab/Materials/burntgrass.png using Guid(d1dde5677b4d68b45bf75a347d7cf98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed5eb9a15cf1f87dd793cd1e884aa55') in 0.024423 seconds
   Import took 0.026429 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.4 MB.
+System memory in use after: 104.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1751.
+Total: 1.588600 ms (FindLiveObjects: 0.161100 ms CreateObjectMapping: 0.037100 ms MarkObjects: 1.375300 ms  DeleteObjects: 0.013900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 854.314720 seconds.
+  path: Assets/Prefab/Materials/NewLayer.terrainlayer
+  artifactKey: Guid(086db16705f231549923da6049951a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/NewLayer.terrainlayer using Guid(086db16705f231549923da6049951a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cce70c2a74d60df61c9fe7f19773837') in 0.071893 seconds
+  Import took 0.074353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Prefab/Materials/T_dried.terrainlayer
+  artifactKey: Guid(6dc6b0a284542a84ab12a7f087607d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/T_dried.terrainlayer using Guid(6dc6b0a284542a84ab12a7f087607d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e07ee2cf451656e80de7961cd8f33be') in 0.022136 seconds
+  Import took 0.024156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Prefab/Materials/T_alive_dryer.terrainlayer
+  artifactKey: Guid(ee2589e1175e50f4b9e2bcf36fe43147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/T_alive_dryer.terrainlayer using Guid(ee2589e1175e50f4b9e2bcf36fe43147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ee8425b5c48ab4f6546e5535d43772') in 0.011692 seconds
+  Import took 0.014289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Prefab/Materials/T_alive_alot.terrainlayer
+  artifactKey: Guid(3aee95bf5d3e14249aaa546a7c8f7a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/T_alive_alot.terrainlayer using Guid(3aee95bf5d3e14249aaa546a7c8f7a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de9cb700d6390ce0e235832a7721378') in 0.013719 seconds
+  Import took 0.016375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Prefab/Materials/T_dryandcooled.terrainlayer
+  artifactKey: Guid(a026f524a8930ed40823f1cc38888e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/T_dryandcooled.terrainlayer using Guid(a026f524a8930ed40823f1cc38888e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5dab13dbb91a0a98639250d83df4f0f') in 0.013290 seconds
+  Import took 0.015913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Prefab/Materials/T_alive_darker.terrainlayer
+  artifactKey: Guid(9a064241268deb64e9e2bd3bded0741e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/T_alive_darker.terrainlayer using Guid(9a064241268deb64e9e2bd3bded0741e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481e2e4b728d073ec26f24f7e84a9c73') in 0.011957 seconds
+  Import took 0.014845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005688 seconds.
+  path: Assets/Prefab/Materials/T_dryandcooled.terrainlayer
+  artifactKey: Guid(a026f524a8930ed40823f1cc38888e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/T_dryandcooled.terrainlayer using Guid(a026f524a8930ed40823f1cc38888e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5dab13dbb91a0a98639250d83df4f0f') in 0.007384 seconds
+  Import took 0.010185 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
