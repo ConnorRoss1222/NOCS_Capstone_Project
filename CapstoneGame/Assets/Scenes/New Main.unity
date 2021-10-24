@@ -11445,7 +11445,11 @@ MonoBehaviour:
   timer_length: 60
   timerIsRunning: 0
   win_minigame: 0
+  ActionDisplay: {fileID: 653121764}
   ActionText: {fileID: 2146545864}
+  subText: {fileID: 759268826}
+  characterName: {fileID: 352391502}
+  subBox: {fileID: 1521862709}
   Timer: {fileID: 2078246193}
   Ember1: {fileID: 601302294}
   Ember2: {fileID: 545204015}
@@ -13351,7 +13355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1724974877
 Transform:
   m_ObjectHideFlags: 0
@@ -13360,7 +13364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724974876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1200.98, y: 64.81, z: 510.45413}
+  m_LocalPosition: {x: 1201.48, y: 64.81, z: 510.45413}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1516858931}

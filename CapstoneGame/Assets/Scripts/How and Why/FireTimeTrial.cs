@@ -14,8 +14,11 @@ public class FireTimeTrial : MonoBehaviour
     private float timeRemaining;
     public bool timerIsRunning = false;
     public bool win_minigame = false;
-
+    public GameObject ActionDisplay;
     public GameObject ActionText;
+    public GameObject subText;
+    public GameObject characterName;
+    public GameObject subBox;
     public GameObject Timer;
     public GameObject Ember1;
     public GameObject Ember2;
@@ -77,11 +80,26 @@ public class FireTimeTrial : MonoBehaviour
             }
         }
 
-        if(story_ready == true && check == false)
+        if(story_ready == true && check == false && internal_start == true)
         {
             check = true;
+
+            subText.GetComponent<Text>().text = "Alright we need to act fast! See if you can put out all nine embers by stomping on them before this place becomes a blaze! Try to find them all!";
+            characterName.GetComponent<Text>().text = "Fireman Fred";
+            subBox.SetActive(true);
+            characterName.SetActive(true);
+            StartCoroutine(Conversation1());
+
             Reset();
         }
+    }
+
+    IEnumerator Conversation1()
+    {
+        yield return new WaitForSeconds(4f);
+        subBox.SetActive(false);
+        subText.SetActive(false);
+        characterName.SetActive(false);
     }
 
     // Check if player enters colliderbox of ember

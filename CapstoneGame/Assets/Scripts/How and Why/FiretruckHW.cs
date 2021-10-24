@@ -32,36 +32,14 @@ public class FiretruckHW : MonoBehaviour
             FireTimeTrial.story_ready = true;
             firetruck.SetActive(false);
             Ranger.SetActive(false);
-
             Player.transform.position = teleportTarget.transform.position;
 
-            StartCoroutine(Conversation1());
         }
 
 
     }
 
 
-    IEnumerator Conversation1()
-    {
-        yield return new WaitForSeconds(1f);
-        subText.GetComponent<Text>().text = "Alright we need to act fast! See if you can put out all nine embers by stomping on them before this place becomes a blaze! Try to find them all!";
-        characterName.GetComponent<Text>().text = "Fireman Fred";
-        subBox.SetActive(true);
-        characterName.SetActive(true);
-        StartCoroutine(ExitConversation());
-    }
-
-    IEnumerator ExitConversation()
-    {
-        yield return new WaitForSeconds(4.5f);
-        subBox.SetActive(false);
-        subText.GetComponent<Text>().text = "";
-        characterName.GetComponent<Text>().text = "";
-        Cursor.visible = false;
-        FireTimeTrial.internal_start = true;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
 
     private void OnTriggerEnter(Collider other)
     {
