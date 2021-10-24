@@ -26,8 +26,8 @@ public class ReadPoster1 : MonoBehaviour
             insideRange = false;
             Ranger.Poster1 = true;
             posterOverlay.SetActive(true);
-            optButton.GetComponentInChildren<Text>().text = "Close Poster";
-            optButton.SetActive(true);
+            StartCoroutine(FoundPosterCloseButton());
+            
         }
     }
 
@@ -56,5 +56,12 @@ public class ReadPoster1 : MonoBehaviour
     {
         if (other.CompareTag("Player")) insideRange = false;
         ActionText.SetActive(false);
+    }
+
+    IEnumerator FoundPosterCloseButton()
+    {
+        yield return new WaitForSeconds(10f);
+        optButton.GetComponentInChildren<Text>().text = "Close Poster";
+        optButton.SetActive(true);
     }
 }

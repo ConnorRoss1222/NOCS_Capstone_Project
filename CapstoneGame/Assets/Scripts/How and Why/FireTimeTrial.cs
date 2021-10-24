@@ -8,6 +8,8 @@ using System.Threading;
 public class FireTimeTrial : MonoBehaviour
 {
     public static int num_burning_collected = 0;
+    public static bool story_ready = false;
+    public bool check = false;
     public float timer_length = 10;
     private float timeRemaining;
     public bool timerIsRunning = false;
@@ -26,7 +28,7 @@ public class FireTimeTrial : MonoBehaviour
     public GameObject Ember9;
 
     public static bool start = false;
-    public bool internal_start = false;
+    public static bool internal_start = false;
 
     private void Update()
     {
@@ -39,7 +41,7 @@ public class FireTimeTrial : MonoBehaviour
             ActionText.SetActive(false);
             this.GetComponent<BoxCollider>().enabled = false;
             //increment global variable and print to logs
-            Debug.Log("started");
+
             timeRemaining = timer_length;
             num_burning_collected = 0;
             internal_start = false;
@@ -68,11 +70,17 @@ public class FireTimeTrial : MonoBehaviour
                 start = false;
                 timeRemaining = 0;
                 timerIsRunning = false;
-                Timer.GetComponent<Text>().text = "You ran out of time!";
+                Timer.GetComponent<Text>().text = "You ran out of time and didn't manage to put out all the embers! Go back to the truck to try again!";
                 Timer.SetActive(true);
                 StartCoroutine(ExitConversation());
                 Reset();
             }
+        }
+
+        if(story_ready == true && check == false)
+        {
+            check = true;
+            Reset();
         }
     }
 
@@ -80,12 +88,11 @@ public class FireTimeTrial : MonoBehaviour
     // player tag on player object
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected start");
         if (other.CompareTag("Player"))
         {
             internal_start = true;
         }
-        ActionText.GetComponent<Text>().text = "Press [E] to Start Time Trial (example for now)";
+        ActionText.GetComponent<Text>().text = "Press [E] to Start Time Trial";
         ActionText.SetActive(true);
     }
 

@@ -127,7 +127,7 @@ public class Ranger : MonoBehaviour
 
     IEnumerator Conversation2()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(6.5f);
         subText.GetComponent<Text>().text = "Ok little dude, it’s our time to shine! Want to help us protect the town? Excellent let’s go! ";
         characterName.GetComponent<Text>().text = "Ranger Sam";
         firetruck.SetActive(true);
@@ -137,7 +137,7 @@ public class Ranger : MonoBehaviour
 
     IEnumerator Conversation3()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4.5f);
         subText.GetComponent<Text>().text = "Quickly, hop into Fred's truck! ";
         characterName.GetComponent<Text>().text = "Ranger Sam";
         StartCoroutine(ExitConversation());
