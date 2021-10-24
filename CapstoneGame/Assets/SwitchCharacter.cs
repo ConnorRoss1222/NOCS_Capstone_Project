@@ -8,7 +8,7 @@ public class SwitchCharacter : MonoBehaviour
     public GameObject mainCharacter, Drone;
     public GameObject mapCamera;
     public GameObject subBox;
-
+    public static bool switchcommand = false;
     bool currentlyTalking;
     int currentCharacter =  0;
 
@@ -31,8 +31,9 @@ public class SwitchCharacter : MonoBehaviour
         {
             currentlyTalking = false;
         }
-        if (Input.GetKeyDown("p") && !currentlyTalking)
+        if ((Input.GetKeyDown("p") && !currentlyTalking) || (switchcommand == true && !currentlyTalking))
         {
+            switchcommand = false;
             switch (currentCharacter)
             {
                 case 0:

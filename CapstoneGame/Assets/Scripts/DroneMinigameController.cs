@@ -29,11 +29,12 @@ public class DroneMinigameController : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "Alright, so I need a nice wide angle shot of the land. Show me what you’ve got! Just steer along those flags that i've set up and ill take the photos of what we need. When you are ready to start press P";
-                characterName.GetComponent<Text>().text = "Reporter";
+                subText.GetComponent<Text>().text = "Alright, so Richard says he needs a nice wide angle shot of the land. Show me what you’ve got! Just steer along those flags that i've set up and ill take the photos of what we need. When you are ready to start press P";
+                characterName.GetComponent<Text>().text = "Fireman";
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
+                SwitchCharacter.switchcommand = true;
                 StartCoroutine(ExitConversation1());
             }
             else
@@ -42,7 +43,7 @@ public class DroneMinigameController : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Good job we make a great team. Here take a look at the photos.";
-                characterName.GetComponent<Text>().text = "Reporter";
+                characterName.GetComponent<Text>().text = "Fireman";
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
