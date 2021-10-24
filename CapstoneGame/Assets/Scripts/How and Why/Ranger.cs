@@ -12,11 +12,16 @@ public class Ranger : MonoBehaviour
     public GameObject subBox;
     public GameObject optButton01;
     public GameObject optButton02;
+    public GameObject firetruck;
+    public GameObject Poster_1;
+    public GameObject Poster_2;
+    public GameObject Poster_3;
     private bool insideRange = false;
     public static bool Poster1 = false;
     public static bool Poster2 = false;
     public static bool Poster3 = false;
     private bool firstTimeMeeting = false;
+    public GameObject honk;
 
     void Update()
     {
@@ -30,10 +35,15 @@ public class Ranger : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Hey there little mate, my name’s Ranger Sam. What brings you around here?";
-                characterName.GetComponent<Text>().text = "Ranger";
+                characterName.GetComponent<Text>().text = "Ranger Sam";
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 firstTimeMeeting = true;
+
+                Poster_1.GetComponent<BoxCollider>().enabled = true;
+                Poster_2.GetComponent<BoxCollider>().enabled = true;
+                Poster_3.GetComponent<BoxCollider>().enabled = true;
+
                 StartCoroutine(Conversation0());
             }
             else
@@ -46,7 +56,7 @@ public class Ranger : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Alright, now you’ve got a basic understanding on how bushfires start, remind me – What are the three main parts of the fire triangle?";
-                    characterName.GetComponent<Text>().text = "Ranger";
+                    characterName.GetComponent<Text>().text = "Ranger Sam";
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
                     optButton01.GetComponentInChildren<Text>().text = "oxygen, heat, fuel";
@@ -62,7 +72,7 @@ public class Ranger : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Sorry little dude but I don't wanna give you any jobs if you dont understand the risk. Try reading all of those posters and then come back.";
-                    characterName.GetComponent<Text>().text = "Ranger";
+                    characterName.GetComponent<Text>().text = "Ranger Sam";
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
                     StartCoroutine(ExitConversation());
@@ -92,7 +102,7 @@ public class Ranger : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
         subText.GetComponent<Text>().text = "What are the three main parts of the fire triangle?";
-        characterName.GetComponent<Text>().text = "Ranger";
+        characterName.GetComponent<Text>().text = "Ranger Sam";
         optButton01.GetComponentInChildren<Text>().text = "oxygen, heat, fuel";
         optButton02.GetComponentInChildren<Text>().text = "solid, liquid, gas";
         optButton01.SetActive(true);
@@ -103,23 +113,33 @@ public class Ranger : MonoBehaviour
     {
         yield return new WaitForSeconds(4.5f);
         subText.GetComponent<Text>().text = "Oh so you're helping out the mayor, well if you wanna learn more about bushfires why don't you give the posters I just put up a read";
-        characterName.GetComponent<Text>().text = "Ranger";
+        characterName.GetComponent<Text>().text = "Ranger Sam";
         StartCoroutine(ExitConversation());
     }
 
     IEnumerator Conversation1()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(4.5f);
         subText.GetComponent<Text>().text = "Sam! Smouldering embers from the previous fire have been detected in the bush area. It may not be a problem now, but with a bit of wind and some heat, the whole thing could go up in flames!";
-        characterName.GetComponent<Text>().text = "Fireman";
+        characterName.GetComponent<Text>().text = "Fireman Fred";
         StartCoroutine(Conversation2());
     }
 
     IEnumerator Conversation2()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
         subText.GetComponent<Text>().text = "Ok little dude, it’s our time to shine! Want to help us protect the town? Excellent let’s go! ";
-        characterName.GetComponent<Text>().text = "Ranger";
+        characterName.GetComponent<Text>().text = "Ranger Sam";
+        firetruck.SetActive(true);
+        honk.SetActive(true);
+        StartCoroutine(Conversation3());
+    }
+
+    IEnumerator Conversation3()
+    {
+        yield return new WaitForSeconds(2.5f);
+        subText.GetComponent<Text>().text = "Quickly, hop into Fred's truck! ";
+        characterName.GetComponent<Text>().text = "Ranger Sam";
         StartCoroutine(ExitConversation());
     }
 
@@ -136,7 +156,6 @@ public class Ranger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
         ActionText.GetComponent<Text>().text = "Press [E] to Interact";
         ActionText.SetActive(true);
@@ -148,4 +167,5 @@ public class Ranger : MonoBehaviour
         if (other.CompareTag("Player")) insideRange = false;
         ActionText.SetActive(false);
     }
+
 }
