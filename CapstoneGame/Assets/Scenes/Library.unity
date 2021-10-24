@@ -350,7 +350,7 @@ Transform:
   m_LocalScale: {x: 175.5853, y: 175.58531, z: 175.58531}
   m_Children: []
   m_Father: {fileID: 1632049221}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &45863545
 MonoBehaviour:
@@ -500,7 +500,7 @@ Transform:
   m_LocalScale: {x: 175.58531, y: 175.58531, z: 175.58531}
   m_Children: []
   m_Father: {fileID: 1632049221}
-  m_RootOrder: 8
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &92846279
 MonoBehaviour:
@@ -757,7 +757,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 36.364, y: 112.718, z: -90}
 --- !u!1 &167170973
 GameObject:
@@ -980,7 +980,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 36.364, y: -22.434, z: -90}
 --- !u!1 &267265949
 GameObject:
@@ -1906,7 +1906,7 @@ RectTransform:
   - {fileID: 805165287}
   - {fileID: 2116505394}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1945,7 +1945,7 @@ Transform:
   m_LocalScale: {x: 175.58531, y: 175.58531, z: 175.58531}
   m_Children: []
   m_Father: {fileID: 1632049221}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &730043923
 MonoBehaviour:
@@ -2748,7 +2748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 36.364, y: -90, z: -90}
 --- !u!1 &1094453252
 GameObject:
@@ -2789,13 +2789,6 @@ MonoBehaviour:
   optButton01: {fileID: 805165283}
   optButton02: {fileID: 2116505393}
   characterName: {fileID: 1304640771}
-  Reporter: {fileID: 9795704}
-  Bird: {fileID: 81232089}
-  Book1: {fileID: 593410469}
-  Book2: {fileID: 730043921}
-  Book3: {fileID: 1754885338}
-  Book4: {fileID: 45863543}
-  Book5: {fileID: 92846277}
 --- !u!65 &1094453254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3464,7 +3457,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 36.364, y: 117.267, z: -90}
 --- !u!1 &1403952297
 GameObject:
@@ -3557,7 +3550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 63.679, y: 90, z: 90}
 --- !u!1 &1413676619
 GameObject:
@@ -4117,7 +4110,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 36.364, y: 16.314, z: -90}
 --- !u!1 &1670048163
 GameObject:
@@ -4210,7 +4203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 143.81601, y: -0.434021, z: -90}
 --- !u!1 &1679142169
 GameObject:
@@ -4453,7 +4446,7 @@ Transform:
   m_LocalScale: {x: 175.58531, y: 175.58531, z: 175.58531}
   m_Children: []
   m_Father: {fileID: 1632049221}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754885340
 MonoBehaviour:
@@ -4712,7 +4705,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 143.81601, y: -90, z: -90}
 --- !u!1 &1866790715
 GameObject:
@@ -4805,7 +4798,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 63.679, y: 90, z: 90}
 --- !u!1 &1897833304
 GameObject:
@@ -5457,7 +5450,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &2068618126
 GameObject:

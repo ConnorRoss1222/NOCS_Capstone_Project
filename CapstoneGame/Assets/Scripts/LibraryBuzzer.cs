@@ -15,13 +15,7 @@ public class LibraryBuzzer : MonoBehaviour
     private bool buzzedIn = false;
     private bool insideRange = false;
 
-    public GameObject Reporter;
-    public GameObject Bird;
-    public GameObject Book1;
-    public GameObject Book2;
-    public GameObject Book3;
-    public GameObject Book4;
-    public GameObject Book5;
+
 
     public static bool finishedLibrary = false;
 
