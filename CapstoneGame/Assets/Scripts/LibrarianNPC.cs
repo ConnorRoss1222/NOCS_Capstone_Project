@@ -32,7 +32,7 @@ public class LibrarianNPC : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "I want to talk but that bird is really freaking me out";
-                characterName.GetComponent<Text>().text = "Librarian";
+                characterName.GetComponent<Text>().text = "Liam";
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -45,11 +45,13 @@ public class LibrarianNPC : MonoBehaviour
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
-                    subText.GetComponent<Text>().text = "Thank you very much for lending a helping hand there! The whole ecosystem has been going crazy since the bushland was destroyed. Ohh, and my name is Liam, by the way, Liam the Librarian. What brings you into the library today?";
+                    subText.GetComponent<Text>().text = "Thank you very much for lending a helping hand there! The whole ecosystem has been going crazy since the bushland was destroyed.";
+                    characterName.GetComponent<Text>().text = "Liam";
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
-                    StartCoroutine(FoundPossumConversation());
+                    StartCoroutine(FoundPossumConversation1());
+                    
                 }
                 else
                 {
@@ -57,6 +59,7 @@ public class LibrarianNPC : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "I'm sorry to be like this but I cannot help you learn until you find that book.";
+                    characterName.GetComponent<Text>().text = "Liam";
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
@@ -71,6 +74,7 @@ public class LibrarianNPC : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Oh great you found it! Let's give it a read.";
+                    characterName.GetComponent<Text>().text = "Liam";
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
@@ -84,6 +88,7 @@ public class LibrarianNPC : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Oh you're back, are you here to see the book again?";
+
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
@@ -95,7 +100,6 @@ public class LibrarianNPC : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
         ActionText.GetComponent<Text>().text = "Press [E] to Interact";
         ActionText.SetActive(true);
@@ -128,17 +132,34 @@ public class LibrarianNPC : MonoBehaviour
         optButton.SetActive(false);
     }
 
-
-    IEnumerator FoundPossumConversation()
+    IEnumerator FoundPossumConversation1()
     {
         yield return new WaitForSeconds(5.5f);
-        subText.GetComponent<Text>().text = "Ohhh you’d like some information on bushfires! Have I got just the book for you, if I could just……ahhh…..find it. Rats, I must’ve put it back on the shelf. Now if I remember correctly, it should be in the nonfiction section.";
-        characterName.GetComponent<Text>().text = "Librarian";
+        subText.GetComponent<Text>().text = "Ohh, and my name is Liam, by the way, Liam the Librarian.What brings you into the library today ?";
+        characterName.GetComponent<Text>().text = "Liam";
+        statePossumConversation = true;
+        StartCoroutine(FoundPossumConversation2());
+    }
+
+    IEnumerator FoundPossumConversation2()
+    {
+        yield return new WaitForSeconds(5.5f);
+        subText.GetComponent<Text>().text = "Ohhh you’d like some information on bushfires! Have I got just the book for you, if I could just……ahhh…..find it.";
+        characterName.GetComponent<Text>().text = "Liam";
+        statePossumConversation = true;
+        StartCoroutine(FoundPossumConversation3());
+    }
+
+    IEnumerator FoundPossumConversation3()
+    {
+        yield return new WaitForSeconds(5.5f);
+        subText.GetComponent<Text>().text = "Rats, I must’ve put it back on the shelf. Now if I remember correctly, it should be in the nonfiction section. Go find it and we can give it a read together!";
+        characterName.GetComponent<Text>().text = "Liam";
         statePossumConversation = true;
         StartCoroutine(ExitConversation());
     }
 
-    IEnumerator ExitConversation()
+   IEnumerator ExitConversation()
     {
         yield return new WaitForSeconds(5.5f);
         subBox.SetActive(false);

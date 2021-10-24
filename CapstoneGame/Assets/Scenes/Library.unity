@@ -369,6 +369,7 @@ MonoBehaviour:
   subText: {fileID: 8032225}
   subBox: {fileID: 746086414}
   Book: {fileID: 45863543}
+  characterName: {fileID: 1304640771}
 --- !u!65 &45863546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -517,7 +518,12 @@ MonoBehaviour:
   ActionText: {fileID: 1221757786}
   subText: {fileID: 8032225}
   subBox: {fileID: 746086414}
+  characterName: {fileID: 1304640771}
   Book: {fileID: 92846277}
+  Book2: {fileID: 593410469}
+  Book3: {fileID: 730043921}
+  Book4: {fileID: 1754885338}
+  Book5: {fileID: 45863543}
 --- !u!65 &92846280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1636,6 +1642,7 @@ MonoBehaviour:
   subText: {fileID: 8032225}
   subBox: {fileID: 746086414}
   Book: {fileID: 593410469}
+  characterName: {fileID: 1304640771}
 --- !u!65 &593410471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1830,6 +1837,7 @@ MonoBehaviour:
   subText: {fileID: 8032225}
   subBox: {fileID: 746086414}
   Book: {fileID: 730043921}
+  characterName: {fileID: 1304640771}
 --- !u!65 &730043924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2001,7 +2009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3273
+      value: -9.78
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2009,23 +2017,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3185
+      value: 25.64
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5661647
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8242922
+      value: 0.86602545
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2033,7 +2041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 111.034
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140203, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2645,6 +2653,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subText: {fileID: 8032225}
   subBox: {fileID: 746086414}
+  ActionDisplay: {fileID: 1562421875}
+  ActionText: {fileID: 1221757786}
+  optButton01: {fileID: 805165283}
+  optButton02: {fileID: 2116505393}
+  characterName: {fileID: 1304640771}
 --- !u!65 &1094453254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2715,8 +2728,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094453252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.22, y: 1, z: 27.42}
-  m_LocalScale: {x: 2, y: 5, z: 2}
+  m_LocalPosition: {x: -8.22, y: 2.66, z: 27.42}
+  m_LocalScale: {x: 3, y: 5, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -4320,6 +4333,7 @@ MonoBehaviour:
   subText: {fileID: 8032225}
   subBox: {fileID: 746086414}
   Book: {fileID: 1754885338}
+  characterName: {fileID: 1304640771}
 --- !u!65 &1754885341
 BoxCollider:
   m_ObjectHideFlags: 0

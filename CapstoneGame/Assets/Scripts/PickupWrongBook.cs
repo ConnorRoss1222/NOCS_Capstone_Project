@@ -10,6 +10,8 @@ public class PickupWrongBook : MonoBehaviour
     public GameObject subText;
     public GameObject subBox;
     public GameObject Book;
+    public GameObject characterName;
+
     private bool insideRange = false;
 
     void Update()
@@ -24,6 +26,7 @@ public class PickupWrongBook : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
             subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Lets keep looking";
+            characterName.GetComponent<Text>().text = "Flurm";
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
             StartCoroutine(ExitConversation());
@@ -51,6 +54,7 @@ public class PickupWrongBook : MonoBehaviour
         subBox.SetActive(false);
         Book.SetActive(false);
         subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

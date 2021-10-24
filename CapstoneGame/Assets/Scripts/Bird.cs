@@ -32,9 +32,8 @@ public class Bird : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
-        ActionText.GetComponent<Text>().text = "Press [E] to Interact";
+        ActionText.GetComponent<Text>().text = "Press [E] to Capture";
         ActionText.SetActive(true);
     }
 

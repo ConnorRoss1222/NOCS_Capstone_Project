@@ -55,7 +55,7 @@ public class NewMainFirstDialogue : MonoBehaviour
 
     public void Answer0()
     {
-        FullText = "Firstly, you'll need to learn what bushfires are and where they happen. I think the best place for you to go might be the ________";
+        FullText = "Firstly, you'll need to learn what bushfires are and where they happen. I think the best place for you to go might be the Library";
         StartCoroutine(ShowTextLast());
         optButton01.SetActive(false);
       //  StartCoroutine(ExitConversation());
