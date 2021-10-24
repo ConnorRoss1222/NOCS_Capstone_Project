@@ -6,8 +6,13 @@ public class SwitchCharacter : MonoBehaviour
 {
 
     public GameObject mainCharacter, Drone;
+    public GameObject mapCamera;
+    public GameObject subBox;
 
+    bool currentlyTalking;
     int currentCharacter =  0;
+
+    int mapNoMap = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +23,15 @@ public class SwitchCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("p"))
+        if (subBox.activeSelf)
+        {
+            currentlyTalking = true;
+        }
+        else
+        {
+            currentlyTalking = false;
+        }
+        if (Input.GetKeyDown("p") && !currentlyTalking)
         {
             switch (currentCharacter)
             {
@@ -31,6 +44,24 @@ public class SwitchCharacter : MonoBehaviour
                     mainCharacter.gameObject.SetActive(true);
                     Drone.gameObject.SetActive(false);
                     currentCharacter = 0;
+                    break;
+
+            }
+        }
+
+        if (Input.GetKeyDown("m") && !currentlyTalking)
+        {
+            switch (mapNoMap)
+            {
+                case 0:
+                    mainCharacter.gameObject.SetActive(false);
+                    mapCamera.gameObject.SetActive(true);
+                    mapNoMap = 1;
+                    break;
+                case 1:
+                    mainCharacter.gameObject.SetActive(true);
+                    mapCamera.gameObject.SetActive(false);
+                    mapNoMap = 0;
                     break;
 
             }

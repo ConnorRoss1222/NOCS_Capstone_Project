@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Drone
   - Don't Render
+  - lb_perchTarget
+  - lb_groundTarget
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Minimap
   - Don't Render Main Camera
   - Dont Render Minimap Camera
-  - 
+  - Dont Render Either
   - 
   - 
   - 
