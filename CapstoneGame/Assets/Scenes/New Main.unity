@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.8962264, g: 0.8358266, b: 0.6806248, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 16071698}
   - component: {fileID: 16071697}
   - component: {fileID: 16071696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2844,10 +2844,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: School_building
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 5fcf041150f5f7940a86610069733d7a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcf041150f5f7940a86610069733d7a, type: 3}
 --- !u!1 &462035482
@@ -3282,7 +3278,7 @@ GameObject:
   - component: {fileID: 516608598}
   - component: {fileID: 516608597}
   - component: {fileID: 516608596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3377,7 +3373,7 @@ GameObject:
   - component: {fileID: 531628638}
   - component: {fileID: 531628637}
   - component: {fileID: 531628636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4833,10 +4829,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SchoolHall
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8296ecb15df32ad468d5b0f97543b9ec, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8296ecb15df32ad468d5b0f97543b9ec, type: 3}
 --- !u!1 &759268826
@@ -6054,7 +6046,7 @@ GameObject:
   - component: {fileID: 893671321}
   - component: {fileID: 893671320}
   - component: {fileID: 893671319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6994,25 +6986,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5868222108045771285, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
       propertyPath: m_Name
       value: Library_Interior_andEx 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005213121915979180, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3062356789946986644, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5058389768055144917, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
@@ -7403,7 +7379,7 @@ GameObject:
   - component: {fileID: 1085733355}
   - component: {fileID: 1085733354}
   - component: {fileID: 1085733353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8569,25 +8545,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b36b248dac73de241981c4b3ed591677, type: 3}
---- !u!1 &1398480707 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5058389768055144917, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
-  m_PrefabInstance: {fileID: 1032633218}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1398480711
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398480707}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8683038182186154770, guid: cef91d86bdb3dac40be18fff8d051f04, type: 3}
 --- !u!4 &1403989318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a4bf18fc2c8dbf649bf9d9ff273ef6a3, type: 3}
@@ -11604,11 +11561,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5474786410654597535, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: field of view
-      value: 60
+      value: 41.2
       objectReference: {fileID: 0}
     - target: {fileID: 5474786410654597535, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: far clip plane
-      value: 1000
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5474786410654597535, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: near clip plane
@@ -11650,7 +11607,7 @@ GameObject:
   - component: {fileID: 1783216091}
   - component: {fileID: 1783216090}
   - component: {fileID: 1783216089}
-  m_Layer: 4
+  m_Layer: 9
   m_Name: Lake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
