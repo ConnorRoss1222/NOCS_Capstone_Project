@@ -33,8 +33,6 @@ public class SwitchCharacter : MonoBehaviour
                     currentCharacter = 0;
                     break;
 
-
-
             }
         }
     
