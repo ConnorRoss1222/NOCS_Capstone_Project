@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ReporterInLibrary : MonoBehaviour
 {
+    public GameObject Reporter2;
     public GameObject Reporter;
     public GameObject ActionDisplay;
     public GameObject ActionText;
@@ -33,7 +34,7 @@ public class ReporterInLibrary : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Hey Liam! Sorry to rush in on such short notice – the mayor has asked me to write a news report on the recent bushfire.";
-                characterName.GetComponent<Text>().text = "Reporter";
+                characterName.GetComponent<Text>().text = "Richard";
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 firstTimeMeeting = true;
@@ -47,7 +48,7 @@ public class ReporterInLibrary : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Welcome back, are you ready to give it another go";
-                characterName.GetComponent<Text>().text = "Reporter";
+                characterName.GetComponent<Text>().text = "Richard";
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 StartCoroutine(ConversationQuestion1());
@@ -59,7 +60,7 @@ public class ReporterInLibrary : MonoBehaviour
     {
         yield return new WaitForSeconds(5.5f);
         subText.GetComponent<Text>().text = "I’m so stressed out I have no clue where to start. Have you got any information relating to bushfires in your library?";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         StartCoroutine(Conversation1());
     }
 
@@ -75,7 +76,7 @@ public class ReporterInLibrary : MonoBehaviour
     {
         yield return new WaitForSeconds(5.5f);
         subText.GetComponent<Text>().text = "That would be fantastic if you could just help me fill in these blanks the next issue should be done in no time";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         StartCoroutine(ConversationQuestion1());
     }
 
@@ -85,7 +86,7 @@ public class ReporterInLibrary : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         subText.GetComponent<Text>().text = "Many of Australia's native plants are ________";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         correctQuestion = 0;
         optButton01.GetComponentInChildren<Text>().text = "Fire prone and very combustible";
         optButton02.GetComponentInChildren<Text>().text = "Fire resistant and almost inflammable";
@@ -99,7 +100,7 @@ public class ReporterInLibrary : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         subText.GetComponent<Text>().text = "Due to Australias hot and dry climate, _______";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         correctQuestion = 1;
         optButton01.GetComponentInChildren<Text>().text = "At any time of the year, some parts are to dry for fires to start";
         optButton02.GetComponentInChildren<Text>().text = "At any time of the year, some parts are prone to bushfires";
@@ -113,7 +114,7 @@ public class ReporterInLibrary : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         subText.GetComponent<Text>().text = "The potential for extreme fire weather ________";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         correctQuestion = 2;
         optButton01.GetComponentInChildren<Text>().text = "Is the same across all parts of Australia";
         optButton02.GetComponentInChildren<Text>().text = "Varies greatly throughout Australia";
@@ -135,7 +136,7 @@ public class ReporterInLibrary : MonoBehaviour
             optButton01.SetActive(false);
             optButton02.SetActive(false);
             subText.GetComponent<Text>().text = "Sorry to be picky but that doesn't sound quite right to me, maybe give that book you and Liam had another read and then try again";
-            characterName.GetComponent<Text>().text = "Reporter";
+            characterName.GetComponent<Text>().text = "Richard";
             StartCoroutine(ExitConversation());
         }
         else if (correctQuestion == 2)
@@ -143,7 +144,7 @@ public class ReporterInLibrary : MonoBehaviour
             optButton01.SetActive(false);
             optButton02.SetActive(false);
             subText.GetComponent<Text>().text = "Sorry to be picky but that doesn't sound quite right to me, maybe give that book you and Liam had another read and then try again";
-            characterName.GetComponent<Text>().text = "Reporter";
+            characterName.GetComponent<Text>().text = "Richard";
             StartCoroutine(ExitConversation());
         }
     }
@@ -155,7 +156,7 @@ public class ReporterInLibrary : MonoBehaviour
             optButton01.SetActive(false);
             optButton02.SetActive(false);
             subText.GetComponent<Text>().text = "Sorry to be picky but that doesn't sound quite right to me, maybe give that book you and Liam had another read and then try again";
-            characterName.GetComponent<Text>().text = "Reporter";
+            characterName.GetComponent<Text>().text = "Richard";
             StartCoroutine(ExitConversation());
         }
         else if (correctQuestion == 1)
@@ -178,7 +179,7 @@ public class ReporterInLibrary : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         subText.GetComponent<Text>().text = "Thank you so much for helping, I just need one more thing. The mayor has requested a photo of the area to bring awareness to the people. I need a good one as this story is going to the front page!";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         StartCoroutine(QuizComplete2());
     }
 
@@ -186,7 +187,7 @@ public class ReporterInLibrary : MonoBehaviour
     {
         yield return new WaitForSeconds(4f);
         subText.GetComponent<Text>().text = "You look like you know how to fly a drone. Follow me!";
-        characterName.GetComponent<Text>().text = "Reporter";
+        characterName.GetComponent<Text>().text = "Richard";
         StartCoroutine(ExitConversationQuizPass());
     }
 
@@ -200,6 +201,7 @@ public class ReporterInLibrary : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Reporter.SetActive(false);
+        Reporter2.SetActive(true);
     }
 
     IEnumerator ExitConversation()

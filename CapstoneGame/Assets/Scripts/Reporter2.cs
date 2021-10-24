@@ -3,37 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DroneMinigameController : MonoBehaviour
+public class Reporter2 : MonoBehaviour
 {
+    public GameObject optButton;
     public GameObject photoOverlay;
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject subText;
     public GameObject characterName;
     public GameObject subBox;
-    public GameObject droneScoreText;
-    public GameObject droneScoreBox;
-    public GameObject firstCheckpoint;
     public static int droneScore = 0;
     private bool insideRange = false;
-    public static bool CompletedCheckpoints = false;
+    public static bool CompletedDrone = false;
 
     void Update()
     {
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
             insideRange = false;
-            if (CompletedCheckpoints == false)
+            if (CompletedDrone == false)
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "Alright, so Richard says he needs a nice wide angle shot of the land. Show me what you’ve got! Just steer along those flags that i've set up and ill take the photos of what we need.";
-                characterName.GetComponent<Text>().text = "Fireman";
+                subText.GetComponent<Text>().text = "Thanks again for the help, if you could just meet Fireman Fred at the station he'll set you up with a drone";
+                characterName.GetComponent<Text>().text = "Richard";
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
-                SwitchCharacter.switchcommand = true;
                 StartCoroutine(ExitConversation1());
             }
             else
@@ -41,8 +38,8 @@ public class DroneMinigameController : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "That photo should be the ticket. Why don't you go ahead and take it back to richard";
-                characterName.GetComponent<Text>().text = "Fireman";
+                subText.GetComponent<Text>().text = "Wow you and Fred make a great team. Here take a look at the photo for yourself.";
+                characterName.GetComponent<Text>().text = "Richard";
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -53,13 +50,13 @@ public class DroneMinigameController : MonoBehaviour
 
     IEnumerator PhotoConversation()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3.5f);
         subBox.SetActive(false);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
-        this.GetComponent<BoxCollider>().enabled = true;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        photoOverlay.SetActive(true);
+        optButton.GetComponentInChildren<Text>().text = "Close Photo";
+        optButton.SetActive(true);
     }
 
     IEnumerator ExitConversation1()
@@ -71,10 +68,15 @@ public class DroneMinigameController : MonoBehaviour
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
 
-        firstCheckpoint.SetActive(true);
-        droneScoreBox.SetActive(true);
-        droneScoreText.GetComponent<Text>().text = droneScore.ToString() + "/8";
+    public void CloseButtonPressed()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        this.GetComponent<BoxCollider>().enabled = true;
+        photoOverlay.SetActive(false);
+        optButton.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)

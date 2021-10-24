@@ -25,6 +25,7 @@ public class DroneLastCheckpoint : MonoBehaviour
             subBox.SetActive(true);
             subText.GetComponent<Text>().text = "Good job that covers everywhere! I'll take control now, why dont you take these back to Richard";
             DroneMinigameController.CompletedCheckpoints = true;
+            Reporter2.CompletedDrone = true;
             SwitchCharacter.switchcommand = true;
             StartCoroutine(ExitConversation());
         }
