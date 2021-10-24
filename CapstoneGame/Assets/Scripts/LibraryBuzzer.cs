@@ -76,19 +76,4 @@ public class LibraryBuzzer : MonoBehaviour
         this.GetComponent<BoxCollider>().enabled = true;
     }
 
-    IEnumerator ExitConversationFinished()
-    {
-        yield return new WaitForSeconds(3.5f);
-        subBox.SetActive(false);
-        Reporter.SetActive(false);
-        Bird.SetActive(false);
-        Book1.SetActive(false);
-        Book2.SetActive(false);
-        Book3.SetActive(false);
-        Book4.SetActive(false);
-        Book5.SetActive(false);
-        subText.GetComponent<Text>().text = "";
-        characterName.GetComponent<Text>().text = "";
-        this.GetComponent<BoxCollider>().enabled = true;
-    }
 }
