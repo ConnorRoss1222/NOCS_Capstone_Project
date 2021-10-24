@@ -40,11 +40,11 @@ public class PlayerMovementScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.W) )
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) && !currentlyTalking)
         {
             runningSound.SetActive(true);
         }
-        else if (Input.GetKeyUp(KeyCode.W))
+        else 
         {
             runningSound.SetActive(false);
         }
