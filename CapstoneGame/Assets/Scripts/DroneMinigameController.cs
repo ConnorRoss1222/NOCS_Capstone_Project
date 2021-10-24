@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DroneMinigameController : MonoBehaviour
 {
+    public GameObject Waypoint;
     public GameObject photoOverlay;
     public GameObject ActionDisplay;
     public GameObject ActionText;
@@ -25,6 +26,7 @@ public class DroneMinigameController : MonoBehaviour
             insideRange = false;
             if (CompletedCheckpoints == false)
             {
+                Waypoint.SetActive(false);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);

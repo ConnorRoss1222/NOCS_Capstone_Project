@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ReporterInLibrary : MonoBehaviour
 {
     public GameObject Reporter2;
+    public GameObject Fireman;
+    public GameObject FiremanWaypoint;
     public GameObject Reporter;
     public GameObject ActionDisplay;
     public GameObject ActionText;
@@ -202,6 +204,8 @@ public class ReporterInLibrary : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Reporter.SetActive(false);
         Reporter2.SetActive(true);
+        Fireman.SetActive(true);
+        FiremanWaypoint.SetActive(true);
     }
 
     IEnumerator ExitConversation()

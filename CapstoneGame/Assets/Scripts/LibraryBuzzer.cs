@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LibraryBuzzer : MonoBehaviour
 {
+    public GameObject Waypoint;
     public GameObject subText;
     public GameObject subBox;
     public GameObject ActionDisplay;
@@ -25,6 +26,7 @@ public class LibraryBuzzer : MonoBehaviour
     {
         if ((insideRange && buzzedIn == false) && finishedLibrary == false)
         {
+            Waypoint.SetActive(false);
             insideRange = false;
 
             subBox.SetActive(true);
