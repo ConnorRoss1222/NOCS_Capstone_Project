@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LibraryBuzzer : MonoBehaviour
 {
     public GameObject Waypoint;
+    public GameObject qMark;
     public GameObject subText;
     public GameObject subBox;
     public GameObject ActionDisplay;
@@ -35,7 +36,7 @@ public class LibraryBuzzer : MonoBehaviour
             characterName.GetComponent<Text>().text = "Liam";
             ActionText.GetComponent<Text>().text = "Help Liam capture the bird!";
             ActionText.SetActive(true);
-
+            qMark.SetActive(true);
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(ExitConversation());
         }

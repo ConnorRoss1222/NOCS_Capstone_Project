@@ -12,6 +12,12 @@ public class LibrarianNPC : MonoBehaviour
     public GameObject characterName;
     public GameObject subBox;
     public GameObject bookOverlay;
+    public GameObject notifications;
+    public GameObject book1;
+    public GameObject book2;
+    public GameObject book3;
+    public GameObject book4;
+    public GameObject qMark1;
     public static bool statePickupBook = false;
     public static bool statePossum = false;
     private bool statePossumConversation = false;
@@ -79,9 +85,12 @@ public class LibrarianNPC : MonoBehaviour
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
-                    StartCoroutine(FoundBookConversation());
+                    qMark1.SetActive(false);
                     stateBookConversation = true;
                     ReporterOn.SetActive(true);
+                    StartCoroutine(FoundBookConversation());
+                    
+                    
                 }
                 else
                 {
@@ -89,7 +98,7 @@ public class LibrarianNPC : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Oh you're back, are you here to see the book again?";
-
+                    characterName.GetComponent<Text>().text = "Liam";
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
@@ -120,6 +129,7 @@ public class LibrarianNPC : MonoBehaviour
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
         bookOverlay.SetActive(true);
+        Cursor.lockState = CursorLockMode.Confined;
         StartCoroutine(FoundBookCloseButton());
 
     }
@@ -150,7 +160,7 @@ public class LibrarianNPC : MonoBehaviour
     IEnumerator FoundPossumConversation1()
     {
         yield return new WaitForSeconds(5.5f);
-        subText.GetComponent<Text>().text = "Ohh, and my name is Liam, by the way, Liam the Librarian.What brings you into the library today ?";
+        subText.GetComponent<Text>().text = "Ohh, and my name is Liam, by the way, Liam the Librarian. What brings you into the library today?";
         characterName.GetComponent<Text>().text = "Liam";
         statePossumConversation = true;
         StartCoroutine(FoundPossumConversation2());
@@ -159,7 +169,7 @@ public class LibrarianNPC : MonoBehaviour
     IEnumerator FoundPossumConversation2()
     {
         yield return new WaitForSeconds(5.5f);
-        subText.GetComponent<Text>().text = "Ohhh you’d like some information on bushfires! Have I got just the book for you, if I could just……ahhh…..find it.";
+        subText.GetComponent<Text>().text = "Ohhh you’d like some information on bushfires! Have I got just the book for you, if I could just……ahhh…find it.";
         characterName.GetComponent<Text>().text = "Liam";
         statePossumConversation = true;
         StartCoroutine(FoundPossumConversation3());
@@ -167,9 +177,15 @@ public class LibrarianNPC : MonoBehaviour
 
     IEnumerator FoundPossumConversation3()
     {
-        yield return new WaitForSeconds(5.5f);
+        yield return new WaitForSeconds(6f);
         subText.GetComponent<Text>().text = "Rats, I must’ve put it back on the shelf. Now if I remember correctly, it should be in the nonfiction section. Go find it and we can give it a read together!";
         characterName.GetComponent<Text>().text = "Liam";
+        notifications.GetComponent<Text>().text = "Help Liam find the right book!";
+        book1.GetComponent<BoxCollider>().enabled = true;
+        book2.GetComponent<BoxCollider>().enabled = true;
+        book3.GetComponent<BoxCollider>().enabled = true;
+        book4.GetComponent<BoxCollider>().enabled = true;
+        notifications.SetActive(true);
         statePossumConversation = true;
         StartCoroutine(ExitConversation());
     }

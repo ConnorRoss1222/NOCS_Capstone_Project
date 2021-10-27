@@ -16,6 +16,9 @@ public class ReporterInLibrary : MonoBehaviour
     public GameObject subBox;
     public GameObject optButton01;
     public GameObject optButton02;
+    public GameObject qMark2;
+    public GameObject qMark3;
+
     private bool insideRange = false;
     private bool firstTimeMeeting = false;
     private int correctQuestion = 0;
@@ -35,7 +38,8 @@ public class ReporterInLibrary : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "Hey Liam! Sorry to rush in on such short notice – the mayor has asked me to write a news report on the recent bushfire.";
+                qMark2.SetActive(true);
+                subText.GetComponent<Text>().text = "Hey Liam! Sorry to rush in on such short notice. The mayor has asked me to write a news report on the recent bushfire.";
                 characterName.GetComponent<Text>().text = "Richard";
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -187,7 +191,7 @@ public class ReporterInLibrary : MonoBehaviour
 
     IEnumerator QuizComplete2()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
         subText.GetComponent<Text>().text = "You look like you know how to fly a drone. Follow me!";
         characterName.GetComponent<Text>().text = "Richard";
         StartCoroutine(ExitConversationQuizPass());
@@ -202,6 +206,8 @@ public class ReporterInLibrary : MonoBehaviour
         this.GetComponent<BoxCollider>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        qMark2.SetActive(false);
+        qMark3.SetActive(true);
         Reporter.SetActive(false);
         Reporter2.SetActive(true);
         Fireman.SetActive(true);

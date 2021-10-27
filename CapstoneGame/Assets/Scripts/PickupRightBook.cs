@@ -10,6 +10,7 @@ public class PickupRightBook : MonoBehaviour
     public GameObject subText;
     public GameObject subBox;
     public GameObject characterName;
+    public GameObject notifications;
     public GameObject Book;
     public GameObject Book2;
     public GameObject Book3;
@@ -29,6 +30,7 @@ public class PickupRightBook : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
+            notifications.SetActive(false);
             subText.GetComponent<Text>().text = "This is the book! Let's take it back to the librarian";
             characterName.GetComponent<Text>().text = "Flurm";
             LibrarianNPC.statePickupBook = true;
