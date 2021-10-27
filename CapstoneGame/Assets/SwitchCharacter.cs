@@ -10,6 +10,7 @@ public class SwitchCharacter : MonoBehaviour
     public GameObject subBox;
     public static bool switchcommand = false;
     bool currentlyTalking;
+    bool inDrone = false;
     int currentCharacter =  0;
 
     int mapNoMap = 0;
@@ -37,11 +38,13 @@ public class SwitchCharacter : MonoBehaviour
             switch (currentCharacter)
             {
                 case 0:
+                    inDrone = true;
                     mainCharacter.gameObject.SetActive(false);
                     Drone.gameObject.SetActive(true);
                     currentCharacter = 1;
                     break;
                 case 1:
+                    inDrone = false;
                     mainCharacter.gameObject.SetActive(true);
                     Drone.gameObject.SetActive(false);
                     currentCharacter = 0;
@@ -50,7 +53,7 @@ public class SwitchCharacter : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("m") && !currentlyTalking)
+        if (Input.GetKeyDown("m") && !currentlyTalking && inDrone==false)
         {
             switch (mapNoMap)
             {

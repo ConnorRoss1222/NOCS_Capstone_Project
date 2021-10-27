@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DroneLastCheckpoint : MonoBehaviour
 {
+    public GameObject characterName;
     public GameObject subText;
     public GameObject subBox;
     public GameObject droneScoreText;
@@ -23,6 +24,7 @@ public class DroneLastCheckpoint : MonoBehaviour
             DroneMinigameController.droneScore++;
             droneScoreText.GetComponent<Text>().text = DroneMinigameController.droneScore.ToString() + "/8";
             subBox.SetActive(true);
+            characterName.GetComponent<Text>().text = "Fred";
             subText.GetComponent<Text>().text = "Good job that covers everywhere! I'll take control now, why dont you take these back to Richard";
             DroneMinigameController.CompletedCheckpoints = true;
             Reporter2.CompletedDrone = true;
@@ -52,5 +54,6 @@ public class DroneLastCheckpoint : MonoBehaviour
         droneScoreText.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
         thisCheckpoint.SetActive(false);
+        characterName.GetComponent<Text>().text = "";
     }
 }

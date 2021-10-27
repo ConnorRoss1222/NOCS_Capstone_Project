@@ -21,6 +21,8 @@ public class DroneMinigameController : MonoBehaviour
     public static int droneScore = 0;
     private bool insideRange = false;
     public static bool CompletedCheckpoints = false;
+    public Transform teleportTarget;
+    public GameObject Player;
 
     void Update()
     {
@@ -38,6 +40,7 @@ public class DroneMinigameController : MonoBehaviour
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
+                Player.transform.position = teleportTarget.transform.position;
                 SwitchCharacter.switchcommand = true;
                 StartCoroutine(ExitConversation1());
             }
