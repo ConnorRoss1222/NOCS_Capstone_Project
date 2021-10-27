@@ -17,10 +17,12 @@ public class Ranger : MonoBehaviour
     public GameObject Poster_2;
     public GameObject Poster_3;
     public GameObject waypoint;
+    public GameObject qMark5;
     private bool insideRange = false;
     public static bool Poster1 = false;
     public static bool Poster2 = false;
     public static bool Poster3 = false;
+    public bool finished = false;
     private bool firstTimeMeeting = false;
     public GameObject honk;
 
@@ -51,9 +53,10 @@ public class Ranger : MonoBehaviour
             }
             else
             {
-                if (Poster1 == true && Poster2 == true && Poster3 == true)
+                if (Poster1 == true && Poster2 == true && Poster3 == true && finished == false)
                 {
                     this.GetComponent<BoxCollider>().enabled = false;
+                    finished = true;
                     insideRange = false;
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.Confined;
@@ -66,6 +69,16 @@ public class Ranger : MonoBehaviour
                     optButton02.GetComponentInChildren<Text>().text = "solid, liquid, gas";
                     optButton01.SetActive(true);
                     optButton02.SetActive(true);
+                }
+                else if (finished == true)
+                {
+                    insideRange = false;
+                    subBox.SetActive(true);
+                    subText.GetComponent<Text>().text = "Welcome back little man! Try giving some of my posters a read!";
+                    characterName.GetComponent<Text>().text = "Ranger Sam";
+                    ActionDisplay.SetActive(false);
+                    ActionText.SetActive(false);
+                    StartCoroutine(ExitConversation2());
                 }
                 else
                 {
@@ -90,6 +103,7 @@ public class Ranger : MonoBehaviour
         subText.GetComponent<Text>().text = "Great job! I knew you could-";
         optButton01.SetActive(false);
         optButton02.SetActive(false);
+        qMark5.SetActive(false);
         StartCoroutine(Conversation1());
     }
 
@@ -153,6 +167,16 @@ public class Ranger : MonoBehaviour
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
         this.GetComponent<BoxCollider>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    IEnumerator ExitConversation2()
+    {
+        yield return new WaitForSeconds(3.5f);
+        subBox.SetActive(false);
+        subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

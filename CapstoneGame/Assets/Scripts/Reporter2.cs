@@ -13,7 +13,9 @@ public class Reporter2 : MonoBehaviour
     public GameObject characterName;
     public GameObject subBox;
     public GameObject ranger;
+    public GameObject fireman;
     public GameObject waypoint;
+    public GameObject currentWaypoint;
     public GameObject qMark3;
     public GameObject qMark4;
     public GameObject qMark5;
@@ -62,6 +64,8 @@ public class Reporter2 : MonoBehaviour
                 subText.GetComponent<Text>().text = "Wow you and Fred make a great team. Here take a look at the photo for yourself.";
                 characterName.GetComponent<Text>().text = "Richard";
                 qMark3.SetActive(false);
+                fireman.SetActive(false);
+                currentWaypoint.SetActive(false);
                 seePhoto = true;
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);

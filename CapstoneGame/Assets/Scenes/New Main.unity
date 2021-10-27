@@ -6311,6 +6311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waypoint: {fileID: 2022924972}
+  newWaypoint: {fileID: 2085067321}
   photoOverlay: {fileID: 542475823}
   ActionDisplay: {fileID: 653121764}
   ActionText: {fileID: 2146545864}
@@ -14855,7 +14856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1875418052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14880,6 +14881,8 @@ MonoBehaviour:
   Poster_2: {fileID: 1959421439}
   Poster_3: {fileID: 2145509793}
   waypoint: {fileID: 6216607515521198633}
+  qMark5: {fileID: 397627027}
+  finished: 0
   honk: {fileID: 431423656}
 --- !u!65 &1875418053
 BoxCollider:
@@ -15209,10 +15212,12 @@ MonoBehaviour:
   characterName: {fileID: 352391502}
   subBox: {fileID: 1521862709}
   ranger: {fileID: 1875418051}
+  fireman: {fileID: 771191271}
   waypoint: {fileID: 6216607515521198633}
+  currentWaypoint: {fileID: 2085067321}
   qMark3: {fileID: 2073639084}
   qMark4: {fileID: 201882433}
-  qMark5: {fileID: 0}
+  qMark5: {fileID: 397627027}
   seePhoto: 0
 --- !u!65 &1911189448
 BoxCollider:

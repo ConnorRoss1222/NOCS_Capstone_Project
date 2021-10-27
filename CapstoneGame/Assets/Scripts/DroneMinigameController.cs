@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DroneMinigameController : MonoBehaviour
 {
     public GameObject Waypoint;
+    public GameObject newWaypoint;
     public GameObject photoOverlay;
     public GameObject ActionDisplay;
     public GameObject ActionText;
@@ -49,6 +50,7 @@ public class DroneMinigameController : MonoBehaviour
                 characterName.GetComponent<Text>().text = "Fred";
                 qMark4.SetActive(false);
                 qMark3.SetActive(true);
+                newWaypoint.SetActive(true);
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
