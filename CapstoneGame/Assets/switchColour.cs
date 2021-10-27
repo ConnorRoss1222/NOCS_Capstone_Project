@@ -13,6 +13,7 @@ public class switchColour : MonoBehaviour
     public Material red;
     public Material green;
     public GameObject first;
+    public GameObject typeWriterSound;
 
     private string FullText;
     private bool insideRange = false;
@@ -74,13 +75,14 @@ public class switchColour : MonoBehaviour
 
     IEnumerator ShowText(IEnumerator nextPart)
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
-
-      //  yield return new WaitForSeconds(2.5f);
+        typeWriterSound.SetActive(false);
+        //  yield return new WaitForSeconds(2.5f);
         StartCoroutine(nextPart);
     }
 

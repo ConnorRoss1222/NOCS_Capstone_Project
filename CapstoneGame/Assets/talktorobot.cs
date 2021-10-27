@@ -11,6 +11,7 @@ public class talktorobot : MonoBehaviour
     public GameObject subBox;
     public GameObject characterName;
     public GameObject second;
+    public GameObject typeWriterSound;
 
     private string FullText;
     private bool insideRange = false;
@@ -53,12 +54,13 @@ public class talktorobot : MonoBehaviour
 
     IEnumerator ShowText(IEnumerator nextPart)
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
-
+        typeWriterSound.SetActive(false);
         yield return new WaitForSeconds(2.5f);
         StartCoroutine(nextPart);
     }

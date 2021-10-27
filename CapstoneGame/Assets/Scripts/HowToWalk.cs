@@ -16,6 +16,7 @@ public class HowToWalk : MonoBehaviour
     public GameObject flurm;
     public GameObject flurm1;
     public GameObject minimap;
+    public GameObject typeWriterSound;
 
     private bool firstTimeMeeting = false;
     public string FullText;
@@ -79,28 +80,34 @@ public class HowToWalk : MonoBehaviour
 
     IEnumerator ShowText()
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
+        typeWriterSound.SetActive(false);
     } IEnumerator ShowTextLast()
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
+        typeWriterSound.SetActive(false);
         StartCoroutine(ExitConversation());
     }
 
     IEnumerator ShowButton()
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             optButton01.GetComponentInChildren<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
+        typeWriterSound.SetActive(false);
     }
 
 }

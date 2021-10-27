@@ -12,6 +12,7 @@ public class SecondFinishLine : MonoBehaviour
     public GameObject subBox;
     public GameObject characterName;
     public GameObject flurm;
+    public GameObject typeWriterSound;
     private bool insideRange = false;
     private bool firstTimeMeeting = true;
     private string FullText;
@@ -65,12 +66,13 @@ public class SecondFinishLine : MonoBehaviour
 
     IEnumerator ShowText(IEnumerator nextPart)
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
-
+        typeWriterSound.SetActive(false);
         yield return new WaitForSeconds(2.5f);
         StartCoroutine(nextPart);
     }

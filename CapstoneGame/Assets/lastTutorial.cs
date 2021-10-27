@@ -13,6 +13,7 @@ public class lastTutorial : MonoBehaviour
     public GameObject characterName;
     public GameObject minimap;
     public GameObject button1;
+    public GameObject typeWriterSound;
 
     private string FullText;
     private bool insideRange = false;
@@ -31,7 +32,7 @@ public class lastTutorial : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
             characterName.GetComponent<Text>().text = "Flurm";
-            FullText = "Congratulations, you're almost ready to go to Earth!! I've just got two more things to tell you.";
+            FullText = "Congratulations, you're almost ready to go to Earth!! I've just got a couple more things to tell you.";
             StartCoroutine(ShowText(Conversation0()));
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
@@ -55,22 +56,30 @@ public class lastTutorial : MonoBehaviour
 
     IEnumerator Conversation0()
     {
-        FullText = "Firstly, the minimap in the top right corner of your screen shows you where you are and can provide show you where to go.";
+        FullText = "Firstly, the minimap in the top right corner of your screen shows you where you are at any point in time.";
         minimap.SetActive(true);
         StartCoroutine(ShowText(Conversation1()));
         yield return new WaitForSeconds(0.05f);
     }
     IEnumerator Conversation1()
     {
-        FullText = "Secondly, you can pause the game at any time by pressing the escape key.";
-        StartCoroutine(ShowText(Conversation2()));
+        FullText = "Secondly, you can press M at any time to open a map of earth and find out more about where you are.";
+        StartCoroutine(ShowText(Conversation3()));
         yield return new WaitForSeconds(2.5f);
-    }
+    } 
+   
     IEnumerator Conversation2()
     {
         FullText = "You've now completed your training and are qualified to go to Earth! Are you ready to begin your adventure?";
         StartCoroutine(ShowText(Button()));
         yield return new WaitForSeconds(0.05f);
+    }
+
+    IEnumerator Conversation3()
+    {
+        FullText = "Finally, you can pause the game at any time by pressing the escape key.";
+        StartCoroutine(ShowText(Conversation2()));
+        yield return new WaitForSeconds(2.5f);
     }
 
     IEnumerator Button()
@@ -87,12 +96,13 @@ public class lastTutorial : MonoBehaviour
 
     IEnumerator ShowText(IEnumerator nextPart)
     {
+        typeWriterSound.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             subText.GetComponent<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
-
+        typeWriterSound.SetActive(false);
         yield return new WaitForSeconds(2.5f);
         StartCoroutine(nextPart);
     }
@@ -100,11 +110,13 @@ public class lastTutorial : MonoBehaviour
 
     IEnumerator ShowButton()
     {
+        typeWriterSound.SetActive(true);
         button1.SetActive(true);
         for (int i = 0; i < FullText.Length + 1; i++)
         {
             button1.GetComponentInChildren<Text>().text = FullText.Substring(0, i);
             yield return new WaitForSeconds(0.05f);
         }
+        typeWriterSound.SetActive(false);
     }
 }
