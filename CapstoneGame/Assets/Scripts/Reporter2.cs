@@ -16,6 +16,8 @@ public class Reporter2 : MonoBehaviour
     public GameObject waypoint;
     public GameObject qMark3;
     public GameObject qMark4;
+    public GameObject qMark5;
+    public bool seePhoto = false;
     public static int droneScore = 0;
     private bool insideRange = false;
     public static bool CompletedDrone = false;
@@ -39,6 +41,19 @@ public class Reporter2 : MonoBehaviour
                 ActionText.SetActive(false);
                 StartCoroutine(ExitConversation1());
             }
+            else if(seePhoto == true)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Confined;
+                subBox.SetActive(true);
+                subText.GetComponent<Text>().text = "Back again so soon? Check out the photo you took!";
+                characterName.GetComponent<Text>().text = "Richard";
+                ActionDisplay.SetActive(false);
+                ActionText.SetActive(false);
+                photoOverlay.SetActive(true);
+                StartCoroutine(PhotoConversation2());
+
+            }
             else
             {
                 Cursor.visible = true;
@@ -46,6 +61,8 @@ public class Reporter2 : MonoBehaviour
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Wow you and Fred make a great team. Here take a look at the photo for yourself.";
                 characterName.GetComponent<Text>().text = "Richard";
+                qMark3.SetActive(false);
+                seePhoto = true;
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -64,7 +81,14 @@ public class Reporter2 : MonoBehaviour
         optButton.GetComponentInChildren<Text>().text = "Close Photo";
         optButton.SetActive(true);
 
-       
+    }
+    IEnumerator PhotoConversation2()
+    {
+        yield return new WaitForSeconds(4f);
+        subBox.SetActive(false);
+        subText.GetComponent<Text>().text = "";
+        characterName.GetComponent<Text>().text = "";
+        photoOverlay.SetActive(false);
 
     }
 
@@ -98,6 +122,7 @@ public class Reporter2 : MonoBehaviour
         yield return new WaitForSeconds(4.5f);
         ranger.SetActive(true);
         waypoint.SetActive(true);
+        qMark5.SetActive(true);
         subText.GetComponent<Text>().text = "";
         characterName.GetComponent<Text>().text = "";
         subBox.SetActive(false);

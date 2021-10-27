@@ -15,6 +15,8 @@ public class DroneMinigameController : MonoBehaviour
     public GameObject droneScoreText;
     public GameObject droneScoreBox;
     public GameObject firstCheckpoint;
+    public GameObject qMark4;
+    public GameObject qMark3;
     public static int droneScore = 0;
     private bool insideRange = false;
     public static bool CompletedCheckpoints = false;
@@ -31,7 +33,7 @@ public class DroneMinigameController : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Alright, so Richard says he needs a nice wide angle shot of the land. Show me what you’ve got! Just steer along those flags that i've set up and ill take the photos of what we need.";
-                characterName.GetComponent<Text>().text = "Fireman";
+                characterName.GetComponent<Text>().text = "Fred";
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -44,7 +46,9 @@ public class DroneMinigameController : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "That photo should be the ticket. Why don't you go ahead and take it back to richard";
-                characterName.GetComponent<Text>().text = "Fireman";
+                characterName.GetComponent<Text>().text = "Fred";
+                qMark4.SetActive(false);
+                qMark3.SetActive(true);
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -81,7 +85,6 @@ public class DroneMinigameController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
         if (other.CompareTag("Player")) insideRange = true;
         ActionText.GetComponent<Text>().text = "Press [E] to Interact";
         ActionText.SetActive(true);
