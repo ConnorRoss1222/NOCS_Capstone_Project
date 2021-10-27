@@ -14,6 +14,8 @@ public class Reporter2 : MonoBehaviour
     public GameObject subBox;
     public GameObject ranger;
     public GameObject waypoint;
+    public GameObject qMark3;
+    public GameObject qMark4;
     public static int droneScore = 0;
     private bool insideRange = false;
     public static bool CompletedDrone = false;
@@ -31,6 +33,8 @@ public class Reporter2 : MonoBehaviour
                 subText.GetComponent<Text>().text = "Thanks again for the help, if you could just meet Fireman Fred at the station he'll set you up with a drone";
                 characterName.GetComponent<Text>().text = "Richard";
                 this.GetComponent<BoxCollider>().enabled = false;
+                qMark3.SetActive(false);
+                qMark4.SetActive(true);
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 StartCoroutine(ExitConversation1());

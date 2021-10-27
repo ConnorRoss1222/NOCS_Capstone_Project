@@ -85,12 +85,12 @@ public class LibrarianNPC : MonoBehaviour
                     this.GetComponent<BoxCollider>().enabled = false;
                     ActionDisplay.SetActive(false);
                     ActionText.SetActive(false);
+                    
+                    StartCoroutine(FoundBookConversation());
                     qMark1.SetActive(false);
                     stateBookConversation = true;
                     ReporterOn.SetActive(true);
-                    StartCoroutine(FoundBookConversation());
-                    
-                    
+
                 }
                 else
                 {

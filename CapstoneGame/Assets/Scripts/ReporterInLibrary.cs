@@ -53,7 +53,7 @@ public class ReporterInLibrary : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
                 subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "Welcome back, are you ready to give it another go";
+                subText.GetComponent<Text>().text = "Welcome back, are you ready to give it another go?";
                 characterName.GetComponent<Text>().text = "Richard";
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -105,10 +105,10 @@ public class ReporterInLibrary : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
-        subText.GetComponent<Text>().text = "Due to Australias hot and dry climate, _______";
+        subText.GetComponent<Text>().text = "Due to Australia's hot and dry climate, _______";
         characterName.GetComponent<Text>().text = "Richard";
         correctQuestion = 1;
-        optButton01.GetComponentInChildren<Text>().text = "At any time of the year, some parts are to dry for fires to start";
+        optButton01.GetComponentInChildren<Text>().text = "At any time of the year, some parts are too dry for fires to start";
         optButton02.GetComponentInChildren<Text>().text = "At any time of the year, some parts are prone to bushfires";
         optButton01.SetActive(true);
         optButton02.SetActive(true);
@@ -184,7 +184,7 @@ public class ReporterInLibrary : MonoBehaviour
     IEnumerator QuizComplete1()
     {
         yield return new WaitForSeconds(2f);
-        subText.GetComponent<Text>().text = "Thank you so much for helping, I just need one more thing. The mayor has requested a photo of the area to bring awareness to the people. I need a good one as this story is going to the front page!";
+        subText.GetComponent<Text>().text = "Thank you so much for helping, I just need one more thing. The mayor has requested a photo of the area to bring awareness to the town. I need a good one as this story is going to the front page!";
         characterName.GetComponent<Text>().text = "Richard";
         StartCoroutine(QuizComplete2());
     }

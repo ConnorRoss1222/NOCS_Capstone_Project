@@ -19,8 +19,8 @@ public class LibraryBuzzer : MonoBehaviour
 
 
 
-    public static bool finishedLibrary = false;
-
+    public bool finishedLibrary = false;
+    public static bool finishedWW = false;
 
 
     void Update()
@@ -29,7 +29,7 @@ public class LibraryBuzzer : MonoBehaviour
         {
             Waypoint.SetActive(false);
             insideRange = false;
-
+            finishedLibrary = true;
             subBox.SetActive(true);
             subText.GetComponent<Text>().text = "I'll be with you in just a moment!  I’m just trying to shoo this bird away! AGHGHH! Oooh deary me!";
             buzzedIn = true;
@@ -40,17 +40,7 @@ public class LibraryBuzzer : MonoBehaviour
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(ExitConversation());
         }
-        else if ((insideRange && buzzedIn == false) && finishedLibrary == true)
-        {
-            insideRange = false;
 
-            subBox.SetActive(true);
-            subText.GetComponent<Text>().text = "Welcome back! You are more than welcome to come over and read the book again!";
-            characterName.GetComponent<Text>().text = "Liam";
-            ActionText.SetActive(true);
-            this.GetComponent<BoxCollider>().enabled = false;
-            StartCoroutine(ExitConversation());
-        }
     }
 
     private void OnTriggerEnter(Collider other)
