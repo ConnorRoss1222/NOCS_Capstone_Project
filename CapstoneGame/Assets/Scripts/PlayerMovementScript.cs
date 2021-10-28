@@ -31,9 +31,12 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject textbox;
     public GameObject runningSound;
 
+    Animator animator;
+
     private void Start()
     {
         speed = 20f;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,10 +46,12 @@ public class PlayerMovementScript : MonoBehaviour
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && !currentlyTalking)
         {
             runningSound.SetActive(true);
+            animator.SetBool( "isWalking", true );
         }
         else 
         {
             runningSound.SetActive(false);
+            animator.SetBool( "isWalking", false );
         }
 
             isGrounded = Physics.CheckSphere(groundCheck.position/*creating a sphere at the location of the object */, groundDistance /*creating the radius of the sphere*/, groundMask /*looking for this layer mask */);
