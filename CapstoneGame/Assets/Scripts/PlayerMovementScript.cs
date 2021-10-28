@@ -12,7 +12,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     public float speed = 20f;
     public float gravity = -19.62f;
-    public float jumpHeight = 3f;
+    public float jumpHeight = 10f;
     public float sprint = 40f;
  
     public GameObject FirstPlayer;
@@ -39,9 +39,24 @@ public class PlayerMovementScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    IEnumerator JumpingAnim() //cutting the animation loop, so it doesnt infinitely run.
+    {
+        animator.SetBool( "isJumping", true );
+        yield return new WaitForSeconds( 1 );        
+        animator.SetBool( "isJumping", false );
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if ( currentlyTalking ) //assigning the animation for being in coversations
+        {
+            animator.SetBool( "isTalking", true );
+        }
+        else
+        {
+            animator.SetBool( "isTalking", false );
+        }
 
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && !currentlyTalking)
         {
@@ -84,7 +99,8 @@ public class PlayerMovementScript : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && isGrounded && !currentlyTalking)  //jumping when the player touches the ground
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity); 
+            velocity.y = Mathf.Sqrt(jumpHeight * -10 * gravity);
+            StartCoroutine( JumpingAnim() );
         }
 
         if (Input.GetButtonDown("Sprint") && isGrounded && !currentlyTalking) //toggling the sprint on

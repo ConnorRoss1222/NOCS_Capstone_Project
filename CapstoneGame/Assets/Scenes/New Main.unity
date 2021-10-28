@@ -14398,12 +14398,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: speed
-      value: 113.58
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
+      propertyPath: gravity
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: textbox
       value: 
       objectReference: {fileID: 1521862709}
+    - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
+      propertyPath: jumpHeight
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5474786409564140202, guid: 2022333fa4eb68a418164315fa47d1d8, type: 3}
       propertyPath: runningSound
       value: 

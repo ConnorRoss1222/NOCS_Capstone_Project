@@ -67,9 +67,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 5474786409564140204}
-  speed: 12
-  gravity: -200
-  jumpHeight: 3
+  speed: 20
+  gravity: -150
+  jumpHeight: 2.5
   sprint: 40
   FirstPlayer: {fileID: 5474786409564140205}
   groundCheck: {fileID: 5474786411254899544}
