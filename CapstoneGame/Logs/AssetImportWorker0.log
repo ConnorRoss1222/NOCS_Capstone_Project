@@ -15,11 +15,11 @@ C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61279
+62857
 Successfully changed project path to: C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 C:/Users/livvy/OneDrive/Documents/GitHub/NOCS_Capstone_Project/CapstoneGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,187 +35,673 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001871 seconds.
+Registered in 0.001724 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.78 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.08 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.995 seconds
+- Completed reload, in  0.888 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000844 seconds.
+Registered in 0.000681 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
+- Completed reload, in  0.733 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1232 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 90.4 MB.
 System memory in use after: 90.5 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1712.
-Total: 2.027500 ms (FindLiveObjects: 0.248200 ms CreateObjectMapping: 0.047400 ms MarkObjects: 1.380500 ms  DeleteObjects: 0.350300 ms)
+Total: 2.803600 ms (FindLiveObjects: 0.236600 ms CreateObjectMapping: 0.108400 ms MarkObjects: 2.061400 ms  DeleteObjects: 0.396100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefab/Trees/thinner_bunrt.fbx
-  artifactKey: Guid(c2c1b1db7fbeeb642a8365d0e3ebcba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/thinner_bunrt.fbx using Guid(c2c1b1db7fbeeb642a8365d0e3ebcba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813ede4ca2e4003b288cba787901b135') in 0.119568 seconds
-  Import took 0.121597 seconds .
+  path: Assets/Prefab/FirstPersonPlayer.prefab
+  artifactKey: Guid(2022333fa4eb68a418164315fa47d1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FirstPersonPlayer.prefab using Guid(2022333fa4eb68a418164315fa47d1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a120f66ca4e265e8e41c8c097d7346') in 0.144843 seconds
+  Import took 0.147411 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Prefab/Trees/notburnt_broken.fbx
-  artifactKey: Guid(8f9af8a8fc84fad43b87ddcad35d4b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/notburnt_broken.fbx using Guid(8f9af8a8fc84fad43b87ddcad35d4b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05f3f5b116b47f6543d7aedec4e07f7') in 0.009443 seconds
-  Import took 0.012014 seconds .
+  Time since last request: 461.048273 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(cd9793c6cbd5c1542b1a50885774f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Branchy_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree burnt_small_rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Burnt_somewhat must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree notburnt_broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '1bc83525b7d5b632eb0336759689c0bd') in 0.063576 seconds
+  Import took 0.066875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/TerrainData_8124b623-79bf-46b2-b328-852fdfe25088.asset
+  artifactKey: Guid(ce71ea3eaade61f4080eabf7f8b0060e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_8124b623-79bf-46b2-b328-852fdfe25088.asset using Guid(ce71ea3eaade61f4080eabf7f8b0060e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Branchy_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree burnt_small_rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Burnt_somewhat must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree notburnt_broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '46d86035613cdb2352150252464396ce') in 0.040919 seconds
+  Import took 0.043709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/TerrainData_3b78659d-59b8-4988-a643-487d24842e79.asset
+  artifactKey: Guid(236a773780107794f9aeb9fb17ea047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_3b78659d-59b8-4988-a643-487d24842e79.asset using Guid(236a773780107794f9aeb9fb17ea047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: 'e47da7d27b9f5647866ec8a7abb9b369') in 0.020273 seconds
+  Import took 0.022783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/TerrainData_503126d1-653f-4c9d-8193-a4134108f4bf.asset
+  artifactKey: Guid(b6900d9909946984ea4ce9f0040bce26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_503126d1-653f-4c9d-8193-a4134108f4bf.asset using Guid(b6900d9909946984ea4ce9f0040bce26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Branchy_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree burnt_small_rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Burnt_somewhat must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree notburnt_broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: 'b0fb0bafe26ea4badd496054aaa1e8b1') in 0.028845 seconds
+  Import took 0.031589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/TerrainData_264a0220-da1e-49ef-9e68-599f27caf54e.asset
+  artifactKey: Guid(f3ef829ac6da96945b4d0fdefaae01a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_264a0220-da1e-49ef-9e68-599f27caf54e.asset using Guid(f3ef829ac6da96945b4d0fdefaae01a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Branchy_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree burnt_small_rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Burnt_somewhat must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree notburnt_broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: 'd63dbf33e484710f7cc7089533c01a79') in 0.026943 seconds
+  Import took 0.029498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/TerrainData_c276c4f4-c68d-4acb-8db5-7a6acf751d06.asset
+  artifactKey: Guid(6a32c94135082e842b12524f6d6b8b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_c276c4f4-c68d-4acb-8db5-7a6acf751d06.asset using Guid(6a32c94135082e842b12524f6d6b8b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Branchy_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree burnt_small_rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Burnt_somewhat must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '4da10f349888b55d7ea4a0efe881f23d') in 0.027142 seconds
+  Import took 0.029735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/TerrainData_469f989b-4bc9-4f3e-af04-dde7f811d175.asset
+  artifactKey: Guid(54219255d9da3e24091901cd97a381e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_469f989b-4bc9-4f3e-af04-dde7f811d175.asset using Guid(54219255d9da3e24091901cd97a381e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree notburnt_broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '62b7b5aab814db851254249221d1d2dc') in 0.024663 seconds
+  Import took 0.027038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/TerrainData_d5b03694-4098-4346-968d-378eb770b6b6.asset
+  artifactKey: Guid(106e2e7bc53efcd46b59da43d4bbed6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_d5b03694-4098-4346-968d-378eb770b6b6.asset using Guid(106e2e7bc53efcd46b59da43d4bbed6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pine_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Branchy_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree burnt_small_rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Burnt_somewhat must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '3c55b09aa8651e63975a5d70d6f8a4ab') in 0.040009 seconds
+  Import took 0.042411 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000144 seconds.
-  path: Assets/Prefab/Trees/Branchy_burnt.fbx
-  artifactKey: Guid(10ab54fb4a639d6479f2ffde48fb9e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Branchy_burnt.fbx using Guid(10ab54fb4a639d6479f2ffde48fb9e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e359144e945d26ddd5f2293e5f20808') in 0.031748 seconds
-  Import took 0.035063 seconds .
+  path: Assets/TerrainData_1fe4b844-86bb-425a-83ab-e9531972bd71.asset
+  artifactKey: Guid(6eb81835d859b3240b43b65e60934cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_1fe4b844-86bb-425a-83ab-e9531972bd71.asset using Guid(6eb81835d859b3240b43b65e60934cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree thinner_bunrt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thin_bushy_tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Pinetree_alive must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Thick_short_burnt must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tree_bushy must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Tall_coloured must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree rock_somewhatbig must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree Long_tree_dry must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree notburnt_broken must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: '044e6b8a7c656680990482c970e9dfb3') in 0.024431 seconds
+  Import took 0.026645 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Prefab/Trees/Tall_coloured.fbx
-  artifactKey: Guid(acbfd6d797e5ebb41b391d7d03df5400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Tall_coloured.fbx using Guid(acbfd6d797e5ebb41b391d7d03df5400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41961dc7c8becffda9ead9fedfec25b8') in 0.033597 seconds
-  Import took 0.035680 seconds .
+  Time since last request: 2.758804 seconds.
+  path: Assets/Scenes/New Main.unity
+  artifactKey: Guid(e8705bee95135b943be278f921a67743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Main.unity using Guid(e8705bee95135b943be278f921a67743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df45e487c7802214cd0ffb95d676f43') in 0.007053 seconds
+  Import took 0.008921 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Prefab/Trees/Broken.fbx
-  artifactKey: Guid(c07fc18c93b1ed5499cb07af6e214aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Broken.fbx using Guid(c07fc18c93b1ed5499cb07af6e214aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab1767c188d71c779419ecd45234991') in 0.013236 seconds
-  Import took 0.015696 seconds .
+  Time since last request: 15.995397 seconds.
+  path: Assets/Prefab/Aniamtions
+  artifactKey: Guid(5f92787c318d2984db80393f91c1dce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions using Guid(5f92787c318d2984db80393f91c1dce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30246b9cae856868b4b8def83274c32b') in 0.005939 seconds
+  Import took 0.007665 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Prefab/Trees/Pine_burnt.fbx
-  artifactKey: Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pine_burnt.fbx using Guid(99580513c77a257438861d4b3e39420f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ff0cf87a58d37ad6afd4809d08098f') in 0.019635 seconds
-  Import took 0.022141 seconds .
+  Time since last request: 0.051347 seconds.
+  path: Assets/Prefab/Aniamtions/Neutral Idle.fbx
+  artifactKey: Guid(872628d0eb1adb541b696c553969d2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Neutral Idle.fbx using Guid(872628d0eb1adb541b696c553969d2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd8774edc0c9afeb7ea93ef2de4b998') in 0.148337 seconds
+  Import took 0.150540 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Prefab/Trees/Tree_bushy.fbx
-  artifactKey: Guid(374af57fbaccabe488392f3a1725f672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Tree_bushy.fbx using Guid(374af57fbaccabe488392f3a1725f672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65b7128d7093ed130850cae6328fe11') in 0.025807 seconds
-  Import took 0.027684 seconds .
+  Time since last request: 13.261894 seconds.
+  path: Assets/Prefab/Aniamtions/Idle (2).fbx
+  artifactKey: Guid(659644a5a60eb8a46a4abfe11ee46b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Idle (2).fbx using Guid(659644a5a60eb8a46a4abfe11ee46b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e7e4204c84c654e67a615fd7631b1b') in 0.273721 seconds
+  Import took 0.275852 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Prefab/Trees/Thick_short_burnt.fbx
-  artifactKey: Guid(587005def73316740ba345455b074867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Thick_short_burnt.fbx using Guid(587005def73316740ba345455b074867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a806ccafb168db0cf8953a84b374857') in 0.015556 seconds
-  Import took 0.018120 seconds .
+  Time since last request: 0.000203 seconds.
+  path: Assets/Prefab/Aniamtions/Walking (3).fbx
+  artifactKey: Guid(5b5f3b6cf8841a64982e4e75fd5b75d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Walking (3).fbx using Guid(5b5f3b6cf8841a64982e4e75fd5b75d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60cff27472995c2d9b67e2ceaace5785') in 0.076435 seconds
+  Import took 0.078432 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Prefab/Trees/Long_tree_dry.fbx
-  artifactKey: Guid(fd56fde8b293e474fb48690324cccc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Long_tree_dry.fbx using Guid(fd56fde8b293e474fb48690324cccc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffa1a8350e5fcb2a82c8671ef472a32') in 0.022251 seconds
-  Import took 0.024859 seconds .
+  Time since last request: 0.000127 seconds.
+  path: Assets/Prefab/Aniamtions/Running (3).fbx
+  artifactKey: Guid(952141c23aa24dd4c91036c1864769e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Running (3).fbx using Guid(952141c23aa24dd4c91036c1864769e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1b8e4304131a762f894cfc42083321') in 0.083784 seconds
+  Import took 0.086289 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/Prefab/Trees/Pinetree_alive.fbx
-  artifactKey: Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Pinetree_alive.fbx using Guid(db39195f7a9ebce43ae4b1764d8a55b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c349a213c774dde7e557de95643ac8ce') in 0.013744 seconds
-  Import took 0.016415 seconds .
+  Time since last request: 0.000186 seconds.
+  path: Assets/Prefab/Aniamtions/Unarmed Jump Running (1).fbx
+  artifactKey: Guid(22d3c8822e75c094ba95b3fdd4853156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Unarmed Jump Running (1).fbx using Guid(22d3c8822e75c094ba95b3fdd4853156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fa64074d26d6452467f59c10f429d4') in 0.079333 seconds
+  Import took 0.081446 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Prefab/Trees/Thin_bushy_tree.fbx
-  artifactKey: Guid(b4cb46c57965c2847a68203f6c819ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Trees/Thin_bushy_tree.fbx using Guid(b4cb46c57965c2847a68203f6c819ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b28aeebd974aa3b2fa1cd3d0d38e3d6') in 0.024424 seconds
-  Import took 0.026998 seconds .
+  Time since last request: 133.814889 seconds.
+  path: Assets/Prefab/Aniamtions/Idle (2).fbx
+  artifactKey: Guid(659644a5a60eb8a46a4abfe11ee46b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Idle (2).fbx using Guid(659644a5a60eb8a46a4abfe11ee46b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986c200b7d306d8d52db7ad8eb8d1ad3') in 0.109261 seconds
+  Import took 0.111944 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.221876 seconds.
-  path: Assets/Prefab/Fireman.fbx
-  artifactKey: Guid(cf425e4c210cb4d4697c3a91f78daa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Fireman.fbx using Guid(cf425e4c210cb4d4697c3a91f78daa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4869f4b380a9a72fc85a1cb421a3432') in 0.044177 seconds
-  Import took 0.046173 seconds .
+  Time since last request: 8.958211 seconds.
+  path: Assets/Prefab/Aniamtions/Running (3).fbx
+  artifactKey: Guid(952141c23aa24dd4c91036c1864769e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Running (3).fbx using Guid(952141c23aa24dd4c91036c1864769e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76eae4d06b68e8a53de4e82df1e4adb6') in 0.146796 seconds
+  Import took 0.150290 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.824114 seconds.
-  path: Assets/Prefab/Aniamtions/Talking.fbx
-  artifactKey: Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/Talking.fbx using Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22929830d5001cb9be94f0beaa3f8f00') in 0.123575 seconds
-  Import took 0.125890 seconds .
+  Time since last request: 14.592453 seconds.
+  path: Assets/Prefab/Aniamtions/Running (3).fbx
+  artifactKey: Guid(952141c23aa24dd4c91036c1864769e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Running (3).fbx using Guid(952141c23aa24dd4c91036c1864769e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7098eb08952934e3227bbaaf7c46b8f5') in 0.138512 seconds
+  Import took 0.140750 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.344024 seconds.
-  path: Assets/Prefab/Aniamtions/Talking.fbx
-  artifactKey: Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/Talking.fbx using Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7320328795ec1af69dd72b13bf8db35') in 0.177608 seconds
-  Import took 0.180356 seconds .
+  Time since last request: 6.355264 seconds.
+  path: Assets/Prefab/Aniamtions/Idle (2).fbx
+  artifactKey: Guid(659644a5a60eb8a46a4abfe11ee46b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Idle (2).fbx using Guid(659644a5a60eb8a46a4abfe11ee46b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6795fe6b5ad2c21b35639decc35984b0') in 0.128258 seconds
+  Import took 0.132014 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.325046 seconds.
-  path: Assets/Prefab/Aniamtions/Talking.fbx
-  artifactKey: Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/Talking.fbx using Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e85817df9588f855eb6e0dc7175656') in 0.109205 seconds
-  Import took 0.112758 seconds .
+  Time since last request: 4.426096 seconds.
+  path: Assets/Prefab/Aniamtions/Running.anim
+  artifactKey: Guid(8a67778d2e2cc684685794ef20af6e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Running.anim using Guid(8a67778d2e2cc684685794ef20af6e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cb3ee44a22835f691de20eaded2bc7') in 0.017234 seconds
+  Import took 0.019309 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.859696 seconds.
-  path: Assets/Prefab/Aniamtions/Talking.fbx
-  artifactKey: Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/Talking.fbx using Guid(3a9f506c4080d1148826c0cef6385e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3501c71a39c1aa893d9685db215a91') in 0.188071 seconds
-  Import took 0.190303 seconds .
+  Time since last request: 0.002119 seconds.
+  path: Assets/Prefab/Aniamtions/Running.anim
+  artifactKey: Guid(8a67778d2e2cc684685794ef20af6e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Running.anim using Guid(8a67778d2e2cc684685794ef20af6e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cb3ee44a22835f691de20eaded2bc7') in 0.011254 seconds
+  Import took 0.013365 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.401728 seconds.
-  path: Assets/Prefab/Aniamtions/talking.anim
-  artifactKey: Guid(dcd608ef5842f84409ab8ba731284744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/talking.anim using Guid(dcd608ef5842f84409ab8ba731284744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c471a9db7edd13ae2383135d3fe59b9') in 0.021563 seconds
-  Import took 0.024337 seconds .
+  Time since last request: 32.412159 seconds.
+  path: Assets/Prefab/Aniamtions/Unarmed Jump Running (1).fbx
+  artifactKey: Guid(22d3c8822e75c094ba95b3fdd4853156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Unarmed Jump Running (1).fbx using Guid(22d3c8822e75c094ba95b3fdd4853156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efdfcf59ac78a2e5766d15c330fdf8be') in 0.079951 seconds
+  Import took 0.083143 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.494096 seconds.
-  path: Assets/Prefab/Aniamtions/Fireman.controller
-  artifactKey: Guid(03c417c5befc33e4d9c48655f07c283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/Fireman.controller using Guid(03c417c5befc33e4d9c48655f07c283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f8f688dc3eed0cab682249bb2a2bf9') in 0.005362 seconds
-  Import took 0.008041 seconds .
+  Time since last request: 4.180732 seconds.
+  path: Assets/Prefab/Aniamtions/Unarmed Jump Running (1).fbx
+  artifactKey: Guid(22d3c8822e75c094ba95b3fdd4853156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Unarmed Jump Running (1).fbx using Guid(22d3c8822e75c094ba95b3fdd4853156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86113b01530f4cda1bac2110eabf744') in 0.089557 seconds
+  Import took 0.091838 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.966027 seconds.
-  path: Assets/Prefab/Aniamtions/Fireman.controller
-  artifactKey: Guid(03c417c5befc33e4d9c48655f07c283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Aniamtions/Fireman.controller using Guid(03c417c5befc33e4d9c48655f07c283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62db8ac77db6d1210df8ad4fb3880263') in 0.016073 seconds
-  Import took 0.018020 seconds .
+  Time since last request: 8.397549 seconds.
+  path: Assets/Prefab/Aniamtions/Jumping.anim
+  artifactKey: Guid(831d0c4208f4b3c45a0526192492918a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Jumping.anim using Guid(831d0c4208f4b3c45a0526192492918a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bfb24b3005df8b0ea24aedb57e79233') in 0.027133 seconds
+  Import took 0.029065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.505051 seconds.
+  path: Assets/Prefab/Aniamtions/Walking (3).fbx
+  artifactKey: Guid(5b5f3b6cf8841a64982e4e75fd5b75d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Walking (3).fbx using Guid(5b5f3b6cf8841a64982e4e75fd5b75d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ab77796935d18a907054ec01157bb4') in 0.082459 seconds
+  Import took 0.084688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.399150 seconds.
+  path: Assets/Prefab/Aniamtions/Walking (3).fbx
+  artifactKey: Guid(5b5f3b6cf8841a64982e4e75fd5b75d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Walking (3).fbx using Guid(5b5f3b6cf8841a64982e4e75fd5b75d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317fc9dcb0c5cd3ac1019cb30b036add') in 0.076656 seconds
+  Import took 0.078910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.052265 seconds.
+  path: Assets/Prefab/Aniamtions/Walking.anim
+  artifactKey: Guid(b13f6355e996e9141b5eb3b3892133b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Walking.anim using Guid(b13f6355e996e9141b5eb3b3892133b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ca09d7230010c6588059c8762afe53') in 0.018790 seconds
+  Import took 0.021507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.246668 seconds.
+  path: Assets/Prefab/Aniamtions/Main_Animatinos.controller
+  artifactKey: Guid(9ed6dc91b03d18b40b8af3d824c560df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Main_Animatinos.controller using Guid(9ed6dc91b03d18b40b8af3d824c560df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502edad27aba4016ca44ae49879e9889') in 0.009013 seconds
+  Import took 0.010854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006077 seconds.
+  path: Assets/Prefab/Aniamtions/Main_Animatinos.controller
+  artifactKey: Guid(9ed6dc91b03d18b40b8af3d824c560df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Aniamtions/Main_Animatinos.controller using Guid(9ed6dc91b03d18b40b8af3d824c560df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502edad27aba4016ca44ae49879e9889') in 0.002465 seconds
+  Import took 0.004371 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000911 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.755 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1212 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.3 MB.
+System memory in use after: 106.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1760.
+Total: 1.896000 ms (FindLiveObjects: 0.187100 ms CreateObjectMapping: 0.045400 ms MarkObjects: 1.647400 ms  DeleteObjects: 0.015000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
