@@ -87,13 +87,15 @@ public class PlayerMovementScript : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity); 
         }
 
-        if (Input.GetButton("Sprint") && isGrounded && !currentlyTalking) //toggling the sprint on
+        if (Input.GetButtonDown("Sprint") && isGrounded && !currentlyTalking) //toggling the sprint on
         {
-            speed = 40f; 
+            speed = 40f;
+            animator.SetBool( "isRunning", true );
         }
         if (Input.GetButtonUp("Sprint") && isGrounded && !currentlyTalking) // toggling the sptin off
         {
             speed = 20f;
+            animator.SetBool( "isRunning", false );
         }
 
         velocity.y += gravity * Time.deltaTime; // increasing the velocity as the player falls.
