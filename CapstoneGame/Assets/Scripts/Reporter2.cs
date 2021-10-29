@@ -41,7 +41,7 @@ public class Reporter2 : MonoBehaviour
                 //Turns on dialogue ui
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Thanks again for the help, if you could just meet Fireman Fred at the station he'll set you up with a drone";
-                characterName.GetComponent<Text>().text = "Richard";
+                characterName.GetComponent<Text>().text = "Rikki";
                 this.GetComponent<BoxCollider>().enabled = false;
                 //Turns off object
                 qMark3.SetActive(false);
@@ -61,7 +61,7 @@ public class Reporter2 : MonoBehaviour
                 //Turns on dialogue ui
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Back again so soon? Check out the photo you took!";
-                characterName.GetComponent<Text>().text = "Richard";
+                characterName.GetComponent<Text>().text = "Rikki";
                 //Turns off action ui
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
@@ -79,7 +79,7 @@ public class Reporter2 : MonoBehaviour
                 //Turns on dialogue ui
                 subBox.SetActive(true);
                 subText.GetComponent<Text>().text = "Wow you and Fred make a great team. Here take a look at the photo for yourself.";
-                characterName.GetComponent<Text>().text = "Richard";
+                characterName.GetComponent<Text>().text = "Rikki";
                 //Truns off story objects not needed anymore
                 qMark3.SetActive(false);
                 fireman.SetActive(false);
@@ -148,7 +148,7 @@ public class Reporter2 : MonoBehaviour
         subBox.SetActive(true);
         //Turns on dialogue ui
         subText.GetComponent<Text>().text = "Thanks so much for your help mate! Go find Ranger Sam, I'm sure he has some further learning for you!";
-        characterName.GetComponent<Text>().text = "Richard";
+        characterName.GetComponent<Text>().text = "Rikki";
         StartCoroutine(ExitConversation2());
 
     }

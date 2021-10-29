@@ -35,9 +35,9 @@ public class LibraryBuzzer : MonoBehaviour
             //Turns on dialogue ui
             subBox.SetActive(true);
             subText.GetComponent<Text>().text = "I'll be with you in just a moment!  I’m just trying to shoo this bird away! AGHGHH! Oooh deary me!";
-            characterName.GetComponent<Text>().text = "Liam";
+            characterName.GetComponent<Text>().text = "Lilly";
             //Changes action ui
-            ActionText.GetComponent<Text>().text = "Help Liam capture the bird!";
+            ActionText.GetComponent<Text>().text = "Help Lilly capture the bird!";
             ActionText.SetActive(true);
             //Turns on question mark object
             qMark.SetActive(true);

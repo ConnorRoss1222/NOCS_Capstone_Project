@@ -44,8 +44,8 @@ public class LibrarianNPC : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 //Turns on dialogue ui
                 subBox.SetActive(true);
-                subText.GetComponent<Text>().text = "I want to talk but that bird is really freaking me out.";
-                characterName.GetComponent<Text>().text = "Liam";
+                subText.GetComponent<Text>().text = "I want to talk but that bird is really freaking me out!";
+                characterName.GetComponent<Text>().text = "Lilly";
                 this.GetComponent<BoxCollider>().enabled = false;
                 //Turns of action ui
                 ActionDisplay.SetActive(false);
@@ -64,7 +64,7 @@ public class LibrarianNPC : MonoBehaviour
                     //Turns on dialogue ui
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Thank you very much for lending a helping hand there! The whole ecosystem has been going crazy since the bushland was destroyed.";
-                    characterName.GetComponent<Text>().text = "Liam";
+                    characterName.GetComponent<Text>().text = "Lilly";
                     this.GetComponent<BoxCollider>().enabled = false;
                     //Turns of action ui
                     ActionDisplay.SetActive(false);
@@ -81,7 +81,7 @@ public class LibrarianNPC : MonoBehaviour
                     //Turns on dialogue ui
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "I'm sorry to be like this but I cannot help you learn until you find that book.";
-                    characterName.GetComponent<Text>().text = "Liam";
+                    characterName.GetComponent<Text>().text = "Lilly";
                     this.GetComponent<BoxCollider>().enabled = false;
                     //Turns of action ui
                     ActionDisplay.SetActive(false);
@@ -101,7 +101,7 @@ public class LibrarianNPC : MonoBehaviour
                     //Turns on dialogue ui
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Oh great you found it! Let's give it a read.";
-                    characterName.GetComponent<Text>().text = "Liam";
+                    characterName.GetComponent<Text>().text = "Lilly";
                     this.GetComponent<BoxCollider>().enabled = false;
                     //Turns of action ui
                     ActionDisplay.SetActive(false);
@@ -124,7 +124,7 @@ public class LibrarianNPC : MonoBehaviour
                     //Turns on dialogue ui
                     subBox.SetActive(true);
                     subText.GetComponent<Text>().text = "Oh you're back, are you here to see the book again?";
-                    characterName.GetComponent<Text>().text = "Liam";
+                    characterName.GetComponent<Text>().text = "Lilly";
                     this.GetComponent<BoxCollider>().enabled = false;
                     //Turns of action ui
                     ActionDisplay.SetActive(false);
@@ -206,8 +206,8 @@ public class LibrarianNPC : MonoBehaviour
         //Waits 5.5 Seconds
         yield return new WaitForSeconds(5.5f);
         //Edits Dialogue ui
-        subText.GetComponent<Text>().text = "Ohh, and my name is Liam, by the way, Liam the Librarian. What brings you into the library today?";
-        characterName.GetComponent<Text>().text = "Liam";
+        subText.GetComponent<Text>().text = "Ohh, and my name is Lilly, by the way, Lilly the Librarian. What brings you into the library today?";
+        characterName.GetComponent<Text>().text = "Lilly";
         //Changes story bool to true
         stateBirdConversation = true;
         //Continues story
@@ -220,7 +220,7 @@ public class LibrarianNPC : MonoBehaviour
         yield return new WaitForSeconds(5.5f);
         //Edits Dialogue ui
         subText.GetComponent<Text>().text = "Ohhh you’d like some information on bushfires! Have I got just the book for you, if I could just……ahhh…find it.";
-        characterName.GetComponent<Text>().text = "Liam";
+        characterName.GetComponent<Text>().text = "Lilly";
         //Continues story
         StartCoroutine(FoundPossumConversation3());
     }
@@ -231,9 +231,9 @@ public class LibrarianNPC : MonoBehaviour
         yield return new WaitForSeconds(6f);
         //Edits Dialogue ui
         subText.GetComponent<Text>().text = "Rats, I must’ve put it back on the shelf. Now if I remember correctly, it should be in the nonfiction section. Go find it and we can give it a read together!";
-        characterName.GetComponent<Text>().text = "Liam";
+        characterName.GetComponent<Text>().text = "Lilly";
         //Activates notification ui
-        notifications.GetComponent<Text>().text = "Help Liam find the right book!";
+        notifications.GetComponent<Text>().text = "Help Lilly find the right book!";
         notifications.SetActive(true);
         //Enables book objects
         book1.GetComponent<BoxCollider>().enabled = true;
