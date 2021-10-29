@@ -43,7 +43,6 @@ public class FireTimeTrial : MonoBehaviour
             //remove press e text
             ActionText.SetActive(false);
             this.GetComponent<BoxCollider>().enabled = false;
-            //increment global variable and print to logs
 
             timeRemaining = timer_length;
             num_burning_collected = 0;
@@ -54,6 +53,7 @@ public class FireTimeTrial : MonoBehaviour
 
         if (timerIsRunning)
         {
+            //timer has run out - win scenario and goodbye
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
@@ -65,11 +65,16 @@ public class FireTimeTrial : MonoBehaviour
                     win_minigame = true;
                     Timer.GetComponent<Text>().text = "You Win!";
                     Timer.SetActive(true);
-                    StartCoroutine(ExitConversation());
+                    subText.GetComponent<Text>().text = "Fantastic work little man. You saved the town! Thanks for helping us out.";
+                    characterName.GetComponent<Text>().text = "Fireman Fred";
+                    subBox.SetActive(true);
+                    characterName.SetActive(true);
+                    StartCoroutine(ExitConversation2());
                 }
             }
             else
             {
+                //timer has run out - lose scenario
                 start = false;
                 timeRemaining = 0;
                 timerIsRunning = false;
@@ -79,7 +84,7 @@ public class FireTimeTrial : MonoBehaviour
                 Reset();
             }
         }
-
+        // first time teleporting to firetruck - say scripting
         if(story_ready == true && check == false && internal_start == true)
         {
             check = true;
@@ -94,6 +99,7 @@ public class FireTimeTrial : MonoBehaviour
         }
     }
 
+    //exit final conversation
     IEnumerator Conversation1()
     {
         yield return new WaitForSeconds(4f);
@@ -125,6 +131,7 @@ public class FireTimeTrial : MonoBehaviour
         ActionText.SetActive(false);
     }
 
+    //display count down timer in seconds
     private void DisplayTime(float timeToDisplay)
     {
         timeToDisplay += 1;
@@ -142,6 +149,24 @@ public class FireTimeTrial : MonoBehaviour
         Timer.SetActive(false);
     }
 
+    IEnumerator ExitConversation2()
+    {
+        yield return new WaitForSeconds(4.5f);
+        subText.GetComponent<Text>().text = "Your work here is now complete. Feel free to explore the town or return home. We will miss you!";
+        characterName.GetComponent<Text>().text = "Fireman Fred";
+        StartCoroutine(ExitConversation3());
+    }
+
+    IEnumerator ExitConversation3()
+    {
+        yield return new WaitForSeconds(4.5f);
+        subBox.SetActive(false);
+        subText.SetActive(false);
+        characterName.SetActive(false);
+
+    }
+
+    // reset all embers and place them accordingly
     void Reset()
     {
         this.GetComponent<BoxCollider>().enabled = true;
