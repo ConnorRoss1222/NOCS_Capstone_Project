@@ -25,7 +25,7 @@ public class PickupWrongBook : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             subBox.SetActive(true);
-            subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Lets keep looking";
+            subText.GetComponent<Text>().text = "This doesn't seem to be the right book. Let's keep looking";
             characterName.GetComponent<Text>().text = "Flurm";
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);

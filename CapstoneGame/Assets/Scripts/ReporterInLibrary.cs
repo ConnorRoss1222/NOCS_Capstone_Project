@@ -73,7 +73,7 @@ public class ReporterInLibrary : MonoBehaviour
     IEnumerator Conversation1()
     {
         yield return new WaitForSeconds(5.5f);
-        subText.GetComponent<Text>().text = "Perfect Timing! The mayors new assistant and I were just reading through this book on bushfires, maybe we could offer some assistance?";
+        subText.GetComponent<Text>().text = "Perfect timing! The mayors new assistant and I were just reading through this book on bushfires, maybe we could offer some assistance?";
         characterName.GetComponent<Text>().text = "Liam";
         StartCoroutine(Conversation2());
     }
@@ -174,7 +174,7 @@ public class ReporterInLibrary : MonoBehaviour
         }
         else if (correctQuestion == 2)
         {
-            subText.GetComponent<Text>().text = "Awesome, That all seems correct.";
+            subText.GetComponent<Text>().text = "Awesome, that all seems correct.";
             optButton01.SetActive(false);
             optButton02.SetActive(false);
             StartCoroutine(QuizComplete1());

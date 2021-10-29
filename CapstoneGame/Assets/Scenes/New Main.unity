@@ -9963,7 +9963,7 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: cd9793c6cbd5c1542b1a50885774f1b6, type: 2}
-  m_TreeDistance: 3298
+  m_TreeDistance: 100
   m_TreeBillboardDistance: 1648
   m_TreeCrossFadeLength: 21
   m_TreeMaximumFullLODCount: 1806
@@ -14239,7 +14239,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 5943
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
