@@ -99,6 +99,10 @@ public class Reporter2 : MonoBehaviour
     IEnumerator PhotoConversation()
     {
         //Waits 3.5 seconds
+        //Locks camera for button movement
+        GameObject.Find("FirstPersonPlayer").GetComponent<PlayerMovementScript>().enabled = false;
+        GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = false;
+        GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = false;
         yield return new WaitForSeconds(3.5f);
         //Turns on dialogue ui
         subBox.SetActive(false);
@@ -142,6 +146,10 @@ public class Reporter2 : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         this.GetComponent<BoxCollider>().enabled = true;
+        //Unlocks camera for button press
+        GameObject.Find("FirstPersonPlayer").GetComponent<PlayerMovementScript>().enabled = true;
+        GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = true;
+        GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = true;
         //Turns off phot overlay
         photoOverlay.SetActive(false);
         optButton.SetActive(false);

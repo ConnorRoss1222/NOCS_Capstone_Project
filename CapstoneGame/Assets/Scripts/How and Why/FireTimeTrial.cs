@@ -65,6 +65,7 @@ public class FireTimeTrial : MonoBehaviour
                     win_minigame = true;
                     Timer.GetComponent<Text>().text = "You Win!";
                     Timer.SetActive(true);
+                    subText.SetActive(true);
                     subText.GetComponent<Text>().text = "Fantastic work little man. You saved the town! Thanks for helping us out.";
                     characterName.GetComponent<Text>().text = "Fireman Fred";
                     subBox.SetActive(true);
@@ -152,6 +153,7 @@ public class FireTimeTrial : MonoBehaviour
     IEnumerator ExitConversation2()
     {
         yield return new WaitForSeconds(4.5f);
+        Timer.SetActive(false);
         subText.GetComponent<Text>().text = "Your work here is now complete. Feel free to explore the town or return home. We will miss you!";
         characterName.GetComponent<Text>().text = "Fireman Fred";
         StartCoroutine(ExitConversation3());
