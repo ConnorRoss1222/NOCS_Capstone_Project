@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ReadPoster3 : MonoBehaviour
 {
+    //Creates needed variables
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject posterOverlay;
@@ -15,33 +16,41 @@ public class ReadPoster3 : MonoBehaviour
 
     void Update()
     {
+        //Checks if inside range and interaction key is pressed
         if (insideRange && Input.GetKeyDown(KeyCode.E))
         {
+            //Locks camera
             GameObject.Find("FirstPersonPlayer").GetComponent<PlayerMovementScript>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = false;
             GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = false;
             this.GetComponent<BoxCollider>().enabled = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
+            //Changes required bools
             insideRange = false;
             Ranger.Poster3 = true;
+            //Turns on poster overlay
             posterOverlay.SetActive(true);
+            //Calls button activation method
             StartCoroutine(FoundPosterCloseButton());
         }
     }
 
     public void CloseButtonPressed()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Turns off ui
         this.GetComponent<BoxCollider>().enabled = true;
         posterOverlay.SetActive(false);
+        //Unlocks camera
         optButton.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         GameObject.Find("FirstPersonPlayer").GetComponent<PlayerMovementScript>().enabled = true;
         GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = true;
         GameObject.Find("Canvas").GetComponent<PauseMenu>().enabled = true;
     }
 
+    //Brings up ui and changes insideRange bool to true when entity is detected in range
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("hit detected");
@@ -50,7 +59,7 @@ public class ReadPoster3 : MonoBehaviour
         ActionText.SetActive(true);
     }
 
-
+    //Removes ui and changes bool to false on exit of range
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player")) insideRange = false;
@@ -60,7 +69,9 @@ public class ReadPoster3 : MonoBehaviour
 
     IEnumerator FoundPosterCloseButton()
     {
+        //Waits 10 seconds
         yield return new WaitForSeconds(10f);
+        //Turns on poster button ui
         optButton.GetComponentInChildren<Text>().text = "Close Poster";
         optButton.SetActive(true);
     }
