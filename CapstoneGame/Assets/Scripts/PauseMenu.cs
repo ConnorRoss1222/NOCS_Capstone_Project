@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio; 
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,7 +12,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject PlayerCamera;
     public GameObject textbox;
 
+    public AudioMixer mixer;
 
+    public void SetLevel(float sliderValue )
+    {
+        mixer.SetFloat( "MusicVolume", Mathf.Log10( sliderValue ) * 20 ); //represents the slider value to a db level
+    }
 
     // Update is called once per frame
     void Update()
